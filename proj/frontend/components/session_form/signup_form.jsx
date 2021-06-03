@@ -6,10 +6,14 @@ class SignupForm extends React.Component {
         this.state = {
             email: '',
             password: '',
-            firstName: '',
-            lastName: '',
+            first_name: '',
+            last_name: '',
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    
+    componentWillUnmount() {
+        this.props.receiveErrors([]);
     }
 
     update(field) {
@@ -39,46 +43,47 @@ class SignupForm extends React.Component {
     render() {
         return (
             <div className="signup-form-container">
-                <form onSubmit={this.handleSubmit} className="signup-form-box">
+            <form onSubmit={this.handleSubmit} className="signup-form-box">
                     Welcome to Delp!
-          <br />
-          Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                    <div className="signup-form">
-                        <label>First Name:
-                        <input type="text"
-                                value={this.state.first_name}
-                                onChange={this.update('first_name')}
-                                className="signup-input"
-                            />
-                        </label>
-                        <label>Last Name:
-                        <input type="text"
-                                value={this.state.last_name}
-                                onChange={this.update('last_name')}
-                                className="signup-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Email:
-                        <input type="text"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                                className="signup-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-                        <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="signup-input"
-                            />
-                        </label>
-                        <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
-                    </div>
-                </form>
+            <br />
+            Please {this.props.formType} or {this.props.navLink}
+                {this.renderErrors()}
+                <div className="signup-form">
+                    <label>First Name: 
+                    <input type="text"
+                            value={this.state.first_name}
+                            onChange={this.update('first_name')}
+                            className="signup-input"
+                        />
+                    </label>
+                    <br />
+                    <label>Last Name: 
+                    <input type="text"
+                            value={this.state.last_name}
+                            onChange={this.update('last_name')}
+                            className="signup-input"
+                        />
+                    </label>
+                    <br />
+                    <label>Email: 
+                    <input type="email"
+                            value={this.state.email}
+                            onChange={this.update('email')}
+                            className="signup-input"
+                        />
+                    </label>
+                    <br />
+                    <label>Password: 
+                    <input type="password"
+                            value={this.state.password}
+                            onChange={this.update('password')}
+                            className="signup-input"
+                        />
+                    </label>
+                    <br />
+                    <input className="signup-submit" type="submit" value={this.props.formType} />
+                </div>
+            </form>
             </div>
         );
     }

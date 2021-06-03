@@ -7,7 +7,16 @@ class LoginForm extends React.Component {
             email: '',
             password: ''
         };
+        this.demo = {
+            email: 'guest_user@email.com',
+            password: 'guestuser'
+        }
+
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentWillUnmount () {
+        this.props.receiveErrors([]);
     }
 
     update(field) {
@@ -39,30 +48,32 @@ class LoginForm extends React.Component {
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     Welcome to Delp!
-          <br />
-          Please {this.props.formType} or {this.props.navLink}
+                <br />
+                Please {this.props.formType} or {this.props.navLink}
                     {this.renderErrors()}
-                    <div className="login-form">
+                <div className="login-form">
                         <br />
-                        <label>Email:
-              <input type="text"
+                    <label>Email:
+                        <input type="email"
                                 value={this.state.email}
                                 onChange={this.update('email')}
                                 className="login-input"
                             />
-                        </label>
-                        <br />
-                        <label>Password:
-              <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="login-input"
+                    </label>
+                    <br />
+                    <label>Password:
+                        <input type="password"
+                        value={this.state.password}
+                        onChange={this.update('password')}
+                        className="login-input"
                             />
-                        </label>
-                        <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
+                    </label>
+                    <br />
+
+                    <input className="session-submit" type="submit" value={this.props.formType} />
                     </div>
                 </form>
+                <button className="guest-user-submit" onClick={() => this.props.processForm(this.demo)}>Guest User</button>
             </div>
         );
     }
