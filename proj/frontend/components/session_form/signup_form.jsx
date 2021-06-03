@@ -44,8 +44,9 @@ class SignupForm extends React.Component {
         return (
             <div className="signup-form-container">
             <form onSubmit={this.handleSubmit} className="signup-form-box">
-                    Welcome to Delp!
+                    Sign Up for Delp 
             <br />
+            Connect with great local businesses
             Please {this.props.formType} or {this.props.navLink}
                 {this.renderErrors()}
                 <div className="signup-form">
