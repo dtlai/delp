@@ -229,9 +229,11 @@ var Greeting = function Greeting(_ref) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
       className: "login-signup"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      to: "/login"
-    }, "Login"), "\xA0or\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      to: "/signup"
+      to: "/login",
+      className: "login-button"
+    }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      to: "/signup",
+      className: "login-button"
     }, "Sign up!"));
   };
 
@@ -349,14 +351,18 @@ var Homepage = /*#__PURE__*/function (_React$Component) {
         className: "hero-content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav-bar"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "header-nav"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Write a Review"), "\xA0 \xA0 \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Events"), "\xA0 \xA0 \xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Talk")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "greetings"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "hero-inner"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "home-logo-wrapper"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "home-logo",
         src: "https://i.imgur.com/JrsNpWu.png"
-      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."));
+      }))))));
     }
   }]);
 
