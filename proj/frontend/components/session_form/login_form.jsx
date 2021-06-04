@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -44,38 +45,61 @@ class LoginForm extends React.Component {
     }
 
     render() {
-        return (
-            <div className="login-form-container">
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to Delp!
-                <br />
-                Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                <div className="login-form">
-                        <br />
-                    <label>Email:
-                        <input type="email"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                                className="login-input"
-                            />
-                    </label>
-                    <br />
-                    <label>Password:
-                        <input type="password"
-                        value={this.state.password}
-                        onChange={this.update('password')}
-                        className="login-input"
-                            />
-                    </label>
-                    <br />
-
-                    <input className="session-submit" type="submit" value={this.props.formType} />
+    return (
+        <div className="login-form-container">
+            <div className="header-logo-link">
+                <Link to="/" className="logo-link">
+                    {/* <h1>Delp</h1> */}
+                    <img src="https://i.imgur.com/JrsNpWu.png" />
+                </Link>
+            </div>
+            <form onSubmit={this.handleSubmit} className="login-form-box">
+                <div className="login-header">
+                    <div className="login-message">
+                        Log in to Delp
                     </div>
-                </form>
+                    <div>
+                        New to Delp? {this.props.navLink}
+                    </div>
+                </div>
+                {/* <div className="login-header2">
+                    New to Delp? {this.props.navLink}
+                </div> */}
+            {this.renderErrors()}
+            <div className="login-form">
+                <div>
+                <label>Email:
+                    <input type="email"
+                            value={this.state.email}
+                            onChange={this.update('email')}
+                            className="login-input"
+                        />
+                </label>
+                </div>
+                <div>
+                <label className="password-text">Password:
+                    <input type="password"
+                    value={this.state.password}
+                    onChange={this.update('password')}
+                    className="login-input"
+                        />
+                </label>
+                </div>
+
+                <input className="session-submit" type="submit" value={this.props.formType} />
+                </div>
+            </form>
+            <div className="demo-button">
                 <button className="guest-user-submit" onClick={() => this.props.processForm(this.demo)}>Guest User</button>
             </div>
-        );
+            <div className="signup-button">
+                New to Delp? {this.props.navLink}
+            </div>
+            <div className="login-pic">
+                <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
+            </div>
+        </div>
+    );
     }
 }
 

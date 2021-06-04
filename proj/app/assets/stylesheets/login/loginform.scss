@@ -1,0 +1,40 @@
+
+.login-header {
+    display: flex;
+    align-items: center;
+    // background-color: blue;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.login-message {
+    color: red;
+    font-size: 25px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.signup-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+.demo-button {
+    display: flex;
+    justify-content: center;
+}
+
+.login-pic {
+    display: flex;
+    justify-content: flex-end;
+}
+
+// .login-form-container {
+//     display: flex;
+//     justify-content: center;
+// }

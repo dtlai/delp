@@ -1,0 +1,57 @@
+
+.header-link {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.login-signup {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 60px;
+    width: 100%;
+}
+
+.home-logo {
+    // height: 10em;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // height: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50);
+}
+
+.home-background {
+    position: absolute; 
+    z-index: -1;
+    // top: 80px;
+    // bottom: 80px;
+    // // left: 20px;
+    // width: 100px;
+    // height: 20px;
+    // margin: 80px;
+    // background-repeat: no-repeat;
+    // min-width: 500px;
+    // min-height: 300px;
+    // margin: 0;
+    // padding: 0;
+    // border: 0;
+    // font-size: 100%;
+    // font: inherit;
+    // vertical-align: baseline;
+        // padding-top: 30px;
+    // height: 570px;
+    // background-color: #333;
+    // background-size: cover;
+    // background-position: 50%;
+}
