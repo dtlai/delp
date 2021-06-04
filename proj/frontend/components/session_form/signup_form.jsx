@@ -92,6 +92,12 @@ class SignupForm extends React.Component {
                     <input className="signup-submit" type="submit" value={this.props.formType} />
                 </div>
             </form>
+                <div className="login-pic">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
+                </div>
+                <div className="signup-button">
+                    Already on Delp?&nbsp;{this.props.navLink}
+                </div>
             </div>
         );
     }

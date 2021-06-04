@@ -92,7 +92,7 @@ class LoginForm extends React.Component {
                 <button className="guest-user-submit" onClick={() => this.props.processForm(this.demo)}>Guest User</button>
             </div>
             <div className="signup-button">
-                New to Delp? {this.props.navLink}
+                New to Delp?&nbsp;{this.props.navLink}
             </div>
             <div className="login-pic">
                 <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
