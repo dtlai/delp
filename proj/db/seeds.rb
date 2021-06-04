@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
+Business.destroy_all
 
 demo_user = User.create!(
     first_name: 'Guest',
@@ -16,3 +17,11 @@ demo_user = User.create!(
     zipcode: '90045',
     birthday: '01/01/1990',
 ) 
+
+business1 = Business.create!(
+    name: 'Hae Jang Chon',
+    address: '3821 W 6th St Los Angeles, CA 90020 Koreatown, Wilshire Center',
+)
+
+# pic1_1 = URI.open('https://s3-media0.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/l.jpg')
+# business1.photos.attach(io: pic1_1, filename:'haejangchon1.jpg')
