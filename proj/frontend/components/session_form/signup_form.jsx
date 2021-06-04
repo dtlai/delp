@@ -44,12 +44,12 @@ class SignupForm extends React.Component {
     render() {
         return (
             <div className="signup-form-container">
-                <header>
-                    <Link to="/" className="header-link">
-                        <h1>Delp</h1>
-                    </Link>
-                    {/* <GreetingContainer /> */}
-                </header>
+                <div className="header-logo-link">
+                <Link to="/" className="logo-link">
+                    {/* <h1>Delp</h1> */}
+                    <img src="https://i.imgur.com/JrsNpWu.png" />
+                </Link>
+                </div>
             <form onSubmit={this.handleSubmit} className="signup-form-box">
                     Sign Up for Delp 
             <br />

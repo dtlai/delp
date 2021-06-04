@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -47,6 +47,12 @@ class LoginForm extends React.Component {
     render() {
     return (
         <div className="login-form-container">
+            <div className="header-logo-link">
+                <Link to="/" className="logo-link">
+                    {/* <h1>Delp</h1> */}
+                    <img src="https://i.imgur.com/JrsNpWu.png" />
+                </Link>
+            </div>
             <form onSubmit={this.handleSubmit} className="login-form-box">
                 <div className="login-header">
                     <div className="login-message">

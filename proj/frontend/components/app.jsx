@@ -26,16 +26,13 @@ const App = () => (
             <GreetingContainer />
         </header> */}
         <div>
-            <Link to="/" className="logo-link">
-                {/* <h1>Delp</h1> */}
-                <img src="https://i.imgur.com/JrsNpWu.png"/>
-            </Link>
-            <GreetingContainer />
+           
+            {/* <GreetingContainer /> */}
         </div>
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-            {/* <AuthRoute exact path="/" component={HomepageContainer} /> */}
+            <AuthRoute exact path="/" component={HomepageContainer} />
             <DefaultRoute path="*" />
             {/* <ProtectedRoute exact path="/benches/new" component={BenchFormContainer} />
             <Route path="/benches/:benchId" component={BenchShowContainer} />
