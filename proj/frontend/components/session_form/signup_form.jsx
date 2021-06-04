@@ -57,34 +57,38 @@ class SignupForm extends React.Component {
             Please {this.props.formType} or {this.props.navLink}
                 {this.renderErrors()}
                 <div className="signup-form">
-                    <label>First Name: 
+                    <label> 
                     <input type="text"
                             value={this.state.first_name}
                             onChange={this.update('first_name')}
+                            placeholder="First Name"
                             className="signup-input"
                         />
                     </label>
                     <br />
-                    <label>Last Name: 
+                    <label>
                     <input type="text"
                             value={this.state.last_name}
                             onChange={this.update('last_name')}
+                            placeholder="Last Name"
                             className="signup-input"
                         />
                     </label>
                     <br />
-                    <label>Email: 
+                    <label>
                     <input type="email"
                             value={this.state.email}
                             onChange={this.update('email')}
+                            placeholder="Email"
                             className="signup-input"
                         />
                     </label>
                     <br />
-                    <label>Password: 
+                    <label>
                     <input type="password"
                             value={this.state.password}
                             onChange={this.update('password')}
+                            placeholder="Password"
                             className="signup-input"
                         />
                     </label>
