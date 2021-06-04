@@ -2,13 +2,14 @@
 .login-header {
     display: flex;
     align-items: center;
-    background-color: blue;
+    // background-color: blue;
     margin-top: 10%;
     flex-direction: column;
 }
 
 .login-message {
     color: red;
+    font-size: 25px;
 }
 
 .login-form {
