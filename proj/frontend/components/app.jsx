@@ -25,13 +25,13 @@ const App = () => (
             </Link>
             <GreetingContainer />
         </header> */}
-        <header>
+        <div>
             <Link to="/" className="logo-link">
                 {/* <h1>Delp</h1> */}
-                <img src="https://i.imgur.com/C3eAHw6.png"/>
+                <img src="https://i.imgur.com/JrsNpWu.png"/>
             </Link>
             <GreetingContainer />
-        </header>
+        </div>
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
