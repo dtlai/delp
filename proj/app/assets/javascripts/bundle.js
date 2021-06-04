@@ -344,14 +344,19 @@ var Homepage = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-logo"
+        className: "hero-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hero-content"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "nav-bar"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hero-inner"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-logo-wrapper"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "home-logo",
         src: "https://i.imgur.com/JrsNpWu.png"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "home-background"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis."));
     }
   }]);
 

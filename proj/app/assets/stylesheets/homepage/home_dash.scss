@@ -18,40 +18,36 @@
     width: 100%;
 }
 
+.home-logo-wrapper {
+    // width: 100px;
+}
 .home-logo {
-    // height: 10em;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // height: 10em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50);
+    width: 150px;
 }
 
-.home-background {
-    position: absolute; 
-    z-index: -1;
-    // top: 80px;
-    // bottom: 80px;
-    // // left: 20px;
-    // width: 100px;
-    // height: 20px;
-    // margin: 80px;
-    // background-repeat: no-repeat;
-    // min-width: 500px;
-    // min-height: 300px;
-    // margin: 0;
-    // padding: 0;
-    // border: 0;
-    // font-size: 100%;
-    // font: inherit;
-    // vertical-align: baseline;
-        // padding-top: 30px;
-    // height: 570px;
-    // background-color: #333;
-    // background-size: cover;
-    // background-position: 50%;
+.hero-container {
+    // background-position: 50% 50%;
+    background-size: cover;
+    height: 570px;
+    padding-top: 30px;
+    width: 100%;
+    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
+}
+
+.hero-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav-bar {
+    height: 30px;
+    background-color: green;
+}
+
+.hero-inner {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -11,13 +11,26 @@ class Homepage extends React.Component {
     render() {
         return (
             <div>
-                <div className="home-logo">
-                    <img src="https://i.imgur.com/JrsNpWu.png" />
+                <div className="hero-container">
+                    <div className="hero-content">
+                        <div className="nav-bar">
+
+                        </div>
+                        <GreetingContainer />
+                        <div className="hero-inner">
+                            <div className="home-logo-wrapper">
+                                <img className="home-logo" src="https://i.imgur.com/JrsNpWu.png" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="home-background">
-                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg"/>
-                </div>
-                <GreetingContainer />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit sunt itaque id expedita consectetur quidem corrupti nesciunt incidunt soluta dignissimos mollitia ab unde, necessitatibus aut temporibus dolorum nihil officiis.</p>
             </div>
         );
     }
