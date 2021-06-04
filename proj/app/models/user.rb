@@ -2,8 +2,9 @@ class User < ApplicationRecord
 
   attr_reader :password
 
-  validates :email, :first_name, :last_name, :password_digest, :session_token, presence: true
+  validates :email, :first_name, :last_name, :password_digest, :zipcode, :session_token, presence: true
   validates :email, uniqueness: true
+  validates :zipcode, length: { minimum: 5 }
   validates :password, length: { minimum: 6 }, allow_nil: true
   validates_format_of :email, with: URI::MailTo::EMAIL_REGEXP
 

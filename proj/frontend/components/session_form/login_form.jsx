@@ -87,7 +87,7 @@ class LoginForm extends React.Component {
                 </label>
                 </div>
 
-                <input className="session-submit" type="submit" value={this.props.formType} />
+                <input className="login-submit" type="submit" value={this.props.formType} />
                 </div>
             </form>
             <div className="demo-button">

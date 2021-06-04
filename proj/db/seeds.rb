@@ -12,5 +12,7 @@ demo_user = User.create!(
     first_name: 'Guest',
     last_name: 'User',
     email: 'guest_user@email.com',
-    password: 'guestuser'
+    password: 'guestuser',
+    zipcode: '90045',
+    birthday: '01/01/1990',
 ) 

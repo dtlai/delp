@@ -9,6 +9,8 @@ class SignupForm extends React.Component {
             password: '',
             first_name: '',
             last_name: '',
+            zipcode: '',
+            birthday: '',
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -54,7 +56,7 @@ class SignupForm extends React.Component {
                     Sign Up for Delp 
             <br />
             Connect with great local businesses
-            Please {this.props.formType} or {this.props.navLink}
+
                 {this.renderErrors()}
                 <div className="signup-form">
                     <label> 
@@ -89,6 +91,22 @@ class SignupForm extends React.Component {
                             value={this.state.password}
                             onChange={this.update('password')}
                             placeholder="Password"
+                            className="signup-input"
+                        />
+                    </label>
+                    <label>
+                        <input type="text"
+                            value={this.state.zipcode}
+                            onChange={this.update('zipcode')}
+                            placeholder="Zip Code"
+                            className="signup-input"
+                        />
+                    </label>
+                    <label>Birthday
+                        <input type="text"
+                            value={this.state.birthday}
+                            onChange={this.update('birthday')}
+                            placeholder="Birthday"
                             className="signup-input"
                         />
                     </label>

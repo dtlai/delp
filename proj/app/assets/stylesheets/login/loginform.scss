@@ -27,11 +27,19 @@
 .demo-button {
     display: flex;
     justify-content: center;
+    color: red;
 }
 
 .login-pic {
     display: flex;
     justify-content: flex-end;
+}
+.login-submit {
+    color: red;
+}
+
+.guest-user-submit {
+    color: red;
 }
 
 // .login-form-container {
