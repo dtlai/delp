@@ -48,7 +48,7 @@ class SignupForm extends React.Component {
             
             <>
             <style>
-                        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
             </style>
             <div className="whole-signup-page">
                 <div className="header-logo-link">
