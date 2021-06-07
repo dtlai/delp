@@ -8,6 +8,14 @@ class Business extends React.Component {
 
     componentDidMount() {
         this.props.fetchBusiness(this.props.match.params.businessId)
+            .then(() => {this.setState({hasFetched: true})})
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.state.hasFetched) {
+            return false;
+        }
+        return true;
     }
 
 
@@ -15,7 +23,7 @@ class Business extends React.Component {
     render() {
         return (
             <>
-
+                {business.name}
             </>
         )
     }

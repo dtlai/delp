@@ -33,7 +33,7 @@ export const fetchBusiness = (business) => dispatch => {
 
 export const searchBusinesses = (search) => dispatch => {
     return (
-        BusinessApiUtil.searcBusinesses(search)
+        BusinessApiUtil.searchBusinesses(search)
             .then((businesses) => dispatch(receiveBusinesses(businesses)))
     )
 }
