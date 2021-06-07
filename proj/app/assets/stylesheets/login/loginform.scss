@@ -31,18 +31,30 @@
 }
 
 .login-pic {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 40%;
 }
+
 .login-submit {
     color: red;
 }
 
-.guest-user-submit {
-    color: red;
-}
+
 
 // .login-form-container {
 //     display: flex;
 //     justify-content: center;
 // }
+
+.login-form {
+    display: grid;
+}
+
+.login-input {
+    margin: 5px;
+}
+
+.guest-user-submit {
+    width: 100%;
+    color: red;
+}

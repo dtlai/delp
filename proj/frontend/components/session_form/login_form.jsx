@@ -46,18 +46,21 @@ class LoginForm extends React.Component {
 
     render() {
     return (
+        <>
+        <div className="header-logo-link">
+            <Link to="/" className="logo-link">
+                <img src="https://i.imgur.com/JrsNpWu.png" />
+            </Link>
+        </div>
+        
         <div className="login-form-container">
-            <div className="header-logo-link">
-                <Link to="/" className="logo-link">
-                    <img src="https://i.imgur.com/JrsNpWu.png" />
-                </Link>
-            </div>
+            <div className="login-container">
             <form onSubmit={this.handleSubmit} className="login-form-box">
                 <div className="login-header">
                     <div className="login-message">
                         Log in to Delp
                     </div>
-                    <div>
+                    <div style={{marginTop: "10px", marginBottom: "10px"}}>
                         New to Delp? {this.props.navLink}
                     </div>
                 </div>
@@ -96,10 +99,12 @@ class LoginForm extends React.Component {
             <div className="signup-button">
                 New to Delp?&nbsp;{this.props.navLink}
             </div>
+            </div>
             <div className="login-pic">
                 <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
             </div>
         </div>
+        </>
     );
     }
 }

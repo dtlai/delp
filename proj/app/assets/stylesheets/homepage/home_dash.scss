@@ -1,14 +1,13 @@
 
+#root {
+    min-width: 1000px;
+}
+
 .header-link {
     display: flex;
     justify-content: center;
     font-size: large;
 }
-
-// .login-signup {
-//     display: flex;
-//     justify-content: flex-end;
-// }
 
 .logo-link {
     display: flex;
@@ -18,17 +17,14 @@
     width: 100%;
 }
 
-.home-logo-wrapper {
-    // width: 100px;
-}
 .home-logo {
     width: 150px;
 }
 
 .hero-container {
-    // background-position: 50% 50%;
-    background-size: cover;
-    height: 570px;
+    background-position: center;
+    background-size: initial;
+    height: 400px;
     padding-top: 30px;
     width: 100%;
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
@@ -41,8 +37,7 @@
 }
 
 .nav-bar {
-    height: 30px;
-    // background-color: green;
+    display: flex;
 }
 
 .hero-inner {
@@ -54,28 +49,64 @@
 
 .header-nav {
     display: flex;
-    // justify-content: space-between;
-    // height: 30px;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.greetings {
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 0;
 }
 
 .login-signup {
     display: flex;
     justify-content: flex-end;
-   
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+
+    // align left or right -> have parent dom obj set to display:flex 
+    //align to left -> margin left:0, margin right: auto, right is vice versa 
 }
 
-.login-button {
+.login-greeting {
     color: white;
-    display: block;
-    padding: 9px 12px 10px;
+    padding: 10px 10px;
+    border-color: transparent;
+    outline: none;
+    margin-right: 10px;
+    background: transparent;
     font-size: 14px;
-    line-height: 1.28em;
-    font-weight: 700;
-    background: none;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+   
+}
+.signup-greeting {
+    color: white;
+    // display: block;
+    padding: 7px 24px 8px;
+    background: transparent;
+    border: white solid 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .header-group {
     display: flex;
     justify-content: flex-end;
 }
+
+.login-form-container {
+    display: flex;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+
+
