@@ -17,6 +17,7 @@ export const receiveBusiness = business => {
     }
 }
 
+
 export const fetchBusinesses = () => dispatch => {
     return (
         BusinessApiUtil.fetchBusinesses()

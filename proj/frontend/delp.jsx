@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 // Components
 import Root from './components/root';
 import configureStore from './store/store';
+import {fetchBusinesses} from './actions/business_actions'
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // testing start 
     window.getState = store.getState;
     window.dispatch = store.dispatch;
+    window.fetchBusinesses = fetchBusinesses;
     // testing end 
 
     const root = document.getElementById('root');

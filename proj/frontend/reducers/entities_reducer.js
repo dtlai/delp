@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux';
 
-import users from './users_reducer';
+import UsersReducer from './users_reducer';
+import BusinessesReducer from './businesses_reducer'
 
-export default combineReducers({
-    users,
+const EntitiesReducer = combineReducers({
+    users: UsersReducer,
+    businesses: BusinessesReducer,
 });
+
+export default EntitiesReducer;
