@@ -11,6 +11,9 @@ class Homepage extends React.Component {
     render() {
         return (
             <div>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+                </style>
                 <div className="hero-container">
                     <div className="hero-content">
                         <div className="nav-bar">

@@ -46,82 +46,87 @@ class SignupForm extends React.Component {
     render() {
         return (
             
-            <div className="signup-form-container">
+            <>
+            <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+            </style>
+            <div className="whole-signup-page">
                 <div className="header-logo-link">
-                <Link to="/" className="logo-link">
-                    {/* <h1>Delp</h1> */}
-                    <img src="https://i.imgur.com/JrsNpWu.png" />
-                </Link>
+                    <Link to="/" className="logo-link">
+                        {/* <h1>Delp</h1> */}
+                        <img src="https://i.imgur.com/JrsNpWu.png" />
+                    </Link>
                 </div>
-            <form onSubmit={this.handleSubmit} className="signup-form-box">
-                    Sign Up for Delp 
-            <br />
-            Connect with great local businesses
+                <div className="signup-header">Sign Up for Delp</div>
+                <div className="signup-header-2">Connect with great local businesses</div>
+                <div className="signup-form-container">
+                    <form onSubmit={this.handleSubmit} className="signup-form-box">
+                        {this.renderErrors()}
+                        <div className="signup-form">
+                            <label> 
+                            <input type="text"
+                                    value={this.state.first_name}
+                                    onChange={this.update('first_name')}
+                                    placeholder="First Name"
+                                    className="signup-input"
+                                />
+                            </label>
 
-                {this.renderErrors()}
-                <div className="signup-form">
-                    <label> 
-                    <input type="text"
-                            value={this.state.first_name}
-                            onChange={this.update('first_name')}
-                            placeholder="First Name"
-                            className="signup-input"
-                        />
-                    </label>
-                    <br />
-                    <label>
-                    <input type="text"
-                            value={this.state.last_name}
-                            onChange={this.update('last_name')}
-                            placeholder="Last Name"
-                            className="signup-input"
-                        />
-                    </label>
-                    <br />
-                    <label>
-                    <input type="email"
-                            value={this.state.email}
-                            onChange={this.update('email')}
-                            placeholder="Email"
-                            className="signup-input"
-                        />
-                    </label>
-                    <br />
-                    <label>
-                    <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                            className="signup-input"
-                        />
-                    </label>
-                    <label>
-                        <input type="text"
-                            value={this.state.zipcode}
-                            onChange={this.update('zipcode')}
-                            placeholder="Zip Code"
-                            className="signup-input"
-                        />
-                    </label>
-                    <label>Birthday
-                        <input type="text"
-                            value={this.state.birthday}
-                            onChange={this.update('birthday')}
-                            placeholder="Birthday"
-                            className="signup-input"
-                        />
-                    </label>
-                    <br />
-                    <input className="signup-submit" type="submit" value={this.props.formType} />
-                </div>
-            </form>
-                <div className="login-pic">
-                    <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
-                </div>
-                <div className="signup-button">
+                            <label>
+                            <input type="text"
+                                    value={this.state.last_name}
+                                    onChange={this.update('last_name')}
+                                    placeholder="Last Name"
+                                    className="signup-input"
+                                />
+                            </label>
+
+                            <label>
+                            <input type="email"
+                                    value={this.state.email}
+                                    onChange={this.update('email')}
+                                    placeholder="Email"
+                                    className="signup-input"
+                                />
+                            </label>
+
+                            <label>
+                            <input type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    placeholder="Password"
+                                    className="signup-input"
+                                />
+                            </label>
+                            <label>
+                                <input type="text"
+                                    value={this.state.zipcode}
+                                    onChange={this.update('zipcode')}
+                                    placeholder="Zip Code"
+                                    className="signup-input"
+                                />
+                            </label>
+                            <label>Birthday
+                                <input type="text"
+                                    value={this.state.birthday}
+                                    onChange={this.update('birthday')}
+                                    placeholder="Birthday"
+                                    className="signup-input"
+                                />
+                            </label>
+
+                            <input className="signup-submit" type="submit" value={this.props.formType} />
+                        </div>
+                    </form>
+                    <div className="login-pic">
+                        <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
+                    </div>
+                    <div className="signup-button">
                     Already on Delp?&nbsp;{this.props.navLink}
                 </div>
+                </div>
             </div>
+            </>
         );
     }
 }

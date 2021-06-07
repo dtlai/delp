@@ -1,10 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-// @font-face {
-//     font-family: "Open Sans";
-//     src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
-//     font-weight: normal;
-// }
 
 .login-message {
     color: red;
@@ -44,14 +38,14 @@
 
 .login-form-container {
     display: flex;
-    margin-top: 10%;
-    margin-left: 30%;
+    // margin-top: 10%;
+    // margin-left: 30%;
 }
 
 .login-container {
     // width: 100px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
+    // font-weight: normal;
     font-size: 14px;
 }
 
@@ -61,7 +55,14 @@
 }
 
 .login-input {
-    margin: 5px;
+    margin: 0px 5px 9px;
+    background-color: white;
+    padding: 5px 9px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
     // width: 100px;
 }
 
