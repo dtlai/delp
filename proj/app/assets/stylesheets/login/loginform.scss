@@ -1,11 +1,10 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.login-header {
-    display: flex;
-    align-items: center;
-    // background-color: blue;
-    margin-top: 10%;
-    flex-direction: column;
-}
+// @font-face {
+//     font-family: "Open Sans";
+//     src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+//     font-weight: normal;
+// }
 
 .login-message {
     color: red;
@@ -27,6 +26,8 @@
 .demo-button {
     display: flex;
     justify-content: center;
+    // margin-top: 5px;
+    margin-bottom: 5px;
     color: red;
 }
 
@@ -37,14 +38,23 @@
 
 .login-submit {
     color: red;
+    // margin-top: 5px;
+    margin-bottom: 5px;
 }
 
+.login-form-container {
+    display: flex;
+    margin-top: 10%;
+    margin-left: 30%;
+}
 
+.login-container {
+    // width: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
 
-// .login-form-container {
-//     display: flex;
-//     justify-content: center;
-// }
 
 .login-form {
     display: grid;
@@ -52,9 +62,11 @@
 
 .login-input {
     margin: 5px;
+    // width: 100px;
 }
 
 .guest-user-submit {
     width: 100%;
     color: red;
 }
+

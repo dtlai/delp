@@ -45,6 +45,7 @@ class SignupForm extends React.Component {
 
     render() {
         return (
+            
             <div className="signup-form-container">
                 <div className="header-logo-link">
                 <Link to="/" className="logo-link">

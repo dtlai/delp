@@ -47,6 +47,7 @@ class LoginForm extends React.Component {
     render() {
     return (
         <>
+        
         <div className="header-logo-link">
             <Link to="/" className="logo-link">
                 <img src="https://i.imgur.com/JrsNpWu.png" />

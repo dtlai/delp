@@ -1,6 +1,12 @@
 
+// @font-face {
+//     font-family: "Open Sans";
+//     src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
+// }
+
 #root {
     min-width: 1000px;
+
 }
 
 .header-link {
@@ -48,6 +54,7 @@
 }
 
 .header-nav {
+
     display: flex;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -102,11 +109,7 @@
     justify-content: flex-end;
 }
 
-.login-form-container {
-    display: flex;
-    margin-top: 10%;
-    margin-left: 30%;
-}
+
 
 
 
