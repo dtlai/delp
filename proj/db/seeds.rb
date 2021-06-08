@@ -9,6 +9,8 @@
 User.delete_all
 Business.delete_all
 
+require 'open-uri'
+
 demo_user = User.create!(
     first_name: 'Guest',
     last_name: 'User',

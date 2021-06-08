@@ -1,7 +1,7 @@
 class Api::BusinessesController < ApplicationController
 
     def show 
-        @business = Business.find_by(id: params[:id])
+        @business = Business.with_attached_photos.find_by(id: params[:id])
     end
 
     def index 
@@ -16,7 +16,8 @@ class Api::BusinessesController < ApplicationController
             :state,
             :biz_zipcode,
             :phone_number, 
-            :price_range
+            :price_range,
+            photos: []
         )
     end
 
