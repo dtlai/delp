@@ -20,12 +20,22 @@ demo_user = User.create!(
 
 business1 = Business.create!(
     name: 'Hae Jang Chon',
-    address: '3821 W 6th St Los Angeles, CA 90020 Wilshire Center, Koreatown',
+    address: '3821 W 6th St Koreatown',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90020',
+    phone_number: '(213)389-8777',
+    price_range: '$$',
 )
 
 business2 = Business.create!(
     name: 'Yup Dduk LA',
-    address: '3603 W 6th St Los Angeles, CA 90020 Wilshire Center, Koreatown'
+    address: '3603 W 6th St Koreatown',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90020',
+    phone_number: '(213)263-2355',
+    price_range: '$$',
 )
 
 # pic1_1 = URI.open('https://s3-media0.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/l.jpg')

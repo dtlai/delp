@@ -1,3 +1,8 @@
 json.extract! business,
     :name,
-    :address 
+    :address, 
+    :city, 
+    :state,
+    :biz_zipcode,
+    :phone_number, 
+    :price_range
