@@ -338,6 +338,15 @@ var Business = /*#__PURE__*/function (_React$Component) {
       });
     }
   }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (prevProps.match.params.businessId !== this.props.match.params.businessId) {
+        this.props.fetchBusiness(this.props.match.params.businessId);
+      }
+
+      window.scrollTo(0, 0);
+    }
+  }, {
     key: "shouldComponentUpdate",
     value: function shouldComponentUpdate(nextProps, nextState) {
       if (this.state.hasFetched) {

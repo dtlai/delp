@@ -8,11 +8,17 @@ class Business extends React.Component {
         }
     }
 
-    componentDidMount() {
+    componentDidMount () {
         this.props.fetchBusiness(this.props.match.params.businessId)
             .then(() => {this.setState({hasFetched: true})})
     }
 
+    componentDidUpdate (prevProps) {
+        if (prevProps.match.params.businessId !== this.props.match.params.businessId) {
+            this.props.fetchBusiness(this.props.match.params.businessId)
+        }
+        window.scrollTo(0, 0)
+    }
 
 
     shouldComponentUpdate(nextProps, nextState) {
