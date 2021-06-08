@@ -20,7 +20,12 @@ demo_user = User.create!(
 
 business1 = Business.create!(
     name: 'Hae Jang Chon',
-    address: '3821 W 6th St Los Angeles, CA 90020 Koreatown, Wilshire Center',
+    address: '3821 W 6th St Los Angeles, CA 90020 Wilshire Center, Koreatown',
+)
+
+business2 = Business.create!(
+    name: 'Yup Dduk LA',
+    address: '3603 W 6th St Los Angeles, CA 90020 Wilshire Center, Koreatown'
 )
 
 # pic1_1 = URI.open('https://s3-media0.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/l.jpg')
