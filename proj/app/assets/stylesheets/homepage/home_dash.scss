@@ -5,8 +5,6 @@
 
 }
 
-
-
 .home-logo {
     width: 150px;
 }
@@ -20,6 +18,7 @@
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
 }
 
+// center logo
 .hero-content {
     max-width: 960px;
     margin: 0 auto;
@@ -28,6 +27,8 @@
 
 .nav-bar {
     display: flex;
+    font-family: 'Open Sans', sans-serif;
+    // font: bold;
 }
 
 .hero-inner {
@@ -37,6 +38,7 @@
     align-items: center;
 }
 
+// top left 'write a review' boxes
 .header-nav {
 
     display: flex;
@@ -44,12 +46,16 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-top: 10px;
+    // font: bold;
 }
 
+//login or logout buttons
 .greetings {
     margin-right: 0;
     margin-left: auto;
     padding-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .greetings > .login-signup {
@@ -83,11 +89,12 @@
     border: white solid 2px;
     border-radius: 4px;
     text-decoration: none;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    // font-size: 14px;
+    // font-family: 'Open Sans', sans-serif;
     
 }
 
+//when logged in button
 .header-group {
     display: flex;
     margin-right: 0;

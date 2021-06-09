@@ -58,50 +58,48 @@ class LoginForm extends React.Component {
             </div>
             <div className="login-form-container">
                 <div className="login-container">
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    <div className="login-header">
-                        <div className="login-message">
-                            Log in to Delp
+                    <form onSubmit={this.handleSubmit} className="login-form-box">
+                        <div className="login-header">
+                            <div className="login-message">
+                                Log in to Delp
+                            </div>
+                            <div className="new-delp-message">
+                                New to Delp? {this.props.navLink}
+                            </div>
                         </div>
-                        <div style={{marginTop: "10px", marginBottom: "10px"}}>
-                            New to Delp? {this.props.navLink}
+                    
+                    {this.renderErrors()}
+                    <div className="login-form">
+                        <div>
+                        <label>
+                            <input type="email"
+                                    value={this.state.email}
+                                    onChange={this.update('email')}
+                                    placeholder="Email"
+                                    className="login-input"
+                                />
+                        </label>
                         </div>
-                    </div>
-                    {/* <div className="login-header2">
-                        New to Delp? {this.props.navLink}
-                    </div> */}
-                {this.renderErrors()}
-                <div className="login-form">
-                    <div>
-                    <label>
-                        <input type="email"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                                placeholder="Email"
-                                className="login-input"
-                            />
-                    </label>
-                    </div>
-                    <div>
-                    <label className="password-text">
-                        <input type="password"
-                        value={this.state.password}
-                        onChange={this.update('password')}
-                        placeholder="Password"
-                        className="login-input"
-                            />
-                    </label>
-                    </div>
+                        <div>
+                        <label className="password-text">
+                            <input type="password"
+                            value={this.state.password}
+                            onChange={this.update('password')}
+                            placeholder="Password"
+                            className="login-input"
+                                />
+                        </label>
+                        </div>
 
-                    <input className="login-submit" type="submit" value={this.props.formType} />
+                        <input className="login-submit" type="submit" value={this.props.formType} />
                     </div>
-                </form>
-                <div className="demo-button">
-                    <button className="guest-user-submit" onClick={() => this.props.processForm(this.demo)}>Guest User</button>
-                </div>
-                <div className="signup-button">
-                    New to Delp?&nbsp;{this.props.navLink}
-                </div>
+                    </form>
+                    <div className="demo-button">
+                        <button className="guest-user-submit" onClick={() => this.props.processForm(this.demo)}>Guest User</button>
+                    </div>
+                    <div className="signup-button">
+                        New to Delp?&nbsp;{this.props.navLink}
+                    </div>
                 </div>
                 <div className="login-pic">
                 <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
