@@ -1320,6 +1320,7 @@ var BusinessesReducer = function BusinessesReducer() {
       return action.businesses;
 
     case _actions_business_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_BUSINESS"]:
+      console.log(action);
       return Object.assign({}, state, _defineProperty({}, action.business.id, action.business));
 
     default:
