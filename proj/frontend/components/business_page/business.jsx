@@ -37,10 +37,10 @@ class Business extends React.Component {
             return <div>Loading...</div>;
         }
         return (
-            <>
-                <div className="business-pics">
+            <div>
+                <div className="business-pics-container">
                     {this.props.business.photoUrls.map((photoUrl, i) => (
-                        <img className={`biz-pic_${i}`} key={i} src={photoUrl} alt="" />
+                        <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
                     ))}
                 </div>
                 <div className="business-user-header">
@@ -55,7 +55,7 @@ class Business extends React.Component {
                     <li id='biz-price-range'>{this.props.business.price_range}</li>
                     <li id='biz-phone-number'>{this.props.business.phone_number}</li>
                 </ul>
-            </>
+            </div>
         )
     }
 }

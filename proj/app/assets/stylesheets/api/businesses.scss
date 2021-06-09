@@ -1,3 +1,24 @@
 // Place all the styles related to the api/businesses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.business-pics-container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    // background-image: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 65%);
+}
+
+.biz-pic {
+    float: left;
+    height: 400px;
+    width: 300px;
+    object-fit: cover; //scale-down; //scale-down
+    // overflow: hidden;
+
+}
+
+.business-user-header {
+    display: flex;
+}

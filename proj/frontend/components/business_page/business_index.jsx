@@ -23,7 +23,7 @@ class BusinessIndex extends React.Component {
             return null;
         }
         return (
-            <>
+            <div>
                 <div className="businesses-user-header">
                     <GreetingContainer />
                 </div>
@@ -32,7 +32,7 @@ class BusinessIndex extends React.Component {
                         <Link to={`/businesses/${business.id}`}>{business.name}</Link>
                     ))}
                 </div>
-            </>
+            </div>
         )
     }
 }
