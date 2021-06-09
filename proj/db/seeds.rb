@@ -26,7 +26,7 @@ business1 = Business.create!(
     city: 'Los Angeles',
     state: 'CA',
     biz_zipcode: '90020',
-    phone_number: '(213)389-8777',
+    phone_number: '(213) 389-8777',
     price_range: '$$',
 )
 
@@ -36,7 +36,7 @@ business2 = Business.create!(
     city: 'Los Angeles',
     state: 'CA',
     biz_zipcode: '90020',
-    phone_number: '(213)263-2355',
+    phone_number: '(213) 263-2355',
     price_range: '$$',
 )
 
@@ -44,6 +44,17 @@ business2 = Business.create!(
 # bizfile1_2 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_2.jpeg')
 # bizfile1_3 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_3.jpeg')
 # bizfile1_4 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_4.jpeg')
+
+bizfile1_1 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/haejang/haejang1.jpeg')
+bizfile1_2 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/haejang/haejang2.jpeg')
+bizfile1_3 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/haejang/haejang3.jpeg')
+bizfile1_4 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/haejang/haejang4.jpeg')
+
+business1.photos.attach(io: bizfile1_1, filename: 'haejang1.jpeg')
+business1.photos.attach(io: bizfile1_2, filename: 'haejang2.jpeg')
+business1.photos.attach(io: bizfile1_3, filename: 'haejang3.jpeg')
+business1.photos.attach(io: bizfile1_4, filename: 'haejang4.jpeg')
+
 
 bizfile2_1 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/yupdduk/yupdduk_1.jpeg')
 bizfile2_2 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/yupdduk/yupdduk_2.jpeg')

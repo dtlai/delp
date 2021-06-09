@@ -363,15 +363,31 @@ var Business = /*#__PURE__*/function (_React$Component) {
       }
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "indiv-biz"
+        className: "business-pics"
       }, this.props.business.photoUrls.map(function (photoUrl, i) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-          className: "biz-pics",
+          className: "biz-pic_".concat(i),
           key: i,
           src: photoUrl,
           alt: ""
         });
-      })));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "business-info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-name"
+      }, this.props.business.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-address"
+      }, this.props.business.address), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-city"
+      }, this.props.business.city), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-state"
+      }, this.props.business.state), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-biz-zipcode"
+      }, this.props.business.biz_zipcode), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-price-range"
+      }, this.props.business.price_range), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "biz-phone-number"
+      }, this.props.business.phone_number)));
     }
   }]);
 

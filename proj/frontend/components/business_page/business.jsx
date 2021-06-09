@@ -36,11 +36,20 @@ class Business extends React.Component {
         }
         return (
             <>
-                <div className="indiv-biz">
+                <div className="business-pics">
                     {this.props.business.photoUrls.map((photoUrl, i) => (
-                        <img className="biz-pics" key={i} src={photoUrl} alt="" />
+                        <img className={`biz-pic_${i}`} key={i} src={photoUrl} alt="" />
                     ))}
                 </div>
+                <ul className="business-info">
+                    <li id='biz-name'>{this.props.business.name}</li>
+                    <li id='biz-address'>{this.props.business.address}</li>
+                    <li id='biz-city'>{this.props.business.city}</li>
+                    <li id='biz-state'>{this.props.business.state}</li>
+                    <li id='biz-biz-zipcode'>{this.props.business.biz_zipcode}</li>
+                    <li id='biz-price-range'>{this.props.business.price_range}</li>
+                    <li id='biz-phone-number'>{this.props.business.phone_number}</li>
+                </ul>
             </>
         )
     }
