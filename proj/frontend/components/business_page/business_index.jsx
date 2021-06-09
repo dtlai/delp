@@ -29,7 +29,7 @@ class BusinessIndex extends React.Component {
                         <img src="https://i.imgur.com/JrsNpWu.png" />
                     </Link>
                 </div>
-                <div className="greetings">
+                <div className="businesses-user-header">
                     <GreetingContainer />
                 </div>
                 <div className="list-of-bizs">

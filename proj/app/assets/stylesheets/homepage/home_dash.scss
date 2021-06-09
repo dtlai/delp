@@ -5,19 +5,7 @@
 
 }
 
-.header-link {
-    display: flex;
-    justify-content: center;
-    font-size: large;
-}
 
-.logo-link {
-    display: flex;
-    justify-content: center;
-    background-color: red;
-    height: 60px;
-    width: 100%;
-}
 
 .home-logo {
     width: 150px;
@@ -25,8 +13,8 @@
 
 .hero-container {
     background-position: center;
-    background-size: initial;
-    height: 400px;
+    background-size: cover;
+    height: 600px;
     padding-top: 30px;
     width: 100%;
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
@@ -64,18 +52,18 @@
     padding-top: 0;
 }
 
-.login-signup {
+.greetings > .login-signup {
     display: flex;
     justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: white;
+    color: grey;
 
     // align left or right -> have parent dom obj set to display:flex 
     //align to left -> margin left:0, margin right: auto, right is vice versa 
 }
 
-.login-greeting {
+.greetings > .login-signup > .login-greeting {
     color: white;
     padding: 10px 10px;
     border-color: transparent;
@@ -87,7 +75,7 @@
     text-decoration: none;
    
 }
-.signup-greeting {
+.greetings > .login-signup > .signup-greeting {
     color: white;
     // display: block;
     padding: 7px 24px 8px;
@@ -102,7 +90,8 @@
 
 .header-group {
     display: flex;
-    justify-content: flex-end;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 

@@ -43,6 +43,9 @@ class Business extends React.Component {
                         <img src="https://i.imgur.com/JrsNpWu.png" />
                     </Link>
                 </div>
+                <div className="business-user-header">
+                    <GreetingContainer />
+                </div>
                 <div className="business-pics-container">
                     {this.props.business.photoUrls.map((photoUrl, i) => (
                         <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
@@ -57,9 +60,7 @@ class Business extends React.Component {
                     <li id='biz-price-range'>{this.props.business.price_range}</li>
                     <li id='biz-phone-number'>{this.props.business.phone_number}</li>
                 </ul>
-                <div className="business-user-header">
-                    <GreetingContainer />
-                </div>
+                
             </div>
         )
     }
