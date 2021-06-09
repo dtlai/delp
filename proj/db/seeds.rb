@@ -40,5 +40,17 @@ business2 = Business.create!(
     price_range: '$$',
 )
 
-# pic1_1 = URI.open('https://s3-media0.fl.yelpcdn.com/bphoto/UE_ZY3fBqOaun7z-75Drbw/l.jpg')
-# business1.photos.attach(io: pic1_1, filename:'haejangchon1.jpg')
+# bizfile1_1 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_1.jpeg')
+# bizfile1_2 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_2.jpeg')
+# bizfile1_3 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_3.jpeg')
+# bizfile1_4 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/biz_pics/yupdduk/yupdduk_4.jpeg')
+
+bizfile1_1 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/yupdduk/yupdduk_1.jpeg')
+bizfile1_2 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/yupdduk/yupdduk_2.jpeg')
+bizfile1_3 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/yupdduk/yupdduk_3.jpeg')
+bizfile1_4 = File.open('/Users/David/Desktop/Coding/delp/delp_pics/yupdduk/yupdduk_4.jpeg')
+
+business2.photos.attach(io: bizfile1_1, filename: 'yupdduk_1.jpeg')
+business2.photos.attach(io: bizfile1_2, filename: 'yupdduk_2.jpeg')
+business2.photos.attach(io: bizfile1_3, filename: 'yupdduk_3.jpeg')
+business2.photos.attach(io: bizfile1_4, filename: 'yupdduk_4.jpeg')

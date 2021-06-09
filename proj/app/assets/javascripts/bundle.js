@@ -364,7 +364,14 @@ var Business = /*#__PURE__*/function (_React$Component) {
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "indiv-biz"
-      }, this.props.business.name));
+      }, this.props.business.photoUrls.map(function (photoUrl, i) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "biz-pics",
+          key: i,
+          src: photoUrl,
+          alt: ""
+        });
+      })));
     }
   }]);
 
@@ -1310,7 +1317,7 @@ var BusinessesReducer = function BusinessesReducer() {
 
   switch (action.type) {
     case _actions_business_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_BUSINESSES"]:
-      return Object.assign({}, state, action.businesses);
+      return action.businesses;
 
     case _actions_business_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_BUSINESS"]:
       return Object.assign({}, state, _defineProperty({}, action.business.id, action.business));

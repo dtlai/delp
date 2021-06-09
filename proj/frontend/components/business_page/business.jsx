@@ -37,7 +37,9 @@ class Business extends React.Component {
         return (
             <>
                 <div className="indiv-biz">
-                    {this.props.business.name}
+                    {this.props.business.photoUrls.map((photoUrl, i) => (
+                        <img className="biz-pics" key={i} src={photoUrl} alt="" />
+                    ))}
                 </div>
             </>
         )

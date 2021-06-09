@@ -26,7 +26,7 @@ class BusinessIndex extends React.Component {
                 <div className="list-of-bizs">
                     {this.props.businesses.map((business) => {
                         // console.log(business.name)
-                        return business.name
+                        return business.name 
                     })}
                 </div>
             </>
