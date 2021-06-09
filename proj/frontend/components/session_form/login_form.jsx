@@ -50,12 +50,13 @@ class LoginForm extends React.Component {
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         </style>
+        
+        <div className="login-header">
+            <Link to="/" className="logo-link">
+                <img src="https://i.imgur.com/JrsNpWu.png" />
+            </Link>
+        </div>
         <div className="whole-login-page">
-            <div className="login-header">
-                <Link to="/" className="logo-link">
-                    <img src="https://i.imgur.com/JrsNpWu.png" />
-                </Link>
-            </div>
             <div className="login-form-container">
                 <div className="login-container">
                     <form onSubmit={this.handleSubmit} className="login-form-box">
