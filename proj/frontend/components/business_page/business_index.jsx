@@ -24,12 +24,17 @@ class BusinessIndex extends React.Component {
         }
         return (
             <div>
-                <div className="businesses-user-header">
+                <div className="login-header">
+                    <Link to="/" className="logo-link">
+                        <img src="https://i.imgur.com/JrsNpWu.png" />
+                    </Link>
+                </div>
+                <div className="greetings">
                     <GreetingContainer />
                 </div>
                 <div className="list-of-bizs">
-                    {this.props.businesses.map((business) => (
-                        <Link to={`/businesses/${business.id}`}>{business.name}</Link>
+                    {this.props.businesses.map((business, i) => (
+                        <Link to={`/businesses/${business.id}`} key={i}>{business.name}</Link>
                     ))}
                 </div>
             </div>
