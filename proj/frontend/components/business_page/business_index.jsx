@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import GreetingContainer from '../greeting/greeting_container'
 
 
 class BusinessIndex extends React.Component {
@@ -23,11 +24,13 @@ class BusinessIndex extends React.Component {
         }
         return (
             <>
+                <div className="businesses-user-header">
+                    <GreetingContainer />
+                </div>
                 <div className="list-of-bizs">
-                    {this.props.businesses.map((business) => {
-                        // console.log(business.name)
-                        return business.name 
-                    })}
+                    {this.props.businesses.map((business) => (
+                        <Link to={`/businesses/${business.id}`}>{business.name}</Link>
+                    ))}
                 </div>
             </>
         )

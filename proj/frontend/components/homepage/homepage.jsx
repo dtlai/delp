@@ -35,7 +35,10 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <BusinessIndexContainer />
+                <div>
+                    <Link to="/businesses" className="home-business-link">Businesses</Link>
+
+                </div>
             </div>
         );
     }

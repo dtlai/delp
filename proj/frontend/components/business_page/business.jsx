@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import GreetingContainer from '../greeting/greeting_container'
 
 class Business extends React.Component {
     constructor(props) {
@@ -40,6 +42,9 @@ class Business extends React.Component {
                     {this.props.business.photoUrls.map((photoUrl, i) => (
                         <img className={`biz-pic_${i}`} key={i} src={photoUrl} alt="" />
                     ))}
+                </div>
+                <div className="business-user-header">
+                    <GreetingContainer />
                 </div>
                 <ul className="business-info">
                     <li id='biz-name'>{this.props.business.name}</li>
