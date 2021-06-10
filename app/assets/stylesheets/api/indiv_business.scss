@@ -10,8 +10,12 @@
 .biz-pic {
     float: left;
     height: 400px;
-    width: 300px;
+    width: 25%;
     object-fit: cover; //scale-down; //scale-down
     // overflow: hidden;
 
+}
+
+.indiv-business-container {
+    font-family: 'Open Sans', sans-serif;
 }
