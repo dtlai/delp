@@ -70,7 +70,7 @@ class SignupForm extends React.Component {
                       value={this.state.first_name}
                       onChange={this.update("first_name")}
                       placeholder="First Name"
-                      className="signup-input"
+                      className="signup-input1"
                     />
                   </label>
 
@@ -80,7 +80,7 @@ class SignupForm extends React.Component {
                       value={this.state.last_name}
                       onChange={this.update("last_name")}
                       placeholder="Last Name"
-                      className="signup-input"
+                      className="signup-input2"
                     />
                   </label>
 
@@ -111,14 +111,17 @@ class SignupForm extends React.Component {
                       className="signup-input"
                     />
                   </label>
+                  <div className="bday-text-container">
+                    <div className="bday-text">Birthday</div>
+                    <div className="bday-optional-text">Optional</div>
+                  </div>
                   <label>
-                    Birthday
                     <input
                       type="text"
                       value={this.state.birthday}
                       onChange={this.update("birthday")}
                       placeholder="Birthday"
-                      className="signup-input"
+                      className="signup-input3"
                     />
                   </label>
 

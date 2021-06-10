@@ -1185,13 +1185,13 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
         value: this.state.first_name,
         onChange: this.update("first_name"),
         placeholder: "First Name",
-        className: "signup-input"
+        className: "signup-input1"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         value: this.state.last_name,
         onChange: this.update("last_name"),
         placeholder: "Last Name",
-        className: "signup-input"
+        className: "signup-input2"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "email",
         value: this.state.email,
@@ -1210,12 +1210,18 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
         onChange: this.update("zipcode"),
         placeholder: "Zip Code",
         className: "signup-input"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Birthday", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bday-text-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bday-text"
+      }, "Birthday"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bday-optional-text"
+      }, "Optional")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         value: this.state.birthday,
         onChange: this.update("birthday"),
         placeholder: "Birthday",
-        className: "signup-input"
+        className: "signup-input3"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "signup-submit",
         type: "submit",
