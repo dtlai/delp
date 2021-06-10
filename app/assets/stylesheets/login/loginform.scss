@@ -1,4 +1,4 @@
-.header-logo-link {
+.loginheader-logo-link {
     display: flex;
     justify-content: center;
     background-color: red;
@@ -6,7 +6,11 @@
     width: 100%;
 }
 
-.logo-link > img {
+.loginheader-logo-link > .logo-link {
+    margin-right: 40px;
+}
+
+.loginheader-logo-link > .logo-link > img {
     position: absolute;
     height: 40px;
     padding-top: 10px;

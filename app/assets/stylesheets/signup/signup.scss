@@ -5,7 +5,7 @@
 //     font-family: 'Open Sans', sans-serif;
 //     font-size: 20px;
 // }
-.header-logo-link {
+.signupheader-logo-link {
     display: flex;
     justify-content: center;
     background-color: red;
@@ -13,11 +13,11 @@
     width: 100%;
 }
 
-.logo-link {
+.signupheader-logo-link > .logo-link {
     margin-right: 40px;
 }
 
-.logo-link > img {
+.signupheader-logo-link > .logo-link > img {
     position: absolute;
     height: 40px;
     padding-top: 10px;

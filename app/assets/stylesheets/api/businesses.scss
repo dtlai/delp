@@ -2,48 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-.business-user-header {
+.businesses-header-container {
     display: flex;
-    background-color: gray;
-
+    justify-content: space-between;
 }
 
 
-.business-user-header > .login-signup {
+.businesses-header-container > .logo-link {
     display: flex;
-    justify-content: flex-end;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    background-color: white;
-    margin-right: 0;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.businesses-header-container > .logo-link > img {
+    height: 40px;
+    margin-left: 5%;
+}
+
+.businesses-user-header {
+    margin-right: 5%;
+}
+
+.businesses-user-header > .login-signup {
+    display: flex;
     margin-left: auto;
-    // align left or right -> have parent dom obj set to display:flex 
-    //align to left -> margin left:0, margin right: auto, right is vice versa 
+    margin-right: 0;
 }
 
-.business-user-header > .login-signup > .login-greeting {
-    color: gray;
-    padding: 10px 10px;
-    border-color: transparent;
-    border: grey solid 2px;
-    outline: none;
-    margin-right: 10px;
-    background: transparent;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-   
-}
-.business-user-header > .login-signup > .signup-greeting {
-    color: white;
-    // display: block;
-    padding: 7px 24px 8px;
-    background: transparent;
-    border: white solid 2px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    
+.businesses-user-header > .header-group {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
 }

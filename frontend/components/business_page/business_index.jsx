@@ -23,22 +23,26 @@ class BusinessIndex extends React.Component {
             return null;
         }
         return (
-            <div>
-                <div className="login-header">
-                    <Link to="/" className="logo-link">
-                        <img src="https://i.imgur.com/JrsNpWu.png" />
-                    </Link>
-                </div>
+          <>
+            <div className="business-container">
+              <div className="businesses-header-container">
+                <Link to="/" className="logo-link">
+                  <img src="https://i.imgur.com/JrsNpWu.png" />
+                </Link>
                 <div className="businesses-user-header">
-                    <GreetingContainer />
+                  <GreetingContainer />
                 </div>
-                <div className="list-of-bizs">
-                    {this.props.businesses.map((business, i) => (
-                        <Link to={`/businesses/${business.id}`} key={i}>{business.name}</Link>
-                    ))}
-                </div>
+              </div>
+              <div className="list-of-bizs">
+                {this.props.businesses.map((business, i) => (
+                  <Link to={`/businesses/${business.id}`} key={i}>
+                    {business.name}
+                  </Link>
+                ))}
+              </div>
             </div>
-        )
+          </>
+        );
     }
 }
 

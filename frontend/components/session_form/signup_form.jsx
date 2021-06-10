@@ -49,7 +49,7 @@ class SignupForm extends React.Component {
           @import
           url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         </style>
-        <div className="header-logo-link">
+        <div className="signupheader-logo-link">
           <Link to="/" className="logo-link">
             <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png" />
           </Link>
