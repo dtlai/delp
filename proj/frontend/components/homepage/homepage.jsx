@@ -11,38 +11,43 @@ class Homepage extends React.Component {
 
     render() {
         return (
-            <div>
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-                </style>
-                <div className="hero-container">
-                    <div className="hero-content">
-                        <div className="nav-bar">
-                            <style>
-                                @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-                            </style>
-                            <ul className="header-nav">
-                                <li>Write a Review</li>&nbsp; &nbsp; &nbsp;
-                                <li>Events</li>&nbsp; &nbsp; &nbsp;
-                                <li>Talk</li>
-                                
-                            </ul>
-                            <div className="greetings">
-                                <GreetingContainer />
-                            </div>
-                        </div>
-                        <div className="hero-inner">
-                            <div className="home-logo-wrapper">
-                                <img className="home-logo" src="https://i.imgur.com/JrsNpWu.png" />
-                            </div>
-                        </div>
-                    </div>
+          <div>
+            <style>
+              @import
+              url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+            </style>
+            <div className="hero-container">
+              <div className="hero-content">
+                <div className="nav-bar">
+                  <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+                  </style>
+                  <ul className="header-nav">
+                    <li>Write a Review</li>&nbsp; &nbsp; &nbsp;
+                    <li>Events</li>&nbsp; &nbsp; &nbsp;
+                    <li>Talk</li>
+                  </ul>
+                  <div className="greetings">
+                    <GreetingContainer />
+                  </div>
                 </div>
-                <div>
-                    <Link to="/businesses" className="home-business-link">Businesses</Link>
-
+                <div className="hero-inner">
+                  <div className="home-logo-wrapper">
+                    <img
+                      className="home-logo"
+                      src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png"
+                    />
+                  </div>
                 </div>
+              </div>
             </div>
+            <div>
+              <Link to="/businesses" className="home-business-link">
+                Businesses
+              </Link>
+            </div>
+          </div>
         );
     }
 }

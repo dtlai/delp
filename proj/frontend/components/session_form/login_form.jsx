@@ -54,7 +54,7 @@ class LoginForm extends React.Component {
 
         <div className="header-logo-link">
           <Link to="/" className="logo-link">
-            <img src="https://i.imgur.com/JrsNpWu.png" />
+            <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png" />
           </Link>
         </div>
         <div className="whole-login-page">
@@ -110,12 +110,12 @@ class LoginForm extends React.Component {
               </div>
             </div>
           </div>
-            <div className="login-pic">
-              <img
-                src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"
-                alt="imgnotfound"
-              />
-            </div>
+          <div className="login-pic">
+            <img
+              src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"
+              alt="imgnotfound"
+            />
+          </div>
         </div>
       </>
     );

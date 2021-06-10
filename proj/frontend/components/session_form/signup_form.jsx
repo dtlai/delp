@@ -51,7 +51,7 @@ class SignupForm extends React.Component {
         </style>
         <div className="header-logo-link">
           <Link to="/" className="logo-link">
-            <img src="https://i.imgur.com/JrsNpWu.png" />
+            <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png" />
           </Link>
         </div>
         <div className="whole-signup-page">

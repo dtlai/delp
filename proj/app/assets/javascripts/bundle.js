@@ -760,7 +760,7 @@ var Homepage = /*#__PURE__*/function (_React$Component) {
         className: "home-logo-wrapper"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "home-logo",
-        src: "https://i.imgur.com/JrsNpWu.png"
+        src: "https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png"
       }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/businesses",
         className: "home-business-link"
@@ -955,7 +955,7 @@ var LoginForm = /*#__PURE__*/function (_React$Component) {
         to: "/",
         className: "logo-link"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://i.imgur.com/JrsNpWu.png"
+        src: "https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "whole-login-page"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1162,7 +1162,7 @@ var SignupForm = /*#__PURE__*/function (_React$Component) {
         to: "/",
         className: "logo-link"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://i.imgur.com/JrsNpWu.png"
+        src: "https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "whole-signup-page"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
