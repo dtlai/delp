@@ -2,21 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.businesses-container {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .businesses-header-container {
     display: flex;
     justify-content: space-between;
+    height: 120px;
+    background-color: rgb(230, 230, 230);
 }
 
 
 .businesses-header-container > .logo-link {
     display: flex;
-    margin-left: 0;
+    margin-left: 5%;
     margin-right: auto;
+    margin-top: 40px;
 }
 
 .businesses-header-container > .logo-link > img {
     height: 40px;
-    margin-left: 5%;
 }
 
 .businesses-user-header {
@@ -27,10 +33,48 @@
     display: flex;
     margin-left: auto;
     margin-right: 0;
+    margin-top: 40px;
+    width: 220px;
+    justify-content: space-between;
+}
+
+.businesses-user-header > .login-signup > .login-greeting {
+    color: gray;
+    font-weight: bold;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid gray;
+    padding: 7px 24px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+
+.businesses-user-header > .login-signup > .signup-greeting {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    font-size: 16px;
+    border: none;
+    padding: 7px 24px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: none;
 }
 
 .businesses-user-header > .header-group {
     display: flex;
     margin-left: auto;
     margin-right: 0;
+}
+
+.list-of-bizs {
+    display: grid;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.list-of-bizs > a {
+    margin-top: 5px;
+
 }

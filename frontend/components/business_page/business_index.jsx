@@ -24,7 +24,7 @@ class BusinessIndex extends React.Component {
         }
         return (
           <>
-            <div className="business-container">
+            <div className="businesses-container">
               <div className="businesses-header-container">
                 <Link to="/" className="logo-link">
                   <img src="https://i.imgur.com/JrsNpWu.png" />
