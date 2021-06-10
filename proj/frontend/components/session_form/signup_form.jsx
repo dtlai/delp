@@ -64,26 +64,27 @@ class SignupForm extends React.Component {
               <form onSubmit={this.handleSubmit} className="signup-form-box">
                 {this.renderErrors()}
                 <div className="signup-form-fields">
-                  <label>
-                    <input
-                      type="text"
-                      value={this.state.first_name}
-                      onChange={this.update("first_name")}
-                      placeholder="First Name"
-                      className="signup-input1"
-                    />
-                  </label>
+                  <div className="fname-lname">
+                    <label className="fname-label">
+                      <input
+                        type="text"
+                        value={this.state.first_name}
+                        onChange={this.update("first_name")}
+                        placeholder="First Name"
+                        className="signup-input-fname"
+                      />
+                    </label>
 
-                  <label>
-                    <input
-                      type="text"
-                      value={this.state.last_name}
-                      onChange={this.update("last_name")}
-                      placeholder="Last Name"
-                      className="signup-input2"
-                    />
-                  </label>
-
+                    <label className="lname-label">
+                      <input
+                        type="text"
+                        value={this.state.last_name}
+                        onChange={this.update("last_name")}
+                        placeholder="Last Name"
+                        className="signup-input-lname"
+                      />
+                    </label>
+                  </div>
                   <label>
                     <input
                       type="email"

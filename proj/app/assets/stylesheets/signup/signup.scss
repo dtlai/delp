@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+.logo-link {
+    margin-right: 40px;
+}
+
 .logo-link > img {
     position: absolute;
     height: 40px;
@@ -47,6 +51,11 @@
     margin-right: auto;
     margin-top: 5%;
 }
+
+.signup-pic > img {
+    margin-top: 70px;
+}
+
 .signup-form-container > .signup-header {
     color: red;
     font-size: 30px;
@@ -64,21 +73,21 @@
     margin-right: auto;
 }
 
-.signup-input1 {
+.signup-input-fname {
     margin: 5px 0 7px 5px;
     border: 1px solid gray;
     border-radius: 3px;
     height: 30px;
-    width: 150px;
+    width: 142px;
     padding: 0 0 0 9px;
 }
 
-.signup-input2 {
+.signup-input-lname {
     margin: 5px 0 7px 5px;
     border: 1px solid gray;
     border-radius: 3px;
     height: 30px;
-    width: 150px;
+    width: 142px;
     padding: 0 0 0 9px;
 }
 .signup-input3 {
@@ -122,6 +131,7 @@
     margin-left: 3px;
     width: 100%;
     outline: none;
+    font-size: 20px;
     // max-width: 300px;
 }
 

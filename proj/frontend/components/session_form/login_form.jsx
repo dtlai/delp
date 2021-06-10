@@ -46,68 +46,78 @@ class LoginForm extends React.Component {
 
     render() {
     return (
-        <>
+      <>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+          @import
+          url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         </style>
-        
-        <div className="login-header">
-            <Link to="/" className="logo-link">
-                <img src="https://i.imgur.com/JrsNpWu.png" />
-            </Link>
+
+        <div className="header-logo-link">
+          <Link to="/" className="logo-link">
+            <img src="https://i.imgur.com/JrsNpWu.png" />
+          </Link>
         </div>
         <div className="whole-login-page">
-            <div className="login-form-container">
-                <div className="login-container">
-                    <form onSubmit={this.handleSubmit} className="login-form-box">
-                        <div className="login-message-container">
-                            <div className="login-message">
-                                Log in to Delp
-                            </div>
-                            <div className="new-delp-message">
-                                New to Delp? {this.props.navLink}
-                            </div>
-                        </div>
-                    
-                    {this.renderErrors()}
-                    <div className="login-form">
-                        <div>
-                        <label>
-                            <input type="email"
-                                    value={this.state.email}
-                                    onChange={this.update('email')}
-                                    placeholder="Email"
-                                    className="login-input"
-                                />
-                        </label>
-                        </div>
-                        <div>
-                        <label className="password-text">
-                            <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                            className="login-input"
-                                />
-                        </label>
-                        </div>
-
-                        <input className="login-submit" type="submit" value={this.props.formType} />
-                    </div>
-                    </form>
-                    <div className="demo-button">
-                        <button className="guest-user-submit" onClick={() => this.props.processForm(this.demo)}>Guest User</button>
-                    </div>
-                    <div className="signup-button">
-                        New to Delp?&nbsp;{this.props.navLink}
-                    </div>
-                </div>
-                <div className="login-pic">
-                <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
+          <div className="login-form-container">
+            <div className="login-header">Log in to Delp</div>
+            <div className="login-header-2">
+              New to Delp? {this.props.navLink}
             </div>
+            <div className="login-form-field-container">
+              <form onSubmit={this.handleSubmit} className="login-form-box">
+                {this.renderErrors()}
+                <div className="login-form-fields">
+                  <div>
+                    <label>
+                      <input
+                        type="email"
+                        value={this.state.email}
+                        onChange={this.update("email")}
+                        placeholder="Email"
+                        className="login-input"
+                      />
+                    </label>
+                  </div>
+                  <div>
+                    <label className="password-text">
+                      <input
+                        type="password"
+                        value={this.state.password}
+                        onChange={this.update("password")}
+                        placeholder="Password"
+                        className="login-input"
+                      />
+                    </label>
+                  </div>
+
+                  <input
+                    className="login-submit"
+                    type="submit"
+                    value={this.props.formType}
+                  />
+                </div>
+              </form>
+              <div className="demo-button">
+                <button
+                  className="guest-user-submit"
+                  onClick={() => this.props.processForm(this.demo)}
+                >
+                  Guest User
+                </button>
+              </div>
+              <div className="signup-button">
+                New to Delp?&nbsp;{this.props.navLink}
+              </div>
+            </div>
+          </div>
+            <div className="login-pic">
+              <img
+                src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png"
+                alt="imgnotfound"
+              />
             </div>
         </div>
-        </>
+      </>
     );
     }
 }

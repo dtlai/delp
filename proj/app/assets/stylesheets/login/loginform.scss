@@ -1,4 +1,4 @@
-.login-header > .logo-link {
+.header-logo-link {
     display: flex;
     justify-content: center;
     background-color: red;
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.login-header > .logo-link > img {
+.logo-link > img {
     position: absolute;
     height: 40px;
     padding-top: 10px;
@@ -15,57 +15,27 @@
 
 .whole-login-page {
     display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    // margin: 0 auto ;
-    // width: 1000px;
-    // margin: 0 100px 0 100px;
 }
-
-.login-pic {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-//left login form
 
 .login-form-container {
     display: flex;
-    // margin-left: 100px;
-    // margin-right: 100px;
-    // margin-top: 100px;
-    // margin-bottom: auto;
-    margin: 50px 0 50px 0;
-    width: 60%;
-}
-
-.login-container {
-    display: flex;
-    font-family: 'Open Sans', sans-serif;
-    width: 500px;
-    max-width: 600px;
-    margin-right: 50px;
-    justify-content: center;
-    // margin-left: 20%;
-    // margin-right: auto;
     flex-direction: column;
-    // width: 400px;
-    // vertical-align: baseline;
-    // font-family: 'Open Sans', sans-serif;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.login-container > .signup-button {
-    margin-left: auto;
-    margin-right: 0;
-    font-size: 12px;
-    color: gray;
+.login-form-field-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.login-message-container {
-    display: grid;
+.login-form-fields {
+    display: flex;
+    flex-direction: column;
 }
 
-.login-message-container > .login-message {
+.login-header {
     color: red;
     font-size: 30px;
     font-weight: 800;
@@ -73,25 +43,32 @@
     margin-right: auto;
 }
 
-.login-message-container > .new-delp-message {
+.login-header-2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: 800;
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .login-input {
-    background-color: white;
-    margin: 0px 5px 9px;
-    padding: 5px 9px;
+    margin: 5px 0 7px 5px;
     border: 1px solid gray;
-    border-radius: 5px;
-    box-sizing: border-box;
+    border-radius: 3px;
     height: 30px;
-    width: 100%;
-    max-width: 300px;
-    
+    width: 300px;
+    padding: 0 0 0 9px;
+}
+
+.login-pic {
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.login-pic > img {
+    margin-top: 70px;
 }
 
 .login-submit {
@@ -105,13 +82,17 @@
     margin-left: 3px;
     width: 100%;
     outline: none;
-    max-width: 300px;
-
-    
+    font-size: 20px;
 }
 
+.login-form-field-container > .signup-button {
+    margin-left: auto;
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
 
-.guest-user-submit {
+.demo-button > .guest-user-submit {
     background-color: red;
     color: white;
     padding: 10px 13px;
@@ -122,9 +103,121 @@
     margin-left: 3px;
     width: 100%;
     outline: none;
-    margin-bottom: 10px;
-    max-width: 300px;
+    font-size: 20px;
 }
+
+// .whole-login-page {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 10%;
+//     // margin: 0 auto ;
+//     // width: 1000px;
+//     // margin: 0 100px 0 100px;
+// }
+
+// .login-pic {
+//     margin-left: auto;
+//     margin-right: 0;
+// }
+
+// //left login form
+
+// .login-form-container {
+//     display: flex;
+//     // margin-left: 100px;
+//     // margin-right: 100px;
+//     // margin-top: 100px;
+//     // margin-bottom: auto;
+//     margin: 50px 0 50px 0;
+//     width: 60%;
+// }
+
+// .login-container {
+//     display: flex;
+//     font-family: 'Open Sans', sans-serif;
+//     width: 500px;
+//     max-width: 600px;
+//     margin-right: 50px;
+//     justify-content: center;
+//     // margin-left: 20%;
+//     // margin-right: auto;
+//     flex-direction: column;
+//     // width: 400px;
+//     // vertical-align: baseline;
+//     // font-family: 'Open Sans', sans-serif;
+// }
+
+// .login-container > .signup-button {
+//     margin-left: auto;
+//     margin-right: 0;
+//     font-size: 12px;
+//     color: gray;
+// }
+
+// .login-message-container {
+//     display: grid;
+// }
+
+// .login-message-container > .login-message {
+//     color: red;
+//     font-size: 30px;
+//     font-weight: 800;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .login-message-container > .new-delp-message {
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     font-size: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .login-input {
+//     background-color: white;
+//     margin: 0px 5px 9px;
+//     padding: 5px 9px;
+//     border: 1px solid gray;
+//     border-radius: 5px;
+//     box-sizing: border-box;
+//     height: 30px;
+//     width: 100%;
+//     max-width: 300px;
+    
+// }
+
+// .login-submit {
+//     background-color: red;
+//     color: white;
+//     padding: 10px 13px;
+//     margin-top: 4px;
+//     border: 0px solid gray;
+//     border-radius: 5px;
+//     box-sizing: border-box;
+//     margin-left: 3px;
+//     width: 100%;
+//     outline: none;
+//     max-width: 300px;
+
+    
+// }
+
+
+// .guest-user-submit {
+//     background-color: red;
+//     color: white;
+//     padding: 10px 13px;
+//     margin-top: 4px;
+//     border: 0px solid gray;
+//     border-radius: 5px;
+//     box-sizing: border-box;
+//     margin-left: 3px;
+//     width: 100%;
+//     outline: none;
+//     margin-bottom: 10px;
+//     max-width: 300px;
+// }
 
 // .login-form {
 //     display: flex;
