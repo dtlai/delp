@@ -50,19 +50,21 @@ class SignupForm extends React.Component {
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
             </style>
-            <div className="whole-signup-page">
-                <div className="header-logo-link">
+            <div className="header-logo-link">
                     <Link to="/" className="logo-link">
                         {/* <h1>Delp</h1> */}
                         <img src="https://i.imgur.com/JrsNpWu.png" />
                     </Link>
-                </div>
+            </div>
+            <div className="whole-signup-page">
+                <div className="signup-form-container">
+
                 <div className="signup-header">Sign Up for Delp</div>
                 <div className="signup-header-2">Connect with great local businesses</div>
-                <div className="signup-form-container">
+                <div className="signup-form-field-container">
                     <form onSubmit={this.handleSubmit} className="signup-form-box">
                         {this.renderErrors()}
-                        <div className="signup-form">
+                        <div className="signup-form-fields">
                             <label> 
                             <input type="text"
                                     value={this.state.first_name}
@@ -89,7 +91,6 @@ class SignupForm extends React.Component {
                                     className="signup-input"
                                 />
                             </label>
-
                             <label>
                             <input type="password"
                                     value={this.state.password}
@@ -118,14 +119,18 @@ class SignupForm extends React.Component {
                             <input className="signup-submit" type="submit" value={this.props.formType} />
                         </div>
                     </form>
-                    <div className="login-pic">
-                        <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
-                    </div>
+                    
                     <div className="signup-button">
                     Already on Delp?&nbsp;{this.props.navLink}
                 </div>
-                </div>
             </div>
+            </div>
+            <div className="signup-pic">
+                <img src="https://s3-media0.fl.yelpcdn.com/assets/2/www/img/7922e77f338d/signup/signup_illustration.png" alt="imgnotfound" />
+            </div>
+
+            </div>
+            
             </>
         );
     }

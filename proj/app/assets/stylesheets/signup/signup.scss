@@ -1,7 +1,48 @@
 
 
-.signup-header {
-    color: red;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+// .signup-header {
+//     color: red;
+//     font-family: 'Open Sans', sans-serif;
+//     font-size: 20px;
+// }
+.header-logo-link {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    height: 60px;
+    width: 100%;
+}
+
+.logo-link > img {
+    position: absolute;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.whole-signup-page {
+    display: flex;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.signup-form-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-pic {
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 5%;
 }

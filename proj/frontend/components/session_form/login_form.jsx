@@ -60,7 +60,7 @@ class LoginForm extends React.Component {
             <div className="login-form-container">
                 <div className="login-container">
                     <form onSubmit={this.handleSubmit} className="login-form-box">
-                        <div className="login-header">
+                        <div className="login-message-container">
                             <div className="login-message">
                                 Log in to Delp
                             </div>

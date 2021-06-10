@@ -15,8 +15,16 @@
 
 .whole-login-page {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 10%;
+    // margin: 0 auto ;
+    // width: 1000px;
     // margin: 0 100px 0 100px;
+}
+
+.login-pic {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 //left login form
@@ -28,11 +36,15 @@
     // margin-top: 100px;
     // margin-bottom: auto;
     margin: 50px 0 50px 0;
-
+    width: 60%;
 }
 
 .login-container {
     display: flex;
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+    max-width: 600px;
+    margin-right: 50px;
     // margin-left: 20%;
     // margin-right: auto;
     flex-direction: column;
@@ -41,31 +53,63 @@
     // font-family: 'Open Sans', sans-serif;
 }
 
-.login-header > .login-message {
+.login-message-container {
+    display: grid;
+}
+
+.login-message-container > .login-message {
     color: red;
     font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.login-header > .new-delp-message {
+.login-message-container > .new-delp-message {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.login-input {
+    background-color: white;
+    margin: 0px 5px 9px;
+    padding: 5px 9px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+}
 
+.login-submit {
+    background-color: red;
+    color: white;
+    padding: 10px 13px;
+    margin-top: 4px;
+    border: 0px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 3px;
+    width: 100%;
+    outline: none;
 
-.login-pic {
-    margin-left: auto;
-    margin-right: 0;
 }
 
 
 .guest-user-submit {
-    // display: flex;
-    // position: relative;
-    // margin-top: 5px;
-    color: white;
     background-color: red;
+    color: white;
+    padding: 10px 13px;
+    margin-top: 4px;
+    border: 0px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 3px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
 }
 
 // .login-form {
