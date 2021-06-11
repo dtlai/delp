@@ -2,7 +2,6 @@
 
 #root {
     min-width: 1200px;
-
 }
 
 .home-logo {
@@ -65,9 +64,40 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: grey;
+    cursor: pointer;
 
     // align left or right -> have parent dom obj set to display:flex 
     //align to left -> margin left:0, margin right: auto, right is vice versa 
+}
+
+.greetings > .header-group {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    
+}
+
+.greetings > .header-group > .header-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 5px;
+    
+}
+
+.greetings > .header-group > .header-button {
+    margin-left: 5px;
+
+    color: gray;
+    font-weight: bold;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid gray;
+    padding: 7px 24px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    height: 30px;
+    cursor: pointer;
 }
 
 .greetings > .login-signup > .login-greeting {
@@ -80,7 +110,6 @@
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-   
 }
 .greetings > .login-signup > .signup-greeting {
     color: white;
@@ -90,6 +119,7 @@
     border: white solid 2px;
     border-radius: 4px;
     text-decoration: none;
+    cursor: pointer;
     // font-size: 14px;
     // font-family: 'Open Sans', sans-serif;
     
@@ -102,14 +132,16 @@
     margin-left: auto;
 }
 
+
 .home-business-link {
-    font-size: 20px;
-    display: flex;
+    display: flex;    
+    margin-top: 40px;
     justify-content: center;
-    
 }
 
-
+.home-business-link > img {
+    height: 60px;
+}
 
 
 

@@ -38,23 +38,24 @@ class Business extends React.Component {
     }
     return (
       <>
-        <div className="indiv-business-container">
-          <div className="businesses-header-container">
-            <Link to="/" className="logo-link">
-              <img src="https://i.imgur.com/JrsNpWu.png" />
-            </Link>
-            <div className="businesses-user-header">
-              <GreetingContainer />
-            </div>
+        <div className="businesses-header-container">
+          <Link to="/" className="logo-link">
+            <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png" />
+          </Link>
+          <div className="businesses-user-header">
+            <GreetingContainer />
           </div>
-
+        </div>
+        <div className="indiv-business-container">
           <div className="business-pics-container">
             {this.props.business.photoUrls.map((photoUrl, i) => (
               <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
             ))}
           </div>
+        <div className="biz-name-container">
+            <p id="biz-name">{this.props.business.name}</p>
+        </div>  
           <ul className="business-info">
-            <li id="biz-name">{this.props.business.name}</li>
             <li id="biz-address">{this.props.business.address}</li>
             <li id="biz-city">{this.props.business.city}</li>
             <li id="biz-state">{this.props.business.state}</li>
@@ -62,6 +63,9 @@ class Business extends React.Component {
             <li id="biz-price-range">{this.props.business.price_range}</li>
             <li id="biz-phone-number">{this.props.business.phone_number}</li>
           </ul>
+          <Link to="/businesses" className="go-back-to-biz">
+            <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
+          </Link>
         </div>
       </>
     );

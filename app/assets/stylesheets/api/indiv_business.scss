@@ -19,3 +19,13 @@
 .indiv-business-container {
     font-family: 'Open Sans', sans-serif;
 }
+
+.indiv-business-container > .go-back-to-biz {
+    display: flex;    
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.indiv-business-container > .go-back-to-biz > img {
+    height: 60px;
+}
