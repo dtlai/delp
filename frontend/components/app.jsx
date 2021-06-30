@@ -15,8 +15,7 @@ import HomepageContainer from './homepage/homepage_container'
 import BusinessIndexContainer from './business_page/business_index_container'
 import BusinessContainer from './business_page/business_container'
 // import SearchContainer from './search/search_container';
-// import BenchShowContainer from './bench_show/bench_show_container';
-// import BenchFormContainer from './bench_form/bench_form_container';
+// took out routes
 import { AuthRoute, DefaultRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
