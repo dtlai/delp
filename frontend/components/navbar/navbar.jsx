@@ -100,7 +100,7 @@ class NavBar extends React.Component {
 
   logoutContainer() {
     return (
-      <div className="">
+      <div className="nav-logout-container">
         <Link to="/login" className="login-greeting">
           Login
         </Link>
@@ -117,22 +117,11 @@ class NavBar extends React.Component {
         this.loginContainer() : this.logoutContainer();
 
     return (
-      <div className="nav-bar">
-        <ul>
-          <div className="logo-home-link-container">
-            <Link to="/" className="logo-home-link">
-              <img
-                src=""
-                alt="Delp Logo"
-              />
-            </Link>
-          </div>
-        </ul>
-
-        <div className="nav-links">
-          {sessionButtons}
+      <>
+        <div className="nav-bar">
+          <div className="nav-links">{sessionButtons}</div>
         </div>
-      </div>
+      </>
     );
   }
 }
