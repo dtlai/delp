@@ -1,5 +1,5 @@
 import React from 'react'
-import {withRouter} from 'react-router-dom'
+// import {withRouter} from 'react-router-dom';
 
 class SearchBar extends React.Component {
 
@@ -22,6 +22,7 @@ class SearchBar extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
+        console.log(this.props)
         this.props
           .searchBusinesses(this.state.query)
           .then(() => this.props.history.push(`/businesses?query=${this.state.query}`));
@@ -43,4 +44,4 @@ class SearchBar extends React.Component {
 
 }
 
-export default withRouter(SearchBar);
+export default SearchBar;

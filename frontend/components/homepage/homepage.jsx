@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NavBarContainer from '../navbar/navbar_container'
 import BusinessContainer from '../business_page/business_container'
 import BusinessIndexContainer from '../business_page/business_index_container'
+import SearchBarContainer from '../search_form/search_form_container'
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -30,6 +31,9 @@ class Homepage extends React.Component {
                       className="home-logo"
                       src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png"
                     />
+                  </div>
+                  <div className="search-bar-form">
+                    <SearchBarContainer/>
                   </div>
                 </div>
               </div>
