@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import GreetingContainer from '../greeting/greeting_container'
+import NavBarContainer from '../navbar/navbar_container'
 
 
 class BusinessIndex extends React.Component {
@@ -30,7 +30,7 @@ class BusinessIndex extends React.Component {
                   <img src="https://i.imgur.com/JrsNpWu.png" />
                 </Link>
                 <div className="businesses-user-header">
-                  <GreetingContainer />
+                  <NavBarContainer />
                 </div>
               </div>
               <div className="list-of-bizs">

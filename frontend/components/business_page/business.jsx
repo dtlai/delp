@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import GreetingContainer from "../greeting/greeting_container";
+import NavBarContainer from "../navbar/navbar_container"
 
 class Business extends React.Component {
   constructor(props) {
@@ -43,7 +43,7 @@ class Business extends React.Component {
             <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png" />
           </Link>
           <div className="businesses-user-header">
-            <GreetingContainer />
+            <NavBarContainer />
           </div>
         </div>
         <div className="indiv-business-container">
