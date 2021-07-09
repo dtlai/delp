@@ -28,7 +28,6 @@ class BusinessIndex extends React.Component {
 
 
     render() {
-        // console.log(this.props.businesses)
         if (!this.state.hasFetched) {
             return null;
         }
