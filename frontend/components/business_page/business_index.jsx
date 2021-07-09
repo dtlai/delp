@@ -13,10 +13,17 @@ class BusinessIndex extends React.Component {
     }
 
     componentDidMount() {
-      this.props.searchBusinesses(this.state.search)
-        .then(() => this.setState({ hasFetched: true }))
-        // this.props.fetchBusinesses()
-        //     .then(() => { this.setState({ hasFetched: true }) })
+      if (!this.state.search) {
+        this.props.fetchBusinesses().then(() => {
+          this.setState({ hasFetched: true });
+        });
+      }
+      else {
+        this.props
+          .searchBusinesses(this.state.search)
+          .then(() => this.setState({ hasFetched: true }));
+      }
+        
     }
 
 
