@@ -4,7 +4,7 @@ import BusinessIndex from './business_index';
 import { withRouter } from 'react-router-dom';
 import { logout } from '../../actions/session_actions';
 import { fetchBusinesses } from '../../actions/business_actions';
-// import { searchBusinesses } from '../../actions/business_actions';
+import { searchBusinesses } from '../../actions/business_actions';
 
 const mSTP = (state, ownProps) => { 
     return {
@@ -16,7 +16,7 @@ const mSTP = (state, ownProps) => {
 
 const mDTP = dispatch => {
     return {
-        // searchBusinesses: search => dispatch(searchBusinesses(search)),
+        searchBusinesses: search => dispatch(searchBusinesses(search)),
         fetchBusinesses: () => dispatch(fetchBusinesses()),
         logout: () => dispatch(logout()),
     }

@@ -7,13 +7,16 @@ class BusinessIndex extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hasFetched: false
-        }
+          hasFetched: false,
+          search: this.props.location.search.split("=")[1],
+        };
     }
 
     componentDidMount() {
-        this.props.fetchBusinesses()
-            .then(() => { this.setState({ hasFetched: true }) })
+      this.props.searchBusinesses(this.state.search)
+        .then(() => )
+        // this.props.fetchBusinesses()
+        //     .then(() => { this.setState({ hasFetched: true }) })
     }
 
 
