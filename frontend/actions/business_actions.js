@@ -1,7 +1,7 @@
 import * as BusinessApiUtil from '../util/business_api_util'
 
-export const RECEIVE_BUSINESSES = 'RECEIVE_BUSINESSES'
-export const RECEIVE_BUSINESS = 'RECEIVE_BUSINESS'
+export const RECEIVE_BUSINESSES = 'RECEIVE_BUSINESSES';
+export const RECEIVE_BUSINESS = 'RECEIVE_BUSINESS';
 
 export const receiveBusinesses = businesses => {
     return {
