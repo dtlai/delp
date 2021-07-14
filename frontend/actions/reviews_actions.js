@@ -13,6 +13,20 @@ export const receiveReviews = reviews => {
 export const receiveReview = review => {
     return {
         type: RECEIVE_REVIEW,
-        reviews
+        review
     }
 }
+
+export const fetchReviews = () => (dispatch) => {
+  return ReviewApiUtil.fetchReviews().then((reviews) =>
+    dispatch(receiveReviews(reviews))
+  );
+};
+
+export const fetchReview = (review) => (dispatch) => {
+  return ReviewApiUtil.fetchReview(review).then((review) =>
+    dispatch(receiveReviews(review))
+  );
+};
+
+
