@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBarContainer from "../navbar/navbar_container"
-import ReviewForm from '../reviews/review_form_container'
+import ReviewFormContainer from '../reviews/review_form_container'
+import ReviewIndexContainer from '../reviews/review_index_container'
 
 class Business extends React.Component {
   constructor(props) {
@@ -50,6 +51,9 @@ class Business extends React.Component {
           <div className="businesses-user-header">
             <NavBarContainer />
           </div>
+        </div>
+        <div>
+          <ReviewIndexContainer />
         </div>
         <div className="create-review-button">
           <button className="review-button" onClick={() => this.goCreateReview()}>Write a Review

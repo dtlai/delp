@@ -36,11 +36,12 @@ class ReviewsIndex extends React.Component {
   render() {
     if (!this.state.hasFetched) return null;
     let { reviews } = this.props;
+    console.log(reviews)
     return (
       <>
        <div>
            {reviews.map((review) => (
-               <p>{review}</p>
+               <p>{review.message}</p>
            ))}
        </div>
       </>

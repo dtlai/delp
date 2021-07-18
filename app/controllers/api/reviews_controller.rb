@@ -1,7 +1,7 @@
 class Api::ReviewsController < ApplicationController
 
     def index 
-        @reviews = Review.all.where(business_id: params[:business_id])
+        @reviews = Business.find(params[:business_id]).reviews
         render :index
     end
 
@@ -22,7 +22,7 @@ class Api::ReviewsController < ApplicationController
     def update 
         @review = Review.find_by(id: params[:id])
         if @review.update(review_params)
-            render: show 
+            render :show 
         else
             render json: ["Cannot update reviews"] 
         end

@@ -7,18 +7,22 @@ class ReviewForm extends React.Component {
     super(props);
     console.log(this.props);
     this.state = {
-      body: "",
+      message: "",
       rating: 1,
-      authorId: this.props.userId,
-      businessId: this.props.business.id,
+      user_id : this.props.userId,
+      business_id: this.props.business.id,
+      loading: true,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleBody = this.handleBody.bind(this);
+    this.handleMessage = this.handleMessage.bind(this);
     this.handleRating = this.handleRating.bind(this);
   }
 
   componentDidMount() {
-    this.props.fetchBusiness(this.props.business.id);
+    this.props.fetchBusiness(this.props.business.id)
+        .then(() => this.setState({
+            loading: false,
+        }))
   }
 
   handleSubmit(e) {
@@ -31,16 +35,12 @@ class ReviewForm extends React.Component {
       );
   }
 
-  handleBody(e) {
-    this.setState({ body: e.target.value });
+  handleMessage(e) {
+    this.setState({ message: e.target.value });
   }
 
   handleRating(e) {
     this.setState({ rating: e.target.value });
-  }
-
-  hoverRating(value) {
-    this.setState({ rating: value });
   }
 
   renderErrors() {
@@ -60,7 +60,7 @@ class ReviewForm extends React.Component {
   }
 
   render() {
-    if (!this.props.business) return null;
+    if (!this.props.business || this.state.loading) return null;
     return (
       <>
         <div className="review-form-container">
@@ -73,7 +73,6 @@ class ReviewForm extends React.Component {
                   <input
                     name="rating"
                     type="radio"
-                    // checked={this.state.rating === 1}
                     onChange={this.handleRating}
                     value="1"
                   />
@@ -83,7 +82,6 @@ class ReviewForm extends React.Component {
                   <input
                     name="rating"
                     type="radio"
-                    // checked={this.state.rating === 2}
                     onChange={this.handleRating}
                     value="2"
                   />
@@ -93,7 +91,6 @@ class ReviewForm extends React.Component {
                   <input
                     name="rating"
                     type="radio"
-                    // checked={this.state.rating === 3}
                     onChange={this.handleRating}
                     value="3"
                   />
@@ -103,7 +100,6 @@ class ReviewForm extends React.Component {
                   <input
                     name="rating"
                     type="radio"
-                    // checked={this.state.rating === 4}
                     onChange={this.handleRating}
                     value="4"
                   />
@@ -113,14 +109,13 @@ class ReviewForm extends React.Component {
                   <input
                     name="rating"
                     type="radio"
-                    // checked={this.state.rating === 5}
                     onChange={this.handleRating}
                     value="5"
                   />
                 </label>
               </div>
               <div>
-                  <input type="text-area" className="review-message-body" onChange={this.handleBody} value={this.state.body} placeholder="Please write a message"/>
+                  <input type="text-area" className="review-message-message" onChange={this.handleMessage} value={this.state.message} placeholder="Please write a message"/>
               </div>
               <div>
                   <button className="review-submit-button">Post Review</button>
