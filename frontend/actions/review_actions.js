@@ -33,18 +33,16 @@ export const receiveReviewErrors = (errors) => {
   };
 };
 
-export const fetchReviews = () => dispatch => {
-  return (
-    ReviewApiUtil.fetchReviews()
-      .then((reviews) => dispatch(receiveReviews(reviews)))
-  )
+export const fetchReviews = (businessId) => dispatch => {
+  return ReviewApiUtil.fetchReviews(businessId)
+    .then((reviews) => dispatch(receiveReviews(reviews))
+  );
 }
 
-export const fetchReview = () => dispatch => {
-  return (
-    ReviewApiUtil.fetchReview()
-      .then((review) => dispatch(receiveReview(review)))
-  )
+export const fetchReview = (businessId, reviewId) => dispatch => {
+  return ReviewApiUtil.fetchReview(businessId, reviewId)
+    .then((review) => dispatch(receiveReview(review))
+  );
 }
 
 export const createReview = (review, businessId) => dispatch => {
