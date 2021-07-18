@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBarContainer from "../navbar/navbar_container"
+import ReviewForm from '../reviews/review_form_container'
 
 class Business extends React.Component {
   constructor(props) {
@@ -32,6 +33,10 @@ class Business extends React.Component {
     return true;
   }
 
+  goCreateReview () {
+    this.props.history.push(`${this.props.business.id}/createReview`);
+  }
+
   render() {
     if (!this.props.business) {
       return <div>Loading...</div>;
@@ -45,6 +50,10 @@ class Business extends React.Component {
           <div className="businesses-user-header">
             <NavBarContainer />
           </div>
+        </div>
+        <div className="create-review-button">
+          <button className="review-button" onClick={() => this.goCreateReview()}>Write a Review
+          </button>
         </div>
         <div className="indiv-business-container">
           <div className="business-pics-container">

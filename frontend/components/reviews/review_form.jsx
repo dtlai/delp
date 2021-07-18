@@ -9,8 +9,8 @@ class ReviewForm extends React.Component {
     this.state = {
       body: "",
       rating: 1,
-      author_id: this.props.user_id,
-      business_id: this.props.business.id,
+      authorId: this.props.userId,
+      businessId: this.props.business.id,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleBody = this.handleBody.bind(this);
@@ -25,7 +25,7 @@ class ReviewForm extends React.Component {
     e.preventDefault();
     const review = Object.assign({}, this.state);
     this.props
-      .processForm(review, this.props.business.business_id)
+      .createReview(review, this.props.business.businessId)
       .then(() =>
         this.props.history.push(`/businesses/${this.props.business.id}`)
       );
@@ -41,6 +41,20 @@ class ReviewForm extends React.Component {
 
   hoverRating(value) {
     this.setState({ rating: value });
+  }
+
+  renderErrors() {
+    let error;
+    if (this.props.errors.length !== 0) {
+      debugger;
+      error = this.props.errors[0];
+      if (error.includes("Message")) {
+        error = "Please explain your review";
+      } else {
+        error =
+          "Please select a rating for this business.";
+      }
+    }
   }
 
   render() {
