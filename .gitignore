@@ -27,3 +27,5 @@ bundle.js.map
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/frontend/config/keys_dev.js
