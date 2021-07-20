@@ -17,7 +17,7 @@ const containerStyle = {
 
 Geocode.setApiKey(googleMapsAPI);
 
-export class BusinessMap extends Component {
+export class BusinessIndexMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,17 +30,14 @@ export class BusinessMap extends Component {
   }
 
   componentDidMount() {
-    const business = this.props.business;
-    let markerInfo = {
-        address: business.address,
-    };
-    this.getLatLong(markerInfo);
+    const businesses = this.props.businesses;
+    let markerInfo = businesses.map(business => ({
+        address: business.address
+    }))
+    markerInfo.forEach(info => this.getLatLong(info));
   }
 
-  componentDidUpdate(prevProps) {
-
-    
-  }
+  componentDidUpdate(prevProps) {}
 
   recenterMap(mapProps, map, event) {
     this.setState({ center: event.latLng });
@@ -50,11 +47,10 @@ export class BusinessMap extends Component {
     Geocode.fromAddress(markerInfo).then(
       (response) => {
         const { lat, lng } = response.results[0].geometry.location;
+        let oldMarkers = this.state.markers;
         markerInfo.location.coords = { lat: lat, lng: lng };
-        this.setState({
-          markers: [markerInfo],
-          center: markerInfo.location.coords,
-        });
+        oldMarkers = oldMarkers.concat(markerInfo);
+        this.setState({ markers: oldMarkers });
       },
       (error) => {
         console.error(error);
@@ -83,7 +79,6 @@ export class BusinessMap extends Component {
             info={markerInfo}
           />
         ))}
-
       </Map>
     );
   }
@@ -91,4 +86,4 @@ export class BusinessMap extends Component {
 
 export default GoogleApiWrapper({
   apiKey: googleMapsAPI,
-})(BusinessMap);
+})(BusinessIndexMap);

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import NavBarContainer from '../navbar/navbar_container'
-
+import { BusinessIndexMap } from '../google_maps/business_index_map';
 
 class BusinessIndex extends React.Component {
     constructor(props) {
@@ -41,6 +41,9 @@ class BusinessIndex extends React.Component {
                 <div className="businesses-user-header">
                   <NavBarContainer />
                 </div>
+              </div>
+              <div>
+                <BusinessIndexMap businesses={this.props.businesses}/>
               </div>
               <div className="list-of-bizs">
                 {this.props.businesses.map((business, i) => (
