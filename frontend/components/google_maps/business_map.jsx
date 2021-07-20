@@ -78,13 +78,13 @@ export class BusinessMap extends Component {
         center={this.state.center}
         onDblclick={this.recenterMap}
       >
-        {/* {this.state.markers.map((markerInfo, idx) => (
+        {this.state.markers.map((markerInfo, idx) => (
           <Marker
             position={markerInfo.address}
             key={`marker-${idx}`}
             info={markerInfo}
           />
-        ))} */}
+        ))}
 
       </Map>
     );

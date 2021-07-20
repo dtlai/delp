@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavBarContainer from "../navbar/navbar_container"
 import ReviewFormContainer from '../reviews/review_form_container'
 import ReviewIndexContainer from '../reviews/review_index_container'
-import { BusinessMap } from "../google_maps/business_map";
+import BusinessMap from "../google_maps/business_map";
 
 class Business extends React.Component {
   constructor(props) {
