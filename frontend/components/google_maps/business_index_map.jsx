@@ -28,8 +28,10 @@ export class BusinessIndexMap extends Component {
         lng: 118.2518,
       },
       selectedPlace: {
-        name: "",
-        address: "",
+        info: {
+          name: "",
+          address: "",
+        },
       },
       markers: [],
     };
@@ -44,6 +46,7 @@ export class BusinessIndexMap extends Component {
         business.address + " " + business.city + " " + business.state;
       let markerInfo = {
         coords: "",
+        name: business.name,
       };
       Geocode.fromAddress(address).then((response) => {
         const { lat, lng } = response.results[0].geometry.location;
@@ -53,8 +56,12 @@ export class BusinessIndexMap extends Component {
         this.setState({
           markers: oldMarkers,
           center: markerInfo.coords,
+        //   name: markerInfo.name,
         });
-      });
+      }),
+        (error) => {
+          console.error(error);
+        };
     });
   }
 
@@ -110,7 +117,7 @@ export class BusinessIndexMap extends Component {
           onClose={this.onClose}
         >
           <div>
-            <h3>{this.state.selectedPlace.name}</h3>
+            <h3>{this.state.selectedPlace.info.name}</h3>
           </div>
         </InfoWindow>
       </Map>
