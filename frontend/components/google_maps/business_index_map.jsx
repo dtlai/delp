@@ -48,7 +48,7 @@ export class BusinessIndexMap extends Component {
       (response) => {
         const { lat, lng } = response.results[0].geometry.location;
         let oldMarkers = this.state.markers;
-        markerInfo.location.coords = { lat: lat, lng: lng };
+        markerInfo.address = { lat: 34.0522, lng: 118.2437 };
         oldMarkers = oldMarkers.concat(markerInfo);
         this.setState({ markers: oldMarkers });
       },
@@ -74,7 +74,7 @@ export class BusinessIndexMap extends Component {
       >
         {this.state.markers.map((markerInfo, idx) => (
           <Marker
-            position={markerInfo.location.coords}
+            position={markerInfo.address}
             key={`marker-${idx}`}
             info={markerInfo}
           />

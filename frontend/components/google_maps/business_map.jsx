@@ -21,8 +21,10 @@ export class BusinessMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeMarker: {},
-      center: {},
+      center: {
+          lat: 34.0522,
+          lng: 118.2437
+      },
       markers: [],
     };
     this.recenterMap = this.recenterMap.bind(this);
@@ -50,10 +52,10 @@ export class BusinessMap extends Component {
     Geocode.fromAddress(markerInfo).then(
       (response) => {
         const { lat, lng } = response.results[0].geometry.location;
-        markerInfo.location.coords = { lat: lat, lng: lng };
+        markerInfo.address = { lat: lat, lng: lng };
         this.setState({
           markers: [markerInfo],
-          center: markerInfo.location.coords,
+          center: markerInfo.address,
         });
       },
       (error) => {
@@ -76,13 +78,13 @@ export class BusinessMap extends Component {
         center={this.state.center}
         onDblclick={this.recenterMap}
       >
-        {this.state.markers.map((markerInfo, idx) => (
+        {/* {this.state.markers.map((markerInfo, idx) => (
           <Marker
-            position={markerInfo.location.coords}
+            position={markerInfo.address}
             key={`marker-${idx}`}
             info={markerInfo}
           />
-        ))}
+        ))} */}
 
       </Map>
     );
