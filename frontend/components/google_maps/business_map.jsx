@@ -22,8 +22,8 @@ export class BusinessMap extends Component {
     super(props);
     this.state = {
       center: {
-          lat: 34.0522,
-          lng: 118.2437
+        lat: 34.0488,
+        lng: 118.2518,
       },
       markers: [],
     };
@@ -52,10 +52,11 @@ export class BusinessMap extends Component {
     Geocode.fromAddress(markerInfo).then(
       (response) => {
         const { lat, lng } = response.results[0].geometry.location;
-        markerInfo.address = { lat: lat, lng: lng };
+        markerInfo.address = { lat: 34.0488, lng: -118.2518 };
         this.setState({
           markers: [markerInfo],
-          center: markerInfo.address,
+          //   center: markerInfo.address,
+          center: { lat: 34.0488, lng: -118.2518 },
         });
       },
       (error) => {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import Geocode from "react-geocode";
 const googleMapsAPI = require("../../config/keys").googleMapsAPI;
 
@@ -21,20 +21,28 @@ export class BusinessIndexMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      showingInfoWindow: false,
       activeMarker: {},
-      center: {},
+      center: {
+        lat: 134.0522,
+        lng: 118.2437,
+      },
+      selectedPlace: {
+        name: "",
+      },
       markers: [],
     };
     this.recenterMap = this.recenterMap.bind(this);
+    this.onMarkerClick = this.onMarkerClick.bind(this);
     this.getLatLong = this.getLatLong.bind(this);
   }
 
   componentDidMount() {
     const businesses = this.props.businesses;
-    let markerInfo = businesses.map(business => ({
-        address: business.address
-    }))
-    markerInfo.forEach(info => this.getLatLong(info));
+    let markerInfo = businesses.map((business) => ({
+      address: business.address,
+    }));
+    markerInfo.forEach((info) => this.getLatLong(info));
   }
 
   componentDidUpdate(prevProps) {}
@@ -42,6 +50,22 @@ export class BusinessIndexMap extends Component {
   recenterMap(mapProps, map, event) {
     this.setState({ center: event.latLng });
   }
+
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true,
+    });
+
+  onClose = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null,
+      });
+    }
+  };
 
   getLatLong(markerInfo) {
     Geocode.fromAddress(markerInfo).then(
@@ -72,6 +96,15 @@ export class BusinessIndexMap extends Component {
         center={this.state.center}
         onDblclick={this.recenterMap}
       >
+           <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          onClose={this.onClose}
+        >
+            <div>
+                <h3>Name: {this.state.selectedPlace.name}</h3>
+            </div>
+        </InfoWindow>
         {this.state.markers.map((markerInfo, idx) => (
           <Marker
             position={markerInfo.address}
