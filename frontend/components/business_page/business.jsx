@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavBarContainer from "../navbar/navbar_container"
 import ReviewFormContainer from '../reviews/review_form_container'
 import ReviewIndexContainer from '../reviews/review_index_container'
+import { CurrentMap } from "../google_maps/business_map";
 
 class Business extends React.Component {
   constructor(props) {
@@ -51,6 +52,9 @@ class Business extends React.Component {
           <div className="businesses-user-header">
             <NavBarContainer />
           </div>
+        </div>
+        <div className="business-map">
+          <CurrentMap />
         </div>
         <div>
           <ReviewIndexContainer />
