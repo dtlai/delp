@@ -24,8 +24,8 @@ export class BusinessIndexMap extends Component {
       showingInfoWindow: false,
       activeMarker: {},
       center: {
-        lat: 134.0522,
-        lng: 118.2437,
+        lat: 34.0488,
+        lng: 118.2518,
       },
       selectedPlace: {
         name: "",
@@ -74,7 +74,13 @@ export class BusinessIndexMap extends Component {
         let oldMarkers = this.state.markers;
         markerInfo.address = { lat: lat, lng: lng };
         oldMarkers = oldMarkers.concat(markerInfo);
-        this.setState({ markers: oldMarkers });
+        this.setState({
+          markers: oldMarkers,
+          center: {
+            lat: 34.0488,
+            lng: -118.2518,
+          },
+        });
       },
       (error) => {
         console.error(error);
@@ -110,6 +116,7 @@ export class BusinessIndexMap extends Component {
             position={markerInfo.address}
             key={`marker-${idx}`}
             info={markerInfo}
+            onClick={this.onMarkerClick}
           />
         ))}
       </Map>

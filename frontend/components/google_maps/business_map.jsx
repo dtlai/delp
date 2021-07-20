@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import { StaticGoogleMap, GoogleApiWrapper, Marker, Map } from "google-maps-react";
 import Geocode from "react-geocode";
 const googleMapsAPI = require("../../config/keys").googleMapsAPI;
 
@@ -34,16 +34,14 @@ export class BusinessMap extends Component {
   componentDidMount() {
     const business = this.props.business;
     let markerInfo = {
-        address: business.address,
+      address: business.address,
     };
     this.getLatLong(markerInfo);
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps) {}
 
-    
-  }
-
+  
   recenterMap(mapProps, map, event) {
     this.setState({ center: event.latLng });
   }
@@ -52,11 +50,11 @@ export class BusinessMap extends Component {
     Geocode.fromAddress(markerInfo).then(
       (response) => {
         const { lat, lng } = response.results[0].geometry.location;
-        markerInfo.address = { lat: 34.0488, lng: -118.2518 };
+        markerInfo.address = { lat: lat, lng: lng };
         this.setState({
           markers: [markerInfo],
-          //   center: markerInfo.address,
-          center: { lat: 34.0488, lng: -118.2518 },
+          center: markerInfo.address,
+          //   center: { lat: 34.0488, lng: -118.2518 },
         });
       },
       (error) => {
@@ -86,8 +84,13 @@ export class BusinessMap extends Component {
             info={markerInfo}
           />
         ))}
-
       </Map>
+      //   <StaticGoogleMap
+      //     size="600x600"
+      //     className="img-fluid"
+      //   >
+      //     <Marker position="6.4488387,3.5496361" color="blue" label="P" />
+      //   </StaticGoogleMap>
     );
   }
 }
