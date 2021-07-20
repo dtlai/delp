@@ -29,20 +29,33 @@ export class BusinessIndexMap extends Component {
       },
       selectedPlace: {
         name: "",
+        address: "",
       },
       markers: [],
     };
     this.recenterMap = this.recenterMap.bind(this);
     this.onMarkerClick = this.onMarkerClick.bind(this);
-    this.getLatLong = this.getLatLong.bind(this);
   }
 
   componentDidMount() {
     const businesses = this.props.businesses;
-    let markerInfo = businesses.map((business) => ({
-      address: business.address,
-    }));
-    markerInfo.forEach((info) => this.getLatLong(info));
+    businesses.map((business) => {
+      let address =
+        business.address + " " + business.city + " " + business.state;
+      let markerInfo = {
+        coords: "",
+      };
+      Geocode.fromAddress(address).then((response) => {
+        const { lat, lng } = response.results[0].geometry.location;
+        let oldMarkers = this.state.markers;
+        markerInfo.coords = { lat: lat, lng: lng };
+        oldMarkers = oldMarkers.concat(markerInfo);
+        this.setState({
+          markers: oldMarkers,
+          center: markerInfo.coords,
+        });
+      });
+    });
   }
 
   componentDidUpdate(prevProps) {}
@@ -51,12 +64,14 @@ export class BusinessIndexMap extends Component {
     this.setState({ center: event.latLng });
   }
 
-  onMarkerClick = (props, marker, e) =>
-    this.setState({
+  onMarkerClick = (props, marker, e) => {
+    console.log(props);
+    return this.setState({
       selectedPlace: props,
       activeMarker: marker,
       showingInfoWindow: true,
     });
+  };
 
   onClose = (props) => {
     if (this.state.showingInfoWindow) {
@@ -66,27 +81,6 @@ export class BusinessIndexMap extends Component {
       });
     }
   };
-
-  getLatLong(markerInfo) {
-    Geocode.fromAddress(markerInfo).then(
-      (response) => {
-        const { lat, lng } = response.results[0].geometry.location;
-        let oldMarkers = this.state.markers;
-        markerInfo.address = { lat: lat, lng: lng };
-        oldMarkers = oldMarkers.concat(markerInfo);
-        this.setState({
-          markers: oldMarkers,
-          center: {
-            lat: 34.0488,
-            lng: -118.2518,
-          },
-        });
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
-  }
 
   render() {
     return (
@@ -102,23 +96,23 @@ export class BusinessIndexMap extends Component {
         center={this.state.center}
         onDblclick={this.recenterMap}
       >
-           <InfoWindow
-          marker={this.state.activeMarker}
-          visible={this.state.showingInfoWindow}
-          onClose={this.onClose}
-        >
-            <div>
-                <h3>Name: {this.state.selectedPlace.name}</h3>
-            </div>
-        </InfoWindow>
         {this.state.markers.map((markerInfo, idx) => (
           <Marker
-            position={markerInfo.address}
+            position={markerInfo.coords}
             key={`marker-${idx}`}
             info={markerInfo}
             onClick={this.onMarkerClick}
           />
         ))}
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          onClose={this.onClose}
+        >
+          <div>
+            <h3>{this.state.selectedPlace.name}</h3>
+          </div>
+        </InfoWindow>
       </Map>
     );
   }

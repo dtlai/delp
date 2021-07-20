@@ -28,40 +28,30 @@ export class BusinessMap extends Component {
       markers: [],
     };
     this.recenterMap = this.recenterMap.bind(this);
-    this.getLatLong = this.getLatLong.bind(this);
   }
 
   componentDidMount() {
     const business = this.props.business;
+    let address = business.address + " " + business.city + " " + business.state;
     let markerInfo = {
-      address: business.address,
+      coords: "",
     };
-    this.getLatLong(markerInfo);
+    Geocode.fromAddress(address).then((response) => {
+        const { lat, lng } = response.results[0].geometry.location;
+        markerInfo.coords = { lat: lat, lng: lng};
+        this.setState({
+            markers: [markerInfo],
+            center: markerInfo.coords
+        })
+    })
   }
 
   componentDidUpdate(prevProps) {}
-
   
   recenterMap(mapProps, map, event) {
     this.setState({ center: event.latLng });
   }
 
-  getLatLong(markerInfo) {
-    Geocode.fromAddress(markerInfo).then(
-      (response) => {
-        const { lat, lng } = response.results[0].geometry.location;
-        markerInfo.address = { lat: lat, lng: lng };
-        this.setState({
-          markers: [markerInfo],
-          center: markerInfo.address,
-          //   center: { lat: 34.0488, lng: -118.2518 },
-        });
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
-  }
 
   render() {
     return (
@@ -79,7 +69,7 @@ export class BusinessMap extends Component {
       >
         {this.state.markers.map((markerInfo, idx) => (
           <Marker
-            position={markerInfo.address}
+            position={markerInfo.coords}
             key={`marker-${idx}`}
             info={markerInfo}
           />
