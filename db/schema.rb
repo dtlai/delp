@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_13_170728) do
+ActiveRecord::Schema.define(version: 2021_07_21_002254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,15 @@ ActiveRecord::Schema.define(version: 2021_07_13_170728) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "business_categories", force: :cascade do |t|
+    t.integer "business_id", null: false
+    t.integer "category_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["business_id"], name: "index_business_categories_on_business_id"
+    t.index ["category_id"], name: "index_business_categories_on_category_id"
+  end
+
   create_table "businesses", force: :cascade do |t|
     t.string "name", null: false
     t.string "address", null: false
@@ -46,6 +55,13 @@ ActiveRecord::Schema.define(version: 2021_07_13_170728) do
     t.integer "biz_zipcode", null: false
     t.string "price_range", null: false
     t.string "phone_number", null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "category", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category"], name: "index_categories_on_category"
   end
 
   create_table "reviews", force: :cascade do |t|
