@@ -8,6 +8,7 @@
 
 User.delete_all
 Business.delete_all
+BusinessCategory.destroy_all
 
 require 'open-uri'
 
@@ -63,3 +64,6 @@ business2.photos.attach(io: bizfile2_1, filename: 'yupdduk_1.jpeg')
 business2.photos.attach(io: bizfile2_2, filename: 'yupdduk_2.jpeg')
 business2.photos.attach(io: bizfile2_3, filename: 'yupdduk_3.jpeg')
 business2.photos.attach(io: bizfile2_4, filename: 'yupdduk_4.jpeg')
+
+korean_cat = Category.create!(category: "Korean")
+b_c1 = BusinessCategory.create!(business_id: business1.id, category_id: korean_cat.id)
