@@ -43,7 +43,7 @@ class BusinessIndex extends React.Component {
                 </div>
               </div>
               <div>
-                <BusinessIndexMap businesses={this.props.businesses}/>
+                {/* <BusinessIndexMap businesses={this.props.businesses}/> */}
               </div>
               <div className="list-of-bizs">
                 {this.props.businesses.map((business, i) => (
