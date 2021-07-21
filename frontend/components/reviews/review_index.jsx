@@ -44,6 +44,11 @@ class ReviewsIndex extends React.Component {
                <p>{review.message}</p>
            ))}
        </div>
+       <div>
+           {reviews.map((review) => (
+               <p>{review.rating}</p>
+           ))}
+       </div>
       </>
     );
   }
