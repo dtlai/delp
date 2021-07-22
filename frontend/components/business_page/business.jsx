@@ -54,7 +54,7 @@ class Business extends React.Component {
           </div>
         </div>
         <div className="business-map">
-          {/* <BusinessMap business={this.props.business}/> */}
+          <BusinessMap business={this.props.business}/>
         </div>
         <div>
           <ReviewIndexContainer />

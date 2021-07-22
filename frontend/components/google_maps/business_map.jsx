@@ -1,19 +1,6 @@
 import React, { Component } from "react";
-import { StaticGoogleMap, GoogleApiWrapper, Marker, Map } from "google-maps-react";
 import Geocode from "react-geocode";
 const googleMapsAPI = require("../../config/keys").googleMapsAPI;
-
-const mapStyles = {
-  width: "100%",
-  height: "100%",
-};
-const containerStyle = {
-  position: "relative",
-  width: "70rem",
-  height: "30rem",
-  marginLeft: "20rem",
-  background: "gray",
-};
 
 Geocode.setApiKey(googleMapsAPI);
 
@@ -21,13 +8,9 @@ export class BusinessMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      center: {
-        lat: 34.0488,
-        lng: 118.2518,
-      },
-      markers: [],
+      center: {},
+      markerInfo: {}
     };
-    this.recenterMap = this.recenterMap.bind(this);
   }
 
   componentDidMount() {
@@ -40,51 +23,20 @@ export class BusinessMap extends Component {
         const { lat, lng } = response.results[0].geometry.location;
         markerInfo.coords = { lat: lat, lng: lng};
         this.setState({
-            markers: [markerInfo],
-            center: markerInfo.coords
+            center: markerInfo.coords,
         })
     })
   }
 
-  componentDidUpdate(prevProps) {}
-  
-  recenterMap(mapProps, map, event) {
-    this.setState({ center: event.latLng });
-  }
-
-
   render() {
     return (
-      <Map
-        disableDoubleClickZoom={true}
-        streetViewControl={false}
-        mapTypeControl={false}
-        ref="map"
-        google={this.props.google}
-        zoom={12}
-        style={mapStyles}
-        containerStyle={containerStyle}
-        center={this.state.center}
-        onDblclick={this.recenterMap}
-      >
-        {this.state.markers.map((markerInfo, idx) => (
-          <Marker
-            position={markerInfo.coords}
-            key={`marker-${idx}`}
-            info={markerInfo}
-          />
-        ))}
-      </Map>
-      //   <StaticGoogleMap
-      //     size="600x600"
-      //     className="img-fluid"
-      //   >
-      //     <Marker position="6.4488387,3.5496361" color="blue" label="P" />
-      //   </StaticGoogleMap>
+      <img
+        src={`https://maps.googleapis.com/maps/api/staticmap?center=${this.state.center.lat},${this.state.center.lng}&zoom=13&size=600x300&maptype=roadmap
+        &markers=color:red%7Clabel:D%7C${this.state.center.lat},${this.state.center.lng}
+        &key=${googleMapsAPI}`}
+        alt="no location"
+      />
     );
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: googleMapsAPI,
-})(BusinessMap);
