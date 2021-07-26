@@ -5,6 +5,13 @@ import SearchBarContainer from '../search_form/search_form_container';
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
+    if (this.props.formType === 'home') {
+      this.type = 'home'
+    } else if (this.props.formType === 'other') {
+      this.type = 'other'
+    } else if (this.props.formType === 'review') {
+      this.type = 'review'
+    }
     this.logoutUser = this.logoutUser.bind(this);
     this.loginContainer = this.loginContainer.bind(this);
     this.logoutContainer = this.logoutContainer.bind(this);
@@ -103,11 +110,8 @@ class NavBar extends React.Component {
 
     return (
       <>
-        <div className="nav-bar">
+        <div className={`navbar-container-${this.type}`}>
           <div className="nav-links">{sessionButtons}</div>
-        </div>
-        <div className="searchbar-container">
-          <SearchBarContainer />
         </div>
       </>
     );

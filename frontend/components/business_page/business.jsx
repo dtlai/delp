@@ -4,6 +4,7 @@ import NavBarContainer from "../navbar/navbar_container"
 import ReviewFormContainer from '../reviews/review_form_container'
 import ReviewIndexContainer from '../reviews/review_index_container'
 import {BusinessMap} from "../google_maps/business_map";
+import SearchBarContainer from '../search_form/search_form_container'
 
 class Business extends React.Component {
   constructor(props) {
@@ -51,6 +52,7 @@ class Business extends React.Component {
           </Link>
           <div className="businesses-user-header">
             <NavBarContainer />
+            <SearchBarContainer formtype={this.props.formType} />
           </div>
         </div>
         <div className="business-map">

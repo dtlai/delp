@@ -22,7 +22,7 @@ class Homepage extends React.Component {
                     <li>Talk</li>
                   </ul>
                   <div className="greetings">
-                    <NavBarContainer />
+                    <NavBarContainer formType={this.props.formType}/>
                   </div>
                 </div>
                 <div className="hero-inner">

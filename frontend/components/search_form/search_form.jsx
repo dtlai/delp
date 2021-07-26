@@ -37,9 +37,13 @@ class SearchBar extends React.Component {
             <>
                 <div className="search-form-container">
                     <form className="search-form" onSubmit={this.handleSubmit}>
-                        <label className={`search-container-${this.type}`}>
+                        <label className={`search-container1-${this.type}`}>
                             {this.find}
-                            <input className={`search-content-${this.type}`} type="text" value={this.state.query} placeholder="Find a restaurant" onChange={this.handleChange('query')} />
+                            <input className={`search-content-${this.type}`} type="text" value={this.state.query} placeholder="restaurants, businesses..." onChange={this.handleChange('query')} />
+                        </label>
+                        <label className={`search-container2-${this.type}`}>
+                            {this.near}
+                            <input className={`search-content-${this.type}`} type="text" placeholder="Los Angeles"/>
                         </label>
                         <input className="search-form-submit" type="submit" value="Search" />
                     </form>
