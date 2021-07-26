@@ -12,7 +12,7 @@ class Homepage extends React.Component {
 
     render() {
         return (
-          <div>
+          <>
             <div className="hero-container">
               <div className="hero-content">
                 <div className="nav-bar">
@@ -33,7 +33,7 @@ class Homepage extends React.Component {
                     />
                   </div>
                   <div className="search-bar-form">
-                    <SearchBarContainer/>
+                    <SearchBarContainer formType={this.props.formType} />
                   </div>
                 </div>
               </div>
@@ -43,7 +43,7 @@ class Homepage extends React.Component {
                 <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
               </Link>
             </div>
-          </div>
+          </>
         );
     }
 }

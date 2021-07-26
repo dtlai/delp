@@ -7,8 +7,8 @@ import HomePage from './homepage';
 const mapStateToProps = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'Login',
-        navLink: <Link to="/signup">Sign Up</Link>,
+        formType: 'home',
+        // navLink: <Link to="/signup">Sign Up</Link>,
     };
 };
 
