@@ -60,7 +60,7 @@ class NavBar extends React.Component {
     let lastName = this.props.currentUser.last_name;
     
     return (
-      <div>
+      <>
         <div className="user-session-container" ref={this.container}>
           <button onClick={(e) => this.setDropdown(e)} className="dropbtn">
             <img src="https://i.imgur.com/eHreOGm.jpg" alt="profpic" />
@@ -86,20 +86,22 @@ class NavBar extends React.Component {
             </div>
           ) : null}
         </div>
-      </div>
+      </>
     );
   }
 
   logoutContainer() {
     return (
-      <div className="nav-logout-container">
-        <Link to="/login" className="login-greeting">
-          Login
-        </Link>
-        <Link to="/signup" className="signup-greeting">
-          Sign up
-        </Link>
-      </div>
+      <>
+        <div className="nav-logout-container">
+          <Link to="/login" className="login-greeting">
+            Login
+          </Link>
+          <Link to="/signup" className="signup-greeting">
+            Sign up
+          </Link>
+        </div>
+      </>
     );
   }
 
@@ -111,7 +113,7 @@ class NavBar extends React.Component {
     return (
       <>
         <div className={`navbar-container-${this.type}`}>
-          <div className="nav-links">{sessionButtons}</div>
+          <div>{sessionButtons}</div>
         </div>
       </>
     );

@@ -9,7 +9,7 @@ import { searchBusinesses } from '../../actions/business_actions';
 const mSTP = (state, ownProps) => { 
     return {
         businesses: Object.values(state.entities.businesses),
-        formType: 'other_pages',
+        formType: 'other',
         currentUser: state.entities.users[state.session.id]
     }
 }

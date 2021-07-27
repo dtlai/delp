@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 .navbar-container-home {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     .nav-logout-container {
         display: flex;
         justify-content: flex-end;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
         color: grey;
-        cursor: pointer;
 
         .login-greeting {
             color: white;
-            font-family: 'Open Sans', sans-serif;
             cursor: pointer;
             text-decoration: none;
             border-color: transparent;
             background: transparent;
             outline: none;
-            font-size: 14px;
-
-            // padding: 10px 10px;
             margin-right: 7px;
             margin-left: 7px;
             padding: 9px 12px 8px;
@@ -27,13 +22,10 @@
 
         .login-greeting:hover {
             border-bottom: 2px solid white;
-
         }
 
         .signup-greeting {
             color: white;
-            // display: block;
-            font-size: 14px;
             padding: 7px 24px 8px;
             background: transparent;
             border: white solid 2px;
@@ -61,8 +53,6 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
             padding: 12px 16px;
             z-index: 1;
-            // margin-right: 150px;
-            // right: 5px;
             border: 1px solid #bbbac0;
             border-radius: 6px;
             display: flex;
@@ -76,8 +66,69 @@
 
 }
 
-.navbar-container-other {
 
+
+.navbar-container-other {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 40px;
+    width: 220px;
+
+    .user-session-container {
+        .dropbtn {
+            img {
+                height: 30px;
+            }
+        }
+        .user-session-content {
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+            padding: 12px 16px;
+            z-index: 1;
+            border: 1px solid #bbbac0;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            img {
+                height: 30px;
+            }
+        }
+    }
+
+    .nav-logout-container {
+        display: flex;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 20px;
+        width: 220px;
+        justify-content: space-between;
+
+        .login-greeting {
+            color: gray;
+            font-weight: bold;
+            background-color: white;
+            border: 1px solid gray;
+            padding: 7px 24px 8px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .signup-greeting {
+            color: white;
+            font-weight: bold;
+            background-color: red;
+            border: none;
+            padding: 7px 24px 8px;
+            border-radius: 4px;
+            text-decoration: none;
+            outline: none;
+        }
+    }
+    
 }
 
 .navbar-container-review {

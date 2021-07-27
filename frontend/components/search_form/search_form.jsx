@@ -43,7 +43,7 @@ class SearchBar extends React.Component {
                         </label>
                         <label className={`search-container2-${this.type}`}>
                             {this.near}
-                            <input className={`search-content-${this.type}`} type="text" placeholder="Los Angeles"/>
+                            <input className={`search-content-${this.type}`} type="text" placeholder="Los Angeles, CA"/>
                         </label>
                         <input className="search-form-submit" type="submit" value="Search" />
                     </form>

@@ -9,7 +9,7 @@ const mSTP = (state, ownProps) => {
     return {
         business: state.entities.businesses[ownProps.match.params.businessId],
         categoryId: ownProps.match.params.categoryId,
-        formType: 'other_pages',
+        formType: 'other',
         currentUser: state.entities.users[state.session.id]
     }
 }

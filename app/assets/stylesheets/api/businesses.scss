@@ -4,111 +4,114 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
+
 .businesses-container {
     font-family: 'Open Sans', sans-serif;
-}
-
-.businesses-header-container {
-    display: flex;
-    justify-content: space-between;
-    height: 120px;
-    background-color: rgb(230, 230, 230);
-}
-
-
-.businesses-header-container > .logo-link {
-    display: flex;
-    margin-left: 5%;
-    margin-right: auto;
-    margin-top: 40px;
-}
-
-.businesses-header-container > .logo-link > img {
-    height: 40px;
-}
-
-.businesses-user-header {
-    margin-right: 5%;
-}
-
-.businesses-user-header > .login-signup {
-    display: flex;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 40px;
-    width: 220px;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.businesses-user-header > .header-group {
-    display: flex;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 40px;
-    width: 220px;
     
-}
-
-.businesses-user-header > .header-group > .header-name {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: black;
-    margin-top: 5px;
-}
-
-.businesses-user-header > .header-group > .header-button {
-    margin-left: 5px;
-
-    color: gray;
-    font-weight: bold;
-    background-color: white;
-    font-size: 16px;
-    border: 1px solid gray;
-    padding: 7px 24px 8px;
-    border-radius: 4px;
-    text-decoration: none;
-    height: 30px;
-    cursor: pointer;
-}
-
-.businesses-user-header > .login-signup > .login-greeting {
-    color: gray;
-    font-weight: bold;
-    background-color: white;
-    font-size: 16px;
-    border: 1px solid gray;
-    padding: 7px 24px 8px;
-    border-radius: 4px;
-    text-decoration: none;
+    .businesses-header-container {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        background-color: rgb(230, 230, 230);
+        .logo-link {
+            display: flex;
+            margin-left: 5%;
+            margin-right: auto;
+            margin-top: 40px;
+            img {
+                height: 40px;
+            }
+        }
+        .businesses-user-header {
+            margin-right: 5%;
+        }
+    }
+    .list-of-bizs {
+        display: grid;
+        margin-top: 20px;
+        margin-left: 20px;
+        a {
+            margin-top: 5px;
+        }
+    }
 
 }
 
-.businesses-user-header > .login-signup > .signup-greeting {
-    color: white;
-    font-weight: bold;
-    background-color: red;
-    font-size: 16px;
-    border: none;
-    padding: 7px 24px 8px;
-    border-radius: 4px;
-    text-decoration: none;
-    outline: none;
-}
+    
 
-.businesses-user-header > .header-group {
-    display: flex;
-    margin-left: auto;
-    margin-right: 0;
-}
 
-.list-of-bizs {
-    display: grid;
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
-.list-of-bizs > a {
-    margin-top: 5px;
 
-}
+
+
+// .businesses-user-header > .login-signup {
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: 0;
+//     margin-top: 40px;
+//     width: 220px;
+//     justify-content: space-between;
+//     cursor: pointer;
+// }
+
+// .businesses-user-header > .header-group {
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: 0;
+//     margin-top: 40px;
+//     width: 220px;
+    
+// }
+
+// .businesses-user-header > .header-group > .header-name {
+//     font-family: 'Open Sans', sans-serif;
+//     font-size: 16px;
+//     color: black;
+//     margin-top: 5px;
+// }
+
+// .businesses-user-header > .header-group > .header-button {
+//     margin-left: 5px;
+
+//     color: gray;
+//     font-weight: bold;
+//     background-color: white;
+//     font-size: 16px;
+//     border: 1px solid gray;
+//     padding: 7px 24px 8px;
+//     border-radius: 4px;
+//     text-decoration: none;
+//     height: 30px;
+//     cursor: pointer;
+// }
+
+// .businesses-user-header > .login-signup > .login-greeting {
+//     color: gray;
+//     font-weight: bold;
+//     background-color: white;
+//     font-size: 16px;
+//     border: 1px solid gray;
+//     padding: 7px 24px 8px;
+//     border-radius: 4px;
+//     text-decoration: none;
+
+// }
+
+// .businesses-user-header > .login-signup > .signup-greeting {
+//     color: white;
+//     font-weight: bold;
+//     background-color: red;
+//     font-size: 16px;
+//     border: none;
+//     padding: 7px 24px 8px;
+//     border-radius: 4px;
+//     text-decoration: none;
+//     outline: none;
+// }
+
+// .businesses-user-header > .header-group {
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: 0;
+// }
+
