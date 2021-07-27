@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.search-form-container {
+    font-family: 'Open Sans', sans-serif;
+    .search-form {
+        background-color: white;
+        height: 40px;
+        width: 800px;
+        border-radius: 4px 0 0 4px;
+        .search-container1-home {
+            font-size: 18px;
+            color: gray;
+            background-color: white;
+            margin-left: 5px;
+        }
+        .search-container2-home {
+            font-size: 18px;
+            color: gray;
+            background-color: white;
+        }
+        .search-content1-home {
+            height: 30px;
+            background-color: white;
+            width: 300px;
+            border: none;
+            
+            border-right: 1px solid gray;
+            border-radius: 4px 0 0 4px;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 18px;
+        }
+        .search-content2-home {
+            height: 30px;
+            background-color: white;
+            width: 300px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 18px;
+        }
+    }
+}

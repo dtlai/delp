@@ -15,45 +15,52 @@
     padding-top: 30px;
     width: 100%;
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
-}
-
-// center logo
-.hero-content {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.nav-bar {
-    display: flex;
-    font-weight: 800;
     font-family: 'Open Sans', sans-serif;
-    // font: bold;
+    // center logo
+    .hero-content {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .nav-bar {
+        display: flex;
+        font-weight: 800;
+        // top left 'write a review' boxes
+        .header-nav {
+            display: flex;
+            color: white;
+            margin-top: 10px;
+
+            .about-me-links {
+                display: flex;
+                padding: 5px;
+                .icons {
+                    color: white;
+                }
+            }
+            
+        }
+        //login or logout buttons
+        .greetings {
+            margin-right: 0;
+            margin-left: auto;
+            padding-top: 0;
+        }
+    }
+    .hero-inner {
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.hero-inner {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-// top left 'write a review' boxes
-.header-nav {
 
-    display: flex;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin-top: 10px;
-    // font: bold;
-}
 
-//login or logout buttons
-.greetings {
-    margin-right: 0;
-    margin-left: auto;
-    padding-top: 0;
-    font-family: 'Open Sans', sans-serif;
-    
-}
+
+
+
+
+
+

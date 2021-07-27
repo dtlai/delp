@@ -39,11 +39,11 @@ class SearchBar extends React.Component {
                     <form className="search-form" onSubmit={this.handleSubmit}>
                         <label className={`search-container1-${this.type}`}>
                             {this.find}
-                            <input className={`search-content-${this.type}`} type="text" value={this.state.query} placeholder="restaurants, businesses..." onChange={this.handleChange('query')} />
+                            <input className={`search-content1-${this.type}`} type="text" value={this.state.query} placeholder="restaurants, businesses..." onChange={this.handleChange('query')} />
                         </label>
                         <label className={`search-container2-${this.type}`}>
                             {this.near}
-                            <input className={`search-content-${this.type}`} type="text" placeholder="Los Angeles, CA"/>
+                            <input className={`search-content2-${this.type}`} type="text" placeholder="Los Angeles, CA"/>
                         </label>
                         <input className="search-form-submit" type="submit" value="Search" />
                     </form>

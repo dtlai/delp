@@ -4,6 +4,7 @@ import NavBarContainer from '../navbar/navbar_container'
 import BusinessContainer from '../business_page/business_container'
 import BusinessIndexContainer from '../business_page/business_index_container'
 import SearchBarContainer from '../search_form/search_form_container'
+import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -16,13 +17,49 @@ class Homepage extends React.Component {
             <div className="hero-container">
               <div className="hero-content">
                 <div className="nav-bar">
-                  <ul className="header-nav">
-                    <li>Write a Review</li>&nbsp; &nbsp; &nbsp;
-                    <li>Events</li>&nbsp; &nbsp; &nbsp;
-                    <li>Talk</li>
-                  </ul>
+                  <div className="header-nav">
+                    <div className="about-me-links">
+                      <a
+                        href="https://www.linkedin.com/in/davidlai9/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaLinkedin
+                          className="links-icon"
+                          size={40}
+                          color="white"
+                        />
+                      </a>
+                    </div>
+                    <div className="about-me-links">
+                      <a
+                        href="https://github.com/dtlai"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithub
+                          className="links-icon"
+                          size={40}
+                          color="white"
+                        />
+                      </a>
+                    </div>
+                    <div className="about-me-links">
+                      <a
+                        href="https://angel.co/u/davidtlai"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaAngellist
+                          className="links-icon"
+                          size={40}
+                          color="white"
+                        />
+                      </a>
+                    </div>
+                  </div>
                   <div className="greetings">
-                    <NavBarContainer formType={this.props.formType}/>
+                    <NavBarContainer formType={this.props.formType} />
                   </div>
                 </div>
                 <div className="hero-inner">
