@@ -30,7 +30,7 @@
             display: flex;
             color: white;
 
-            .about-me-links {
+            .other-proj-links {
                 display: flex;
                 padding: 5px;
                 margin-right: 10px;
@@ -45,7 +45,7 @@
                     color: white;
                 }
             }
-            .about-me-links:hover {
+            .other-proj-links:hover {
                 border-bottom: 2px solid white;
             }
         }
@@ -60,6 +60,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .about-me-container {
+            color: white;
+            font-size: 14px;
+            display: flex;
+            margin-top: 20px;
+            .about-me-links {
+                
+            }
+        }
+        .photo-creds {
+            font-size: 14px;
+            color: white;
+            margin-top: 180px;
+            h3 {
+                margin-left: 30px;
+            }
+            p {
+                margin-top: 5px;
+            }
+        }
     }
 }
 
