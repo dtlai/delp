@@ -1,5 +1,7 @@
 import React from 'react'
 // import {withRouter} from 'react-router-dom';
+import { GiMagnifyingGlass } from "react-icons/gi";
+
 
 class SearchBar extends React.Component {
 
@@ -34,22 +36,34 @@ class SearchBar extends React.Component {
 
     render () {
         return (
-            <>
-                <div className="search-form-container">
-                    <form className="search-form" onSubmit={this.handleSubmit}>
-                        <label className={`search-container1-${this.type}`}>
-                            {this.find}
-                            <input className={`search-content1-${this.type}`} type="text" value={this.state.query} placeholder="restaurants, businesses..." onChange={this.handleChange('query')} />
-                        </label>
-                        <label className={`search-container2-${this.type}`}>
-                            {this.near}
-                            <input className={`search-content2-${this.type}`} type="text" placeholder="Los Angeles, CA"/>
-                        </label>
-                        <input className="search-form-submit" type="submit" value="Search" />
-                    </form>
-                </div>
-            </>
-        )
+          <>
+            <div className="search-form-container">
+              <form className="search-form" onSubmit={this.handleSubmit}>
+                <label className={`search-container1-${this.type}`}>
+                  {this.find}
+                  <input
+                    className={`search-content1-${this.type}`}
+                    type="text"
+                    value={this.state.query}
+                    placeholder="restaurants, businesses..."
+                    onChange={this.handleChange("query")}
+                  />
+                </label>
+                <label className={`search-container2-${this.type}`}>
+                  {this.near}
+                  <input
+                    className={`search-content2-${this.type}`}
+                    type="text"
+                    placeholder="Los Angeles, CA 90012"
+                  />
+                </label>
+                <button className={`search-button-${this.type}`}>
+                  <GiMagnifyingGlass className="search-icon" size={30} color="white" />
+                </button>
+              </form>
+            </div>
+          </>
+        );
     }
 
 }

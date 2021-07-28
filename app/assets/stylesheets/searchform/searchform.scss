@@ -2,45 +2,68 @@
 
 .search-form-container {
     font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
     .search-form {
         background-color: white;
-        height: 40px;
-        width: 800px;
-        border-radius: 4px 0 0 4px;
+        height: 50px;
+        width: 900px;
+        border-radius: 4px 4px 4px 4px;
+        margin-left: 5px;
+        margin-right: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .search-container1-home {
             font-size: 18px;
             color: gray;
             background-color: white;
-            margin-left: 5px;
+            margin-left: 10px;
+            // margin-right: 10px;
+            
         }
         .search-container2-home {
             font-size: 18px;
             color: gray;
             background-color: white;
+            margin-left: 10px;
+
         }
         .search-content1-home {
             height: 30px;
             background-color: white;
-            width: 300px;
+            width: 400px;
             border: none;
-            
+            outline: none;
             border-right: 1px solid gray;
-            border-radius: 4px 0 0 4px;
-            margin-top: 5px;
+
             margin-left: 5px;
             margin-right: 5px;
+            margin-top: 1px;
             font-size: 18px;
+            
         }
         .search-content2-home {
             height: 30px;
             background-color: white;
+            outline: none;
             width: 300px;
             border: none;
-            border-radius: 4px 0 0 4px;
-            margin-top: 5px;
+            border-radius: 4px 4px 4px 4px;
             margin-left: 5px;
-            margin-right: 5px;
             font-size: 18px;
+            margin-top: 1px;
+        }
+        .search-button-home {
+            background-color: red;
+            cursor: pointer;
+            transform: scaleX(-1);
+            height: inherit;
+            width: 73px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            .search-icon {
+                height: 50px;
+            }
         }
     }
 }
