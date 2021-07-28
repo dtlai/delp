@@ -34,11 +34,17 @@
             .about-me-links {
                 display: flex;
                 padding: 5px;
-                .icons {
+                margin-right: 20px;
+                font-size: 14px;
+                a {
+                    text-decoration: none;
                     color: white;
+                    cursor: pointer;
                 }
             }
-            
+            .about-me-links:hover {
+                border-bottom: 2px solid white;
+            }
         }
         //login or logout buttons
         .greetings {
