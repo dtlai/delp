@@ -12,7 +12,7 @@
     background-position: center;
     background-size: cover;
     height: 600px;
-    padding-top: 30px;
+    padding-top: 50px;
     width: 100%;
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
     font-family: 'Open Sans', sans-serif;
@@ -29,17 +29,20 @@
         .header-nav {
             display: flex;
             color: white;
-            margin-top: 10px;
 
             .about-me-links {
                 display: flex;
                 padding: 5px;
-                margin-right: 20px;
+                margin-right: 10px;
                 font-size: 14px;
+                border-color: transparent;
+                background: transparent;
+                outline: none;
+                padding: 9px 12px 8px;
+                cursor: pointer;
                 a {
                     text-decoration: none;
                     color: white;
-                    cursor: pointer;
                 }
             }
             .about-me-links:hover {
@@ -50,7 +53,6 @@
         .greetings {
             margin-right: 0;
             margin-left: auto;
-            padding-top: 0;
         }
     }
     .hero-inner {

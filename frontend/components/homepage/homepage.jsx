@@ -64,9 +64,11 @@ class Homepage extends React.Component {
               </div>
             </div>
             <div className="home-biz-link">
-              <Link to="/businesses" className="home-business-link">
+              {/* <Link to="/businesses" className="home-business-link">
                 <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
-              </Link>
+              </Link> */}
+              Find the Best Restaurants in Town
+
             </div>
           </>
         );
