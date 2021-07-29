@@ -69,7 +69,7 @@ class Homepage extends React.Component {
                       >
                         <FaLinkedin
                           className="about-icon"
-                          size={30}
+                          size={20}
                           color="white"
                         />
                       <p>LinkedIn</p>
@@ -81,7 +81,7 @@ class Homepage extends React.Component {
                       >
                         <FaGithub
                           className="about-icon"
-                          size={30}
+                          size={20}
                           color="white"
                         />
                       <p>GitHub</p>
@@ -93,7 +93,7 @@ class Homepage extends React.Component {
                       >
                         <FaAngellist
                           className="about-icon"
-                          size={30}
+                          size={20}
                           color="white"
                         />
                         <p>AngelList</p>

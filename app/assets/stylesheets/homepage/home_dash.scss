@@ -72,8 +72,11 @@
                     margin-left: 10px;
                     display: flex;
                     text-decoration: none;
+                    p:hover {
+                        border-bottom: 2px solid white;
+                    }
                     p {
-                        margin-top: 10px;
+                        margin-top: 5px;
                         margin-left: 5px;
                     }
                     // p {
