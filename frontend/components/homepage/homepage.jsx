@@ -18,7 +18,7 @@ class Homepage extends React.Component {
               <div className="hero-content">
                 <div className="nav-bar">
                   <div className="header-nav">
-                    <div className="other-proj-links">
+                    <div className="contact-links">
                       <a
                         href="mailto:davidlai9@gmail.com"
                         target="_blank"
@@ -27,22 +27,22 @@ class Homepage extends React.Component {
                         Write an Email
                       </a>
                     </div>
-                    <div className="other-proj-links">
+                    <div className="contact-links">
                       <a
-                        href="https://ridealong-app.herokuapp.com/"
+                        href="https://drive.google.com/file/d/1-A2tkofYsHarCbIIde8SU9T5rwFg7tNe/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        RideAlong
+                        Resume
                       </a>
                     </div>
-                    <div className="other-proj-links">
+                    <div className="contact-links">
                       <a
-                        href="https://dtlai.github.io/stocktok/"
+                        href="https://davidtlai.com/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        StockTok
+                        Portfolio
                       </a>
                     </div>
                   </div>
@@ -67,7 +67,36 @@ class Homepage extends React.Component {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <FaLinkedin className="about-us-icon" size={30} color="white"/>
+                        <FaLinkedin
+                          className="about-icon"
+                          size={30}
+                          color="white"
+                        />
+                      <p>LinkedIn</p>
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/davidlai9/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaGithub
+                          className="about-icon"
+                          size={30}
+                          color="white"
+                        />
+                      <p>GitHub</p>
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/davidlai9/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaAngellist
+                          className="about-icon"
+                          size={30}
+                          color="white"
+                        />
+                        <p>AngelList</p>
                       </a>
                     </div>
                   </div>
