@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Geocode from "react-geocode";
-const googleMapsAPI = require("../../config/keys").googleMapsAPI;
+// const googleMapsAPI = require("../../config/keys").googleMapsAPI;
+const googleMapsAPI = require("../../../config/keys").googleMapsAPI;
 
 Geocode.setApiKey(googleMapsAPI);
 
