@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import Geocode from "react-geocode";
-// const googleMapsAPI = require("../../config/keys").googleMapsAPI;
 const googleMapsAPI = require("../../../config/keys").googleMapsAPI;
+// const googleMapsAPI = window.googleAPIKey;
+
 
 const mapStyles = {
   width: "100%",
@@ -103,6 +104,7 @@ export class BusinessIndexMap extends Component {
         containerStyle={containerStyle}
         center={this.state.center}
         onDblclick={this.recenterMap}
+        bootstrapURLKeys={{key: googleMapsAPI}}
       >
         {this.state.markers.map((markerInfo, idx) => (
           <Marker

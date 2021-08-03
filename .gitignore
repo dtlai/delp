@@ -30,3 +30,5 @@ bundle.js.map
 
 # /frontend/config/keys_dev.js
 /config/keys_dev.js
+
+/env

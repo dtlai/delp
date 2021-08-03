@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // testing start 
-    window.getState = store.getState;
-    window.dispatch = store.dispatch;
-    window.fetchBusinesses = fetchBusinesses;
+    // window.getState = store.getState;
+    // window.dispatch = store.dispatch;
+    // window.fetchBusinesses = fetchBusinesses;
     // testing end 
 
     const root = document.getElementById('root');
