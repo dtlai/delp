@@ -1,13 +1,5 @@
 import React, { Component } from "react";
 import Geocode from "react-geocode";
-const googleMapsAPI = require("../../../config/keys").googleMapsAPI;
-// const googleMapsAPI = window.googleAPIKey;
-
-Geocode.setApiKey(googleMapsAPI);
-// Geocode.setApiKey(window.googleAPIKey);
-Geocode.enableDebug();
-
-
 export class BusinessMap extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +10,7 @@ export class BusinessMap extends Component {
   }
 
   componentDidMount() {
+    Geocode.setApiKey(window.googleAPIKey);
     const business = this.props.business;
     let address = business.address + " " + business.city + " " + business.state;
     let markerInfo = {

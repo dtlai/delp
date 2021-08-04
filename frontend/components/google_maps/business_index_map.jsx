@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import Geocode from "react-geocode";
-const googleMapsAPI = require("../../../config/keys").googleMapsAPI;
-// const googleMapsAPI = window.googleAPIKey;
-
 
 const mapStyles = {
   width: "100%",
@@ -17,7 +14,7 @@ const containerStyle = {
   background: "gray",
 };
 
-Geocode.setApiKey(googleMapsAPI);
+
 
 export class BusinessIndexMap extends Component {
   constructor(props) {
@@ -42,6 +39,7 @@ export class BusinessIndexMap extends Component {
   }
 
   componentDidMount() {
+    Geocode.setApiKey(window.googleAPIKey);
     const businesses = this.props.businesses;
     businesses.map((business) => {
       let address =
@@ -104,7 +102,6 @@ export class BusinessIndexMap extends Component {
         containerStyle={containerStyle}
         center={this.state.center}
         onDblclick={this.recenterMap}
-        bootstrapURLKeys={{key: googleMapsAPI}}
       >
         {this.state.markers.map((markerInfo, idx) => (
           <Marker
@@ -128,6 +125,8 @@ export class BusinessIndexMap extends Component {
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: googleMapsAPI,
-})(BusinessIndexMap);
+export default GoogleApiWrapper((props) => {
+  return {
+    apiKey: window.googleAPIKey,
+  }
+})(BusinessIndexMap)
