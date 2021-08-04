@@ -6,6 +6,7 @@ import BusinessIndexContainer from '../business_page/business_index_container'
 import SearchBarContainer from '../search_form/search_form_container'
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 import Categories from '../categories/categories';
+import Footer from '../footer/footer';
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -109,6 +110,7 @@ class Homepage extends React.Component {
               </div>
             </div>
             <Categories />
+            <Footer />
           </>
         );
     }
