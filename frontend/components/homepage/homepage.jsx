@@ -7,6 +7,7 @@ import SearchBarContainer from '../search_form/search_form_container'
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 import Categories from '../categories/categories';
 import Footer from '../footer/footer';
+import OtherProj from '../other_proj/other_proj';
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -110,6 +111,7 @@ class Homepage extends React.Component {
               </div>
             </div>
             <Categories />
+            <OtherProj />
             <Footer />
           </>
         );
