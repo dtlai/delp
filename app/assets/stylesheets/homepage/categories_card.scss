@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.biz-card-title {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: red;
+    font-size: 21px;
+
+}
+
+.categories-card-container {
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 450px;
+}

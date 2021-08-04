@@ -5,6 +5,7 @@ import BusinessContainer from '../business_page/business_container'
 import BusinessIndexContainer from '../business_page/business_index_container'
 import SearchBarContainer from '../search_form/search_form_container'
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
+import Categories from '../categories/categories';
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -72,7 +73,7 @@ class Homepage extends React.Component {
                           size={20}
                           color="white"
                         />
-                      <p>LinkedIn</p>
+                        <p>LinkedIn</p>
                       </a>
                       <a
                         href="https://www.linkedin.com/in/davidlai9/"
@@ -84,7 +85,7 @@ class Homepage extends React.Component {
                           size={20}
                           color="white"
                         />
-                      <p>GitHub</p>
+                        <p>GitHub</p>
                       </a>
                       <a
                         href="https://www.linkedin.com/in/davidlai9/"
@@ -107,12 +108,7 @@ class Homepage extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="home-biz-link">
-              {/* <Link to="/businesses" className="home-business-link">
-                <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
-              </Link> */}
-              Find the Best Restaurants in Town
-            </div>
+            <Categories />
           </>
         );
     }
