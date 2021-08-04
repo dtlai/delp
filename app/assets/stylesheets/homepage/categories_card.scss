@@ -1,32 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+$open-sans: 'Open Sans', sans-serif;
+$primary-gray: rgb(241, 241, 241);
 
-.biz-card-title {
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    color: red;
-    font-size: 21px;
 
-}
 
-.categories-card-container {
+.categories-page-container {
+    background-color: $primary-gray;
+    font-family: $open-sans;
 
-    .categories-card {
-        background-color: red;
-        border: 1px solid black;
-        border-radius: 4px;
-        font-family: 'Open Sans', sans-serif;
-        width: 450px;
-        height: 100px;
-        .card-content {
-            width: 400px;
+    .biz-card-title {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        color: red;
+        font-size: 21px;
+    }
+
+    .categories-card-container {
+        .categories-card {
+            // border: 1px solid black;
+            border: none;
+            background-color: white;
+            margin-bottom: 100px;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            width: 200px;
+            height: 200px;
+            .card-content {
+                p {
+
+                }
+            }
         }
-    }
-    .categories-card:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        cursor: pointer;
-    }
-
+        .categories-card:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+        }
     
+    }
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+$open-sans: 'Open Sans', sans-serif;
 
 .business-pics-container {
     height: 100%;
@@ -18,7 +19,7 @@
 }
 
 .indiv-business-container {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans;
 }
 
 .indiv-business-container > .go-back-to-biz {
@@ -30,8 +31,3 @@
 .indiv-business-container > .go-back-to-biz > img {
     height: 60px;
 }
-
-// .biz-name-container {
-//     // position: absolute;
-//     // margin-top: -200px
-// }

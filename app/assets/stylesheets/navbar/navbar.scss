@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+$open-sans: 'Open Sans', sans-serif;
+// $primary-gray: rgb(216, 216, 216);
+$primary-gray: rgb(241, 241, 241);
+
 
 .navbar-container-home {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans;
     font-size: 14px;
     .nav-logout-container {
         display: flex;
         justify-content: flex-end;
-        color: grey;
+        color: $primary-gray;
 
         .login-greeting {
             color: white;
@@ -36,7 +40,7 @@
 
         .signup-greeting:hover {
             background-color: white;
-            color: gray;
+            color: $primary-gray;
         }
 
     }

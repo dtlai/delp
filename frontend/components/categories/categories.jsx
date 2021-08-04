@@ -16,15 +16,20 @@ class Categories extends React.Component {
     render () {
         return (
           <>
-            <h1 className="biz-card-title">
-              Find the Best Restaurants in Town
-            </h1>
-            <div className="categories-card-container">
-                <div className="categories-card" onClick={() => this.handleClick("Korean")}>
-                    <div className="card-content">
-                        <p>Korean</p>
-                    </div>
+            <div className="categories-page-container">
+              <h1 className="biz-card-title">
+                Find the Best Restaurants in Town
+              </h1>
+              <div className="categories-card-container">
+                <div
+                  className="categories-card"
+                  onClick={() => this.handleClick("Korean")}
+                >
+                  <div className="card-content">
+                    <p>Korean</p>
+                  </div>
                 </div>
+              </div>
             </div>
           </>
         );

@@ -41,9 +41,9 @@ class BusinessIndex extends React.Component {
               <SearchBarContainer formtype={this.props.formType} />
             </div>
           </div>
-          <div className="businesses-map">
-            {/* <BusinessIndexMap businesses={this.props.businesses}/> */}
-          </div>
+          {/* <div className="businesses-map">
+            <BusinessIndexMap businesses={this.props.businesses}/>
+          </div> */}
           <div className="list-of-bizs">
             {this.props.businesses.map((business, i) => (
               <Link to={`/businesses/${business.id}`} key={i}>

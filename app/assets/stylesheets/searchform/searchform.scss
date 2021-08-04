@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+$open-sans: 'Open Sans', sans-serif;
 
 .search-form-container {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans;
     margin-top: 50px;
     .search-form {
         background-color: white;

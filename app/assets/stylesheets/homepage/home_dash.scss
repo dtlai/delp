@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+$open-sans: 'Open Sans', sans-serif;
 
 #root {
     min-width: 1200px;
@@ -15,7 +16,7 @@
     padding-top: 50px;
     width: 100%;
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans;
     // center logo
     .hero-content {
         max-width: 960px;
