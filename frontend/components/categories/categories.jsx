@@ -21,7 +21,9 @@ class Categories extends React.Component {
             </h1>
             <div className="categories-card-container">
                 <div className="categories-card" onClick={() => this.handleClick("Korean")}>
-                    <p>Korean</p>
+                    <div className="card-content">
+                        <p>Korean</p>
+                    </div>
                 </div>
             </div>
           </>

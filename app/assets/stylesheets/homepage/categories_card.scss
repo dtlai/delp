@@ -11,9 +11,22 @@
 }
 
 .categories-card-container {
-    background-color: red;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-family: 'Open Sans', sans-serif;
-    max-width: 450px;
+
+    .categories-card {
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 4px;
+        font-family: 'Open Sans', sans-serif;
+        width: 450px;
+        height: 100px;
+        .card-content {
+            width: 400px;
+        }
+    }
+    .categories-card:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+
+    
 }
