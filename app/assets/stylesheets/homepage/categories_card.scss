@@ -17,18 +17,23 @@ $primary-gray: rgb(241, 241, 241);
     }
 
     .categories-card-container {
+        height: 300px;
         .categories-card {
             // border: 1px solid black;
             border: none;
             background-color: white;
             margin-bottom: 100px;
+            // padding-bottom: 200px;
+            margin-left: 40px;
             border-radius: 4px;
             font-family: 'Open Sans', sans-serif;
             width: 200px;
             height: 200px;
             .card-content {
+                
                 p {
-
+                    justify-content: center;
+                    display: flex;
                 }
             }
         }
