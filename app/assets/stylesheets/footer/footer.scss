@@ -3,7 +3,69 @@ $open-sans: 'Open Sans', sans-serif;
 $primary-gray: rgb(241, 241, 241);
 
 .footer-container {
+    font-family: $open-sans;
     background-color: $primary-gray;
-    
+
+    .footer-titles {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        h3 {
+            margin-right: 100px;
+            margin-left: 100px;
+            font-size: 16px;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        .about-container {
+            margin-left: 100px;
+            margin-right: 100px;
+            a {
+                color: gray;
+                font-size: 14px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+            }
+            a:hover {
+                border-bottom: 1px solid gray;
+            }
+        }
+
+        .get-started-container {
+            margin-left: 100px;
+            margin-right: 100px;
+            .get-started-link {
+                color: gray;
+                font-size: 14px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+            }
+            .get-started-link:hover {
+                border-bottom: 1px solid gray;
+            }
+        }
+        
+    }
+
+    .footer-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright-container {
+        p {
+            font-size: 12px;
+            color: gray;
+            height: 12px;
+            margin-left: 20px;
+            padding-bottom: 40px;
+            margin-top: 20px;
+        }
+    }
 }
 
