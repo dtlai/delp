@@ -7,7 +7,7 @@ $primary-gray: rgb(241, 241, 241);
 .categories-page-container {
     background-color: $primary-gray;
     font-family: $open-sans;
-    height: 350px;
+    height: 400px;
 
     .biz-card-title {
         display: flex;
@@ -31,18 +31,32 @@ $primary-gray: rgb(241, 241, 241);
                 border-radius: 4px;
                 font-family: 'Open Sans', sans-serif;
                 width: 200px;
-                height: 200px;
+                height: 250px;
                 .card-content {
-                    
+                    // object-fit: cover;
+                    // height: 160px;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    img {
+                        height: 200px;
+                        // object-fit: cover;
+                        // overflow: hidden;
+                        // height: 180px;
+                        // width: 200px;
+                    }
                     p {
                         justify-content: center;
                         display: flex;
+                        margin-top: 10px;
                     }
                 }
             }
             .categories-card:hover {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 cursor: pointer;
+                p {
+                    color: rgb(69, 144, 243);;
+                }
             }
         
         }

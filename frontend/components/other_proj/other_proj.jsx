@@ -11,7 +11,6 @@ const OtherProj = () => (
             target="_blank"
             rel="noreferrer"
           >
-            <p>RideAlong</p>
             <img src="https://i.imgur.com/vscAchT.png" alt="ridealonglogo" />
           </a>
         </div>
@@ -21,7 +20,6 @@ const OtherProj = () => (
             target="_blank"
             rel="noreferrer"
           >
-            <p>StockTok</p>
             <img
               className="stocktokpic"
               src="https://i.imgur.com/AuvlJ1y.png"
