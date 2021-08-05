@@ -7,6 +7,7 @@ $primary-gray: rgb(241, 241, 241);
 .categories-page-container {
     background-color: $primary-gray;
     font-family: $open-sans;
+    height: 350px;
 
     .biz-card-title {
         display: flex;
@@ -16,31 +17,35 @@ $primary-gray: rgb(241, 241, 241);
         font-size: 21px;
     }
 
-    .categories-card-container {
-        height: 300px;
-        .categories-card {
-            // border: 1px solid black;
-            border: none;
-            background-color: white;
-            margin-bottom: 100px;
-            // padding-bottom: 200px;
-            margin-left: 40px;
-            border-radius: 4px;
-            font-family: 'Open Sans', sans-serif;
-            width: 200px;
-            height: 200px;
-            .card-content {
-                
-                p {
-                    justify-content: center;
-                    display: flex;
+    .card-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .categories-card-container {
+            margin-left: 20px;
+            margin-right: 20px;
+            
+            .categories-card {
+                border: none;
+                background-color: white;
+                border-radius: 4px;
+                font-family: 'Open Sans', sans-serif;
+                width: 200px;
+                height: 200px;
+                .card-content {
+                    
+                    p {
+                        justify-content: center;
+                        display: flex;
+                    }
                 }
             }
+            .categories-card:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                cursor: pointer;
+            }
+        
         }
-        .categories-card:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            cursor: pointer;
-        }
-    
     }
+    
 }

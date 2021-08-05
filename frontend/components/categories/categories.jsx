@@ -20,13 +20,55 @@ class Categories extends React.Component {
               <h1 className="biz-card-title">
                 Find the Best Restaurants in Town
               </h1>
-              <div className="categories-card-container">
-                <div
-                  className="categories-card"
-                  onClick={() => this.handleClick("Korean")}
-                >
-                  <div className="card-content">
-                    <p>Korean</p>
+              <div className="card-container">
+                <div className="categories-card-container">
+                  <div
+                    className="categories-card"
+                    onClick={() => this.handleClick("American")}
+                  >
+                    <div className="card-content">
+                      <p>American</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="categories-card-container">
+                  <div
+                    className="categories-card"
+                    onClick={() => this.handleClick("Mexican")}
+                  >
+                    <div className="card-content">
+                      <p>Mexican</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="categories-card-container">
+                  <div
+                    className="categories-card"
+                    onClick={() => this.handleClick("Vietnamese")}
+                  >
+                    <div className="card-content">
+                      <p>Vietnamese</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="categories-card-container">
+                  <div
+                    className="categories-card"
+                    onClick={() => this.handleClick("Japanese")}
+                  >
+                    <div className="card-content">
+                      <p>Japanese</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="categories-card-container">
+                  <div
+                    className="categories-card"
+                    onClick={() => this.handleClick("Korean")}
+                  >
+                    <div className="card-content">
+                      <p>Korean</p>
+                    </div>
                   </div>
                 </div>
               </div>
