@@ -1,7 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $open-sans: 'Open Sans', sans-serif;
+$primary-gray: rgb(241, 241, 241);
 
 .other-proj-container {
     background-color: white;
     height: 300px;
+    font-family: $open-sans;
+    h1 {
+        font-size: 21px;
+        color: red;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: center;
+
+        .project {
+            border: 1px solid gray;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-top: 20px;
+            
+            a {
+                color: black;
+                text-decoration: none;
+                height: inherit;
+                width: inherit;
+                img {
+                    display: flex;
+                    margin-right: auto;
+                    margin-left: auto;
+                    
+                }
+                .stocktokpic {
+                    height: 80px;
+                }
+            }
+            p {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+        }
+
+        .project:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+            border: 1px solid rgb(69, 144, 243);
+        }
+    }
+    
 }

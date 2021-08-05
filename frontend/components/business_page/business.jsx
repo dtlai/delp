@@ -5,7 +5,7 @@ import ReviewFormContainer from "../reviews/review_form_container";
 import ReviewIndexContainer from "../reviews/review_index_container";
 import { BusinessMap } from "../google_maps/business_map";
 import SearchBarContainer from "../search_form/search_form_container";
-
+import Footer from "../footer/footer";
 class Business extends React.Component {
   constructor(props) {
     super(props);
@@ -92,6 +92,7 @@ class Business extends React.Component {
             </Link>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

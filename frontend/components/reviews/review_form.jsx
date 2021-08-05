@@ -1,7 +1,6 @@
 import React from "react";
-
 import { withRouter } from "react-router-dom";
-
+import Footer from "../footer/footer";
 class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
@@ -123,6 +122,7 @@ class ReviewForm extends React.Component {
             </form>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

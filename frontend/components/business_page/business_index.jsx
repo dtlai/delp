@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavBarContainer from "../navbar/navbar_container";
 import BusinessIndexMap from "../google_maps/business_index_map";
 import SearchBarContainer from "../search_form/search_form_container";
-
+import Footer from "../footer/footer";
 class BusinessIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -52,6 +52,7 @@ class BusinessIndex extends React.Component {
             ))}
           </div>
         </div>
+        <Footer />
       </>
     );
   }
