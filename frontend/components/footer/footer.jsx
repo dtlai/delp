@@ -4,62 +4,62 @@ import { Link } from 'react-router-dom';
 const Footer = () => (
   <>
     <div className="footer-container">
-      <div className="footer-titles">
-        <h3>About</h3>
-        <h3>Projects</h3>
-        <h3>Get Started</h3>
-      </div>
       <div className="footer-links">
-        <div className="about-container">
+        <div className="links-container">
+          <h3>About</h3>
           <a
             href="https://www.linkedin.com/in/davidlai9/"
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn
+            <p>LinkedIn</p>
           </a>
           <a
             href="https://www.linkedin.com/in/davidlai9/"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            <p>GitHub</p>
           </a>
           <a
             href="https://www.linkedin.com/in/davidlai9/"
             target="_blank"
             rel="noreferrer"
           >
-            AngelList
+            <p>AngelList</p>
           </a>
         </div>
 
-        <div className="projects-container">
+        <div className="links-container">
+          <h3>Projects</h3>
+
           <a href="http://www.davidtlai.com/" target="_blank" rel="noreferrer">
-            Portfolio
+            <p>Portfolio</p>
           </a>
           <a
             href="https://ridealong-app.herokuapp.com/"
             target="_blank"
             rel="noreferrer"
           >
-            RideAlong
+            <p>RideAlong</p>
           </a>
           <a
             href="https://dtlai.github.io/stocktok/"
             target="_blank"
             rel="noreferrer"
           >
-            StockTok
+            <p>StockTok</p>
           </a>
         </div>
 
-        <div className="get-started-container">
+        <div className="links-container">
+          <h3>Get Started</h3>
+
           <Link className="get-started-link" to="/login">
-            Login
+            <p>Login</p>
           </Link>
           <Link className="get-started-link" to="/signup">
-            Sign Up
+            <p>Sign Up</p>
           </Link>
         </div>
       </div>
