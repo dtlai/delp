@@ -20,15 +20,35 @@ $primary-gray: rgb(241, 241, 241);
     .footer-links {
         display: flex;
         justify-content: center;
+
         .about-container {
-            margin-left: 100px;
+            margin-left: 50px;
             margin-right: 100px;
+            margin-top: 10px;
             a {
                 color: gray;
                 font-size: 14px;
                 text-decoration: none;
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 5px;
+            }
+            a:hover {
+                border-bottom: 1px solid gray;
+            }
+        }
+
+        .projects-container {
+            margin-left: 60px;
+            margin-right: 100px;
+            margin-top: 10px;
+            a {
+                color: gray;
+                font-size: 14px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 5px;
             }
             a:hover {
                 border-bottom: 1px solid gray;
@@ -36,14 +56,16 @@ $primary-gray: rgb(241, 241, 241);
         }
 
         .get-started-container {
-            margin-left: 100px;
+            margin-left: 90px;
             margin-right: 100px;
+            margin-top: 10px;
             .get-started-link {
                 color: gray;
                 font-size: 14px;
                 text-decoration: none;
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 5px;
             }
             .get-started-link:hover {
                 border-bottom: 1px solid gray;

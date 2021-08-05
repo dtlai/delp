@@ -34,8 +34,24 @@ const Footer = () => (
           </a>
         </div>
 
-        <div>
-            
+        <div className="projects-container">
+          <a href="http://www.davidtlai.com/" target="_blank" rel="noreferrer">
+            Portfolio
+          </a>
+          <a
+            href="https://ridealong-app.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            RideAlong
+          </a>
+          <a
+            href="https://dtlai.github.io/stocktok/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            StockTok
+          </a>
         </div>
 
         <div className="get-started-container">
@@ -55,9 +71,7 @@ const Footer = () => (
         />
       </div>
       <div className="copyright-container">
-        <p>
-          Copyright &copy; 2021 Delp Inc.
-        </p>
+        <p>Copyright &copy; 2021 Delp Inc.</p>
       </div>
     </div>
   </>
