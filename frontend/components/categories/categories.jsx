@@ -28,8 +28,8 @@ class Categories extends React.Component {
                   >
                     <div className="card-content">
                       <img
-                        src="https://i.imgur.com/ezW1IYA.png"
-                        alt="viet-food-pic"
+                        src="https://i.imgur.com/HSZMEvy.png"
+                        alt="americanfood"
                       />
                       <p>American</p>
                     </div>
@@ -57,7 +57,7 @@ class Categories extends React.Component {
                     <div className="card-content">
                       <img
                         src="https://i.imgur.com/ezW1IYA.png"
-                        alt="viet-food-pic"
+                        alt="vietfood"
                       />
                       <p>Vietnamese</p>
                     </div>
@@ -69,6 +69,10 @@ class Categories extends React.Component {
                     onClick={() => this.handleClick("Japanese")}
                   >
                     <div className="card-content">
+                      <img
+                        src="https://i.imgur.com/6aoMuEU.png"
+                        alt="japanesefood"
+                      />
                       <p>Japanese</p>
                     </div>
                   </div>
@@ -79,6 +83,10 @@ class Categories extends React.Component {
                     onClick={() => this.handleClick("Korean")}
                   >
                     <div className="card-content">
+                      <img
+                        src="https://i.imgur.com/QOBYd64.png"
+                        alt="koreanfood"
+                      />
                       <p>Korean</p>
                     </div>
                   </div>
