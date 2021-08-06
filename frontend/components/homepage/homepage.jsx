@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBarContainer from '../navbar/navbar_container'
-import BusinessContainer from '../business_page/business_container'
-import BusinessIndexContainer from '../business_page/business_index_container'
 import SearchBarContainer from '../search_form/search_form_container'
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 import Categories from '../categories/categories';
