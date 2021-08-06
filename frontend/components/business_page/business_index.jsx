@@ -36,6 +36,7 @@ class BusinessIndex extends React.Component {
             <Link to="/" className="logo-link">
               <img src="https://i.imgur.com/JrsNpWu.png" />
             </Link>
+            <SearchBarContainer />
             <div className="businesses-user-header">
               <NavBarContainer formType={this.props.formType} />
             </div>
