@@ -38,27 +38,34 @@ class SearchBar extends React.Component {
         return (
           <>
             <div className="search-form-container">
-              <form className="search-form" onSubmit={this.handleSubmit}>
-                <label className={`search-container1-${this.type}`}>
+              <form
+                className={`search-form-${this.type}`}
+                onSubmit={this.handleSubmit}
+              >
+                <label className={`search-container1`}>
                   {this.find}
                   <input
-                    className={`search-content1-${this.type}`}
+                    className={`search-content1`}
                     type="text"
                     value={this.state.query}
                     placeholder="restaurants, businesses..."
                     onChange={this.handleChange("query")}
                   />
                 </label>
-                <label className={`search-container2-${this.type}`}>
+                <label className={`search-container2`}>
                   {this.near}
                   <input
-                    className={`search-content2-${this.type}`}
+                    className={`search-content2`}
                     type="text"
                     placeholder="Los Angeles, CA 90012"
                   />
                 </label>
-                <button className={`search-button-${this.type}`}>
-                  <GiMagnifyingGlass className="search-icon" size={30} color="white" />
+                <button className={`search-button`}>
+                  <GiMagnifyingGlass
+                    className="search-icon"
+                    size={30}
+                    color="white"
+                  />
                 </button>
               </form>
             </div>

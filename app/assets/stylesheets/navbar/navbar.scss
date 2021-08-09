@@ -108,7 +108,7 @@ $primary-gray: rgb(241, 241, 241);
         display: flex;
         margin-left: auto;
         margin-right: 0;
-        margin-top: 20px;
+        margin-top: 10px;
         width: 220px;
         justify-content: space-between;
 
@@ -120,6 +120,8 @@ $primary-gray: rgb(241, 241, 241);
             padding: 7px 24px 8px;
             border-radius: 4px;
             text-decoration: none;
+            width: 50px;
+            height: 33px;
         }
         .signup-greeting {
             color: white;
@@ -130,6 +132,8 @@ $primary-gray: rgb(241, 241, 241);
             border-radius: 4px;
             text-decoration: none;
             outline: none;
+            width: 50px;
+            height: 33px;
         }
     }
     

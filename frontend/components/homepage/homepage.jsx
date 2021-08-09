@@ -76,7 +76,7 @@ class Homepage extends React.Component {
                         <p>LinkedIn</p>
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/davidlai9/"
+                        href="https://github.com/dtlai"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -88,7 +88,7 @@ class Homepage extends React.Component {
                         <p>GitHub</p>
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/davidlai9/"
+                        href="https://angel.co/u/davidtlai"
                         target="_blank"
                         rel="noreferrer"
                       >

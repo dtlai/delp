@@ -4,6 +4,7 @@ import NavBarContainer from "../navbar/navbar_container";
 import BusinessIndexMap from "../google_maps/business_index_map";
 import SearchBarContainer from "../search_form/search_form_container";
 import Footer from "../footer/footer";
+import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 class BusinessIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +37,30 @@ class BusinessIndex extends React.Component {
             <Link to="/" className="logo-link">
               <img src="https://i.imgur.com/JrsNpWu.png" />
             </Link>
-            <SearchBarContainer />
+            <SearchBarContainer formType={this.props.formType} />
+            <div className="navbar-links">
+              <a
+                href="https://www.linkedin.com/in/davidlai9/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin className="about-icon" size={30} color="black" />
+              </a>
+              <a
+                href="https://github.com/dtlai"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className="about-icon" size={30} color="black" />
+              </a>
+              <a
+                href="https://angel.co/u/davidtlai"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaAngellist className="about-icon" size={30} color="black" />
+              </a>
+            </div>
             <div className="businesses-user-header">
               <NavBarContainer formType={this.props.formType} />
             </div>
