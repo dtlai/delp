@@ -6,6 +6,7 @@ import ReviewIndexContainer from "../reviews/review_index_container";
 import { BusinessMap } from "../google_maps/business_map";
 import SearchBarContainer from "../search_form/search_form_container";
 import Footer from "../footer/footer";
+import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 class Business extends React.Component {
   constructor(props) {
     super(props);
@@ -48,12 +49,37 @@ class Business extends React.Component {
       <>
         <div className="businesses-container">
           <div className="businesses-header-container">
-            <Link to="/" className="logo-link">
-              <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/actual_delp.png" />
-            </Link>
-            <div className="businesses-user-header">
-              <NavBarContainer formType={this.props.formType} />
-              <SearchBarContainer formtype={this.props.formType} />
+            <div className="business-header">
+              <Link to="/" className="logo-link">
+                <img src="https://i.imgur.com/JrsNpWu.png" />
+              </Link>
+              <SearchBarContainer formType={this.props.formType} />
+              <div className="navbar-links">
+                <a
+                  href="https://www.linkedin.com/in/davidlai9/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin className="about-icon" size={30} color="black" />
+                </a>
+                <a
+                  href="https://github.com/dtlai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub className="about-icon" size={30} color="black" />
+                </a>
+                <a
+                  href="https://angel.co/u/davidtlai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaAngellist className="about-icon" size={30} color="black" />
+                </a>
+              </div>
+              <div className="businesses-user-header">
+                <NavBarContainer formType={this.props.formType} />
+              </div>
             </div>
           </div>
           <div className="business-map">

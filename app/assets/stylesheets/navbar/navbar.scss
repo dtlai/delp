@@ -8,42 +8,45 @@ $primary-gray: rgb(241, 241, 241);
     font-family: $open-sans;
     font-size: 14px;
     .nav-logout-container {
-        display: flex;
-        justify-content: flex-end;
-        color: $primary-gray;
+        .nav-logout-content {
+            display: flex;
+            justify-content: flex-end;
+            color: $primary-gray;
 
-        .login-greeting {
-            color: white;
-            cursor: pointer;
-            text-decoration: none;
-            border-color: transparent;
-            background: transparent;
-            outline: none;
-            margin-right: 7px;
-            margin-left: 7px;
-            padding: 9px 12px 8px;
+            .login-greeting {
+                color: white;
+                cursor: pointer;
+                text-decoration: none;
+                border-color: transparent;
+                background: transparent;
+                outline: none;
+                margin-right: 7px;
+                margin-left: 7px;
+                padding: 9px 12px 8px;
+            }
+
+            .login-greeting:hover {
+                border-bottom: 2px solid white;
+            }
+
+            .signup-greeting {
+                color: white;
+                padding: 7px 24px 8px;
+                background: transparent;
+                border: white solid 2px;
+                border-radius: 4px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .signup-greeting:hover {
+                background-color: white;
+                color: gray;
+            }
+
         }
-
-        .login-greeting:hover {
-            border-bottom: 2px solid white;
-        }
-
-        .signup-greeting {
-            color: white;
-            padding: 7px 24px 8px;
-            background: transparent;
-            border: white solid 2px;
-            border-radius: 4px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .signup-greeting:hover {
-            background-color: white;
-            color: gray;
-        }
-
     }
+    
 
     .user-session-container {
         .dropbtn {
@@ -110,28 +113,40 @@ $primary-gray: rgb(241, 241, 241);
         margin-right: 0;
         margin-top: 10px;
         width: 220px;
-        justify-content: space-between;
+
 
         .login-greeting {
-            color: gray;
+            color: black;
             font-weight: bold;
             background-color: white;
             border: 1px solid gray;
-            padding: 7px 24px 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 20px 5px;
             border-radius: 4px;
             text-decoration: none;
+            // margin-left: 10px;
+            // margin-right: 10px;
             width: 50px;
             height: 33px;
+        }
+        .login-greeting:hover {
+            background-color: gray;
         }
         .signup-greeting {
             color: white;
             font-weight: bold;
             background-color: red;
             border: none;
-            padding: 7px 24px 8px;
+            display: flex;
+            justify-content: center;
+            padding: 5px 20px 5px;
             border-radius: 4px;
             text-decoration: none;
             outline: none;
+            // margin-left: 10px;
+            // margin-right: 10px;
             width: 50px;
             height: 33px;
         }

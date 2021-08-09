@@ -10,32 +10,41 @@ $primary-gray: rgb(241, 241, 241);
     
     .businesses-header-container {
         display: flex;
-        justify-content: space-between;
         height: 120px;
         background-color: $primary-gray;
-        .logo-link {
+
+        .business-header {
             display: flex;
-            margin-left: 5%;
-            margin-right: auto;
-            margin-top: 40px;
-            img {
-                height: 50px;
-            }
-        }
-        .businesses-user-header {
-            margin-right: 5%;
-        }
-        .navbar-links {
-            .about-icon {
-                margin-left: 5px;
-                margin-right: 5px;
+            margin-left: 50px;
+            .logo-link {
+                display: flex;
+                margin-right: 30px;
+                margin-left: 30px;
                 margin-top: 40px;
+                img {
+                    height: 50px;
+                }
             }
-            .about-icon:hover {
-                background-color: rgb(190, 190, 190);
-                border-radius: 10px;
+            .navbar-links {
+                margin-left: 80px;
+                display: flex;
+                .about-icon {
+                    
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    margin-top: 55px;
+                }
+                .about-icon:hover {
+                    background-color: rgb(190, 190, 190);
+                    border-radius: 10px;
+                }
             }
+            .businesses-user-header {
+                display: flex;
+            }
+            
         }
+        
     }
     .list-of-bizs {
         display: grid;

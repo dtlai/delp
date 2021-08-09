@@ -34,35 +34,37 @@ class BusinessIndex extends React.Component {
       <>
         <div className="businesses-container">
           <div className="businesses-header-container">
-            <Link to="/" className="logo-link">
-              <img src="https://i.imgur.com/JrsNpWu.png" />
-            </Link>
-            <SearchBarContainer formType={this.props.formType} />
-            <div className="navbar-links">
-              <a
-                href="https://www.linkedin.com/in/davidlai9/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin className="about-icon" size={30} color="black" />
-              </a>
-              <a
-                href="https://github.com/dtlai"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub className="about-icon" size={30} color="black" />
-              </a>
-              <a
-                href="https://angel.co/u/davidtlai"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaAngellist className="about-icon" size={30} color="black" />
-              </a>
-            </div>
-            <div className="businesses-user-header">
-              <NavBarContainer formType={this.props.formType} />
+            <div className="business-header">
+              <Link to="/" className="logo-link">
+                <img src="https://i.imgur.com/JrsNpWu.png" />
+              </Link>
+              <SearchBarContainer formType={this.props.formType} />
+              <div className="navbar-links">
+                <a
+                  href="https://www.linkedin.com/in/davidlai9/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin className="about-icon" size={30} color="black" />
+                </a>
+                <a
+                  href="https://github.com/dtlai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub className="about-icon" size={30} color="black" />
+                </a>
+                <a
+                  href="https://angel.co/u/davidtlai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaAngellist className="about-icon" size={30} color="black" />
+                </a>
+              </div>
+              <div className="businesses-user-header">
+                <NavBarContainer formType={this.props.formType} />
+              </div>
             </div>
           </div>
           <div className="businesses-map">
