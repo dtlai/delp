@@ -49,6 +49,7 @@ $primary-gray: rgb(241, 241, 241);
     
 
     .user-session-container {
+        
         .dropbtn {
             img {
                 height: 30px;
@@ -79,11 +80,21 @@ $primary-gray: rgb(241, 241, 241);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     display: flex;
-    // margin-left: auto;
-    // margin-right: 0;
-    margin-top: 35px;
+    margin-top: 50px;
+    margin-left: 10px;
     width: 220px;
 
+    .user-info {
+        margin-top: 10px;    
+    }
+    .session-button {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
     .user-session-container {
         .dropbtn {
             img {

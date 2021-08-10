@@ -73,11 +73,9 @@ class NavBar extends React.Component {
               <div className="user-info">
                 {firstName}&nbsp;{lastName}
               </div>
-              <div>
-                <button className="session-button" onClick={this.logoutUser}>
-                  Logout
-                </button>
-              </div>
+              <button className="session-button" onClick={this.logoutUser}>
+                Logout
+              </button>
             </div>
           ) : null}
         </div>
