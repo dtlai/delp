@@ -10,16 +10,16 @@ $primary-gray: rgb(241, 241, 241);
     
     .businesses-header-container {
         display: flex;
-        height: 120px;
+        height: 140px;
         background-color: $primary-gray;
+        justify-content: center;
 
         .business-header {
             display: flex;
-            margin-left: 50px;
             .logo-link {
                 display: flex;
                 margin-right: 30px;
-                margin-left: 30px;
+                // margin-left: 30px;
                 margin-top: 40px;
                 img {
                     height: 50px;

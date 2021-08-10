@@ -79,9 +79,9 @@ $primary-gray: rgb(241, 241, 241);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     display: flex;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 40px;
+    // margin-left: auto;
+    // margin-right: 0;
+    margin-top: 35px;
     width: 220px;
 
     .user-session-container {
@@ -109,47 +109,51 @@ $primary-gray: rgb(241, 241, 241);
 
     .nav-logout-container {
         display: flex;
-        margin-left: auto;
-        margin-right: 0;
         margin-top: 10px;
-        width: 220px;
+        // width: 220px;
 
+        .nav-logout-content {
+            display: flex;
+            .login-greeting {
+                color: black;
+                font-weight: bold;
+                background-color: white;
+                border: 1px solid gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 20px 5px;
+                border-radius: 4px;
+                text-decoration: none;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                width: 60px;
+                height: 33px;
+            }
+            .login-greeting:hover {
+                background-color: gray;
+            }
+            .signup-greeting {
+                color: white;
+                font-weight: bold;
+                background-color: red;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 20px 5px;
+                border-radius: 4px;
+                text-decoration: none;
+                outline: none;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 60px;
+                height: 33px;
+            }
+        }
 
-        .login-greeting {
-            color: black;
-            font-weight: bold;
-            background-color: white;
-            border: 1px solid gray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5px 20px 5px;
-            border-radius: 4px;
-            text-decoration: none;
-            // margin-left: 10px;
-            // margin-right: 10px;
-            width: 50px;
-            height: 33px;
-        }
-        .login-greeting:hover {
-            background-color: gray;
-        }
-        .signup-greeting {
-            color: white;
-            font-weight: bold;
-            background-color: red;
-            border: none;
-            display: flex;
-            justify-content: center;
-            padding: 5px 20px 5px;
-            border-radius: 4px;
-            text-decoration: none;
-            outline: none;
-            // margin-left: 10px;
-            // margin-right: 10px;
-            width: 50px;
-            height: 33px;
-        }
+        
     }
     
 }
