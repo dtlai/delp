@@ -59,7 +59,9 @@ class SignupForm extends React.Component {
             </div>
             <div className="signup-form-field-container">
               <form onSubmit={this.handleSubmit} className="signup-form-box">
-                {this.renderErrors()}
+                <div className="signup-errors">
+                  {this.renderErrors()}
+                </div>
                 <div className="signup-form-fields">
                   <div className="fname-lname">
                     <label className="fname-label">

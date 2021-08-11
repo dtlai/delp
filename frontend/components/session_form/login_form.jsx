@@ -60,7 +60,9 @@ class LoginForm extends React.Component {
             </div>
             <div className="login-form-field-container">
               <form onSubmit={this.handleSubmit} className="login-form-box">
-                {this.renderErrors()}
+                <div className="login-errors">
+                  {this.renderErrors()} 
+                </div>
                 <div className="login-form-fields">
                   <div>
                     <label>

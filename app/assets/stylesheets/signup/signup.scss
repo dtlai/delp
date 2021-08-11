@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-$open-sans: 'Open Sans', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+// $open-sans: 'Open Sans', sans-serif;
 
 .whole-signup-page {
     display: flex;
@@ -37,6 +37,9 @@ $open-sans: 'Open Sans', sans-serif;
 .signup-form-field-container {
     display: flex;
     flex-direction: column;
+    .signup-errors {
+        color: red;
+    }
 }
 
 .signup-form-fields {

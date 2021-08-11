@@ -61,12 +61,12 @@ business4 = Business.create!(
     price_range: '$$',
 )
 
-bizfile1_1 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang1.jpeg')
+bizfile1_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/haejang/haejang11.jpeg')
 bizfile1_2 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang2.jpeg')
 bizfile1_3 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang3.jpeg')
 bizfile1_4 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang4.jpeg')
 
-business1.photos.attach(io: bizfile1_1, filename: 'haejang1.jpeg')
+business1.photos.attach(io: bizfile1_1, filename: 'haejang11.jpeg')
 business1.photos.attach(io: bizfile1_2, filename: 'haejang2.jpeg')
 business1.photos.attach(io: bizfile1_3, filename: 'haejang3.jpeg')
 business1.photos.attach(io: bizfile1_4, filename: 'haejang4.jpeg')

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $open-sans: 'Open Sans', sans-serif;
 // $primary-gray: rgb(216, 216, 216);
 $primary-gray: rgb(241, 241, 241);
@@ -47,7 +47,14 @@ $primary-gray: rgb(241, 241, 241);
         }
     }
     
-
+    .session-button {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
     .user-session-container {
         
         .dropbtn {
@@ -56,6 +63,9 @@ $primary-gray: rgb(241, 241, 241);
             }
         }
         .user-session-content {
+            .user-info {
+                margin-top: 10px;
+            }
             position: absolute;
             background-color: white;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
@@ -80,8 +90,7 @@ $primary-gray: rgb(241, 241, 241);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     display: flex;
-    margin-top: 50px;
-    margin-left: 10px;
+    margin-top: 40px;
     width: 220px;
 
     .user-info {
@@ -96,6 +105,8 @@ $primary-gray: rgb(241, 241, 241);
         font-size: 14px;
     }
     .user-session-container {
+        margin-top: 10px;
+        margin-left: 20px;
         .dropbtn {
             img {
                 height: 30px;

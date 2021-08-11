@@ -4,12 +4,11 @@ import { fetchBusiness } from '../../actions/business_actions';
 import ReviewForm from './review_form'
 
 const mapStateToProps = (state, ownProps) => {
-    console.log(ownProps)
     return {
-    business: state.entities.businesses[ownProps.match.params.businessId],
-    currentUser: state.entities.users[state.session.id],
-    userId: state.session.id,
-    errors: state.errors.review,
+        business: state.entities.businesses[ownProps.match.params.businessId],
+        currentUser: state.entities.users[state.session.id],
+        userId: state.session.id,
+        errors: state.errors.review,
     }
 };
 

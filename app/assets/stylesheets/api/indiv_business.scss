@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $open-sans: 'Open Sans Condensed', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@800&display=swap');
-$montserrat: 'Montserrat', sans-serif;
 $primary-gray: rgb(241, 241, 241);
 
 .businesses-container {
@@ -39,6 +37,8 @@ $primary-gray: rgb(241, 241, 241);
         
 
         .biz-name-container {
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900display=swap');
+            $montserrat: 'Montserrat', sans-serif;
             .biz-name {
                 font-family: $montserrat;
                 position: absolute;
@@ -47,7 +47,6 @@ $primary-gray: rgb(241, 241, 241);
                 color: white;
                 left: 100px;
                 font-size: 48px;
-                // z-index: 10;
             }
         }
 
