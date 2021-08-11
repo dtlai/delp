@@ -33,8 +33,8 @@ class BusinessIndex extends React.Component {
     return (
       <>
         <div className="businesses-container">
-          <div className="businesses-header-container">
-            <div className="business-header">
+          <div className="nav-header-container">
+            <div className="nav-header">
               <Link to="/" className="logo-link">
                 <img src="https://i.imgur.com/JrsNpWu.png" />
               </Link>
@@ -62,7 +62,7 @@ class BusinessIndex extends React.Component {
                   <FaAngellist className="about-icon" size={30} color="black" />
                 </a>
               </div>
-              <div className="businesses-user-header">
+              <div className="nav-user-header">
                 <NavBarContainer formType={this.props.formType} />
               </div>
             </div>

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $open-sans: 'Open Sans Condensed', sans-serif;
 
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+// $montserrat: 'Montserrat', sans-serif;
+
 $primary-gray: rgb(241, 241, 241);
 
 .businesses-container {
@@ -11,8 +14,7 @@ $primary-gray: rgb(241, 241, 241);
             position: relative;
             width: 100%;
             display: inline-flex;
-            // background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 65%);
-            // z-index: 1;
+
             .biz-pic-container {
                 width: 25%;
                 .biz-pic {
@@ -20,7 +22,6 @@ $primary-gray: rgb(241, 241, 241);
                     height: 400px;
                     width: 100%;
                     object-fit: cover; //scale-down; //scale-down
-                    // z-index: -10;
                 }
             }
             
@@ -31,16 +32,15 @@ $primary-gray: rgb(241, 241, 241);
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 30.42%, #0000004a);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 30.42%, #00000070);
             }
         }
         
 
         .biz-name-container {
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900display=swap');
-            $montserrat: 'Montserrat', sans-serif;
+            
             .biz-name {
-                font-family: $montserrat;
+                // font-family: $montserrat;
                 position: absolute;
                 font-weight: 900;
                 top: 300px;

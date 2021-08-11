@@ -9,6 +9,7 @@ const mapStateToProps = (state, ownProps) => {
         currentUser: state.entities.users[state.session.id],
         userId: state.session.id,
         errors: state.errors.review,
+        formType: 'other',
     }
 };
 

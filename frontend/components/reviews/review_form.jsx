@@ -1,6 +1,10 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import Footer from "../footer/footer";
+import NavBarContainer from '../navbar/navbar_container'
+import { Link } from "react-router-dom";
+import SearchBarContainer from '../search_form/search_form_container'
+import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
 class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
@@ -63,6 +67,40 @@ class ReviewForm extends React.Component {
     return (
       <>
         <div className="review-form-container">
+          <div className="nav-header-container">
+            <div className="nav-header">
+            <Link to="/" className="logo-link">
+                <img src="https://i.imgur.com/JrsNpWu.png" />
+            </Link>
+              <SearchBarContainer formType={this.props.formType} />
+              <div className="navbar-links">
+                <a
+                  href="https://www.linkedin.com/in/davidlai9/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin className="about-icon" size={30} color="black" />
+                </a>
+                <a
+                  href="https://github.com/dtlai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub className="about-icon" size={30} color="black" />
+                </a>
+                <a
+                  href="https://angel.co/u/davidtlai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaAngellist className="about-icon" size={30} color="black" />
+                </a>
+              </div>
+              <div className="nav-user-header">
+                <NavBarContainer formType={this.props.formType} />
+              </div>
+            </div>
+          </div>
           <h3>{this.props.business.name}</h3>
           <div className="review-form">
             <form onSubmit={this.handleSubmit} className="review-form-box">
@@ -114,15 +152,21 @@ class ReviewForm extends React.Component {
                 </label>
               </div>
               <div>
-                  <input type="text-area" className="review-message-message" onChange={this.handleMessage} value={this.state.message} placeholder="Please write a message"/>
+                <input
+                  type="text-area"
+                  className="review-message-message"
+                  onChange={this.handleMessage}
+                  value={this.state.message}
+                  placeholder="Please write a message"
+                />
               </div>
               <div>
-                  <button className="review-submit-button">Post Review</button>
+                <button className="review-submit-button">Post Review</button>
               </div>
             </form>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </>
     );
   }

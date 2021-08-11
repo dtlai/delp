@@ -1,3 +1,42 @@
 // Place all the styles related to the api::reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$open-sans: 'Open Sans', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+// $montserrat: 'Montserrat', sans-serif;
+
+.review-form-container {
+    // .review-form-header {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     height: 140px;
+    //     background-color: $primary-gray;
+
+    //     .logo-link {
+    //         display: flex;
+    //         margin-top: 40px;
+    //         margin-left: 20px;
+    //         img {
+    //             height: 50px;
+    //         }
+    //     }
+    // }
+    h3 {
+        margin-left: 40px;
+        font-size: 28px;
+        // font-family: $montserrat;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+    .review-form {
+        display: flex;
+        margin-left: 40px;
+        border: 1px solid gray;
+        padding: 30px;
+        border-radius: 4px;
+        
+    }
+    
+}

@@ -48,8 +48,8 @@ class Business extends React.Component {
     return (
       <>
         <div className="businesses-container">
-          <div className="businesses-header-container">
-            <div className="business-header">
+          <div className="nav-header-container">
+            <div className="nav-header">
               <Link to="/" className="logo-link">
                 <img src="https://i.imgur.com/JrsNpWu.png" />
               </Link>
@@ -77,10 +77,18 @@ class Business extends React.Component {
                   <FaAngellist className="about-icon" size={30} color="black" />
                 </a>
               </div>
-              <div className="businesses-user-header">
+              <div className="nav-user-header">
                 <NavBarContainer formType={this.props.formType} />
               </div>
             </div>
+          </div>
+          <div className="create-review-button">
+            <button
+              className="review-button"
+              onClick={() => this.goCreateReview()}
+            >
+              Write a Review
+            </button>
           </div>
           <div className="indiv-business-container">
             <div className="business-pics-container">
@@ -110,14 +118,6 @@ class Business extends React.Component {
           </div>
           <div>
             <ReviewIndexContainer />
-          </div>
-          <div className="create-review-button">
-            <button
-              className="review-button"
-              onClick={() => this.goCreateReview()}
-            >
-              Write a Review
-            </button>
           </div>
         </div>
         <Footer />
