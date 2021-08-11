@@ -82,6 +82,29 @@ class Business extends React.Component {
               </div>
             </div>
           </div>
+          <div className="indiv-business-container">
+            <div className="business-pics-container">
+              {this.props.business.photoUrls.map((photoUrl, i) => (
+                <div className="biz-pic-container">
+                  <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
+                </div>
+              ))}
+            </div>
+            <div className="biz-name-container">
+              <p className="biz-name">{this.props.business.name}</p>
+            </div>
+            <div className="business-info">
+              <p className="biz-address">{this.props.business.address}</p>
+              <p className="biz-city">{this.props.business.city}</p>
+              <p className="biz-state">{this.props.business.state}</p>
+              <p className="biz-biz-zipcode">{this.props.business.biz_zipcode}</p>
+              <p className="biz-price-range">{this.props.business.price_range}</p>
+              <p className="biz-phone-number">{this.props.business.phone_number}</p>
+            </div>
+            <Link to="/businesses" className="logo-link">
+              <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
+            </Link>
+          </div>
           <div className="business-map">
             <BusinessMap business={this.props.business} />
           </div>
@@ -95,27 +118,6 @@ class Business extends React.Component {
             >
               Write a Review
             </button>
-          </div>
-          <div className="indiv-business-container">
-            <div className="business-pics-container">
-              {this.props.business.photoUrls.map((photoUrl, i) => (
-                <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
-              ))}
-            </div>
-            <div className="biz-name-container">
-              <p id="biz-name">{this.props.business.name}</p>
-            </div>
-            <ul className="business-info">
-              <li id="biz-address">{this.props.business.address}</li>
-              <li id="biz-city">{this.props.business.city}</li>
-              <li id="biz-state">{this.props.business.state}</li>
-              <li id="biz-biz-zipcode">{this.props.business.biz_zipcode}</li>
-              <li id="biz-price-range">{this.props.business.price_range}</li>
-              <li id="biz-phone-number">{this.props.business.phone_number}</li>
-            </ul>
-            <Link to="/businesses" className="go-back-to-biz">
-              <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
-            </Link>
           </div>
         </div>
         <Footer />
