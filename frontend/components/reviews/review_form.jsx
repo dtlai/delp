@@ -69,9 +69,9 @@ class ReviewForm extends React.Component {
         <div className="review-form-container">
           <div className="nav-header-container">
             <div className="nav-header">
-            <Link to="/" className="logo-link">
+              <Link to="/" className="logo-link">
                 <img src="https://i.imgur.com/JrsNpWu.png" />
-            </Link>
+              </Link>
               <SearchBarContainer formType={this.props.formType} />
               <div className="navbar-links">
                 <a
@@ -101,70 +101,73 @@ class ReviewForm extends React.Component {
               </div>
             </div>
           </div>
-          <h3>{this.props.business.name}</h3>
-          <div className="review-form">
-            <form onSubmit={this.handleSubmit} className="review-form-box">
-              <div className="review-content-container">
-                <label>
-                  Not Good
-                  <input
-                    name="rating"
-                    type="radio"
-                    onChange={this.handleRating}
-                    value="1"
+          <div className="form-container">
+            <h3>{this.props.business.name}</h3>
+            <div className="review-form">
+              <form onSubmit={this.handleSubmit} className="review-form-box">
+                <div className="review-content-container">
+                  <label>
+                    Not Good
+                    <input
+                      name="rating"
+                      type="radio"
+                      onChange={this.handleRating}
+                      value="1"
+                    />
+                  </label>
+                  <label>
+                    Could've been better
+                    <input
+                      name="rating"
+                      type="radio"
+                      onChange={this.handleRating}
+                      value="2"
+                    />
+                  </label>
+                  <label>
+                    OK
+                    <input
+                      name="rating"
+                      type="radio"
+                      onChange={this.handleRating}
+                      value="3"
+                    />
+                  </label>
+                  <label>
+                    Good
+                    <input
+                      name="rating"
+                      type="radio"
+                      onChange={this.handleRating}
+                      value="4"
+                    />
+                  </label>
+                  <label>
+                    Great
+                    <input
+                      name="rating"
+                      type="radio"
+                      onChange={this.handleRating}
+                      value="5"
+                    />
+                  </label>
+                </div>
+                <div>
+                  <textarea
+                    // type="text-area"
+                    className="review-message-message"
+                    onChange={this.handleMessage}
+                    value={this.state.message}
+                    placeholder="Please write a review for this business. Also if you would like, you can also leave a review for this application and let me know what you think of this. I do hope you had a good experience and enjoyed browsing through my Yelp-inspired application. Many thanks."
                   />
-                </label>
-                <label>
-                  Could've been better
-                  <input
-                    name="rating"
-                    type="radio"
-                    onChange={this.handleRating}
-                    value="2"
-                  />
-                </label>
-                <label>
-                  OK
-                  <input
-                    name="rating"
-                    type="radio"
-                    onChange={this.handleRating}
-                    value="3"
-                  />
-                </label>
-                <label>
-                  Good
-                  <input
-                    name="rating"
-                    type="radio"
-                    onChange={this.handleRating}
-                    value="4"
-                  />
-                </label>
-                <label>
-                  Great
-                  <input
-                    name="rating"
-                    type="radio"
-                    onChange={this.handleRating}
-                    value="5"
-                  />
-                </label>
-              </div>
-              <div>
-                <input
-                  type="text-area"
-                  className="review-message-message"
-                  onChange={this.handleMessage}
-                  value={this.state.message}
-                  placeholder="Please write a message"
-                />
-              </div>
-              <div>
-                <button className="review-submit-button">Post Review</button>
-              </div>
-            </form>
+                </div>
+                <div>
+                  <button className="review-submit-button">Post Review</button>
+                </div>
+              </form>
+            </div>
           </div>
+
           <Footer />
         </div>
       </>

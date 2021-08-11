@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $open-sans: 'Open Sans Condensed', sans-serif;
 
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-// $montserrat: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+$montserrat: 'Montserrat', sans-serif;
 
 $primary-gray: rgb(241, 241, 241);
 
@@ -40,7 +40,7 @@ $primary-gray: rgb(241, 241, 241);
         .biz-name-container {
             
             .biz-name {
-                // font-family: $montserrat;
+                font-family: $montserrat;
                 position: absolute;
                 font-weight: 900;
                 top: 300px;
