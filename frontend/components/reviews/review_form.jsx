@@ -158,13 +158,13 @@ class ReviewForm extends React.Component {
                     className="review-message-message"
                     onChange={this.handleMessage}
                     value={this.state.message}
-                    placeholder="Please write a review for this business. Also if you would like, you can also leave a review for this application and let me know what you think of this. I do hope you had a good experience and enjoyed browsing through my Yelp-inspired application. Many thanks."
+                    placeholder="Please write a review for this business. Also if you would like, you can also leave a review for this application and let me know what you think of it. I do hope you had a good experience and enjoyed browsing through my Yelp-inspired application. Many thanks."
                   />
                 </div>
-                <div>
-                  <button className="review-submit-button">Post Review</button>
-                </div>
               </form>
+            </div>
+            <div className="review-submit-button">
+              <button className="submit-button">Post Review</button>
             </div>
           </div>
 
