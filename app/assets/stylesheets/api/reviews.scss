@@ -46,27 +46,25 @@ $montserrat: 'Montserrat', sans-serif;
             
         }
 
-        .review-submit-button {
+        .submit-button {
             margin-top: 20px;
-            .submit-button {
-                color: white;
-                font-weight: bold;
-                background-color: red;
-                border: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 5px 20px 5px;
-                border-radius: 4px;
-                text-decoration: none;
-                outline: none;
-                width: 200px;
-                height: 40px;
-                cursor: pointer;
-                font-size: 16px;
-            }
-                
+            color: white;
+            font-weight: bold;
+            background-color: red;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 20px 5px;
+            border-radius: 4px;
+            text-decoration: none;
+            outline: none;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 16px;
         }
+                
     }
     
     

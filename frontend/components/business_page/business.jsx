@@ -7,6 +7,8 @@ import { BusinessMap } from "../google_maps/business_map";
 import SearchBarContainer from "../search_form/search_form_container";
 import Footer from "../footer/footer";
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
+import { BsStar } from "react-icons/bs"
+
 class Business extends React.Component {
   constructor(props) {
     super(props);
@@ -82,14 +84,6 @@ class Business extends React.Component {
               </div>
             </div>
           </div>
-          <div className="create-review-button">
-            <button
-              className="review-button"
-              onClick={() => this.goCreateReview()}
-            >
-              Write a Review
-            </button>
-          </div>
           <div className="indiv-business-container">
             <div className="business-pics-container">
               {this.props.business.photoUrls.map((photoUrl, i) => (
@@ -98,6 +92,22 @@ class Business extends React.Component {
                 </div>
               ))}
             </div>
+            <div className="create-review-button">
+              <button
+                className="review-button"
+                onClick={() => this.goCreateReview()}
+              >
+                <div className="star-pic">
+                  <BsStar />
+                </div>
+                {/* <img
+                  className="star-pic"
+                  src="https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2@2x.yji-6fb03840141c3117356e128a78ab81e7.png"
+                  alt="star"
+                /> */}
+                Write a Review
+              </button>
+            </div>
             <div className="biz-name-container">
               <p className="biz-name">{this.props.business.name}</p>
             </div>
@@ -105,9 +115,15 @@ class Business extends React.Component {
               <p className="biz-address">{this.props.business.address}</p>
               <p className="biz-city">{this.props.business.city}</p>
               <p className="biz-state">{this.props.business.state}</p>
-              <p className="biz-biz-zipcode">{this.props.business.biz_zipcode}</p>
-              <p className="biz-price-range">{this.props.business.price_range}</p>
-              <p className="biz-phone-number">{this.props.business.phone_number}</p>
+              <p className="biz-biz-zipcode">
+                {this.props.business.biz_zipcode}
+              </p>
+              <p className="biz-price-range">
+                {this.props.business.price_range}
+              </p>
+              <p className="biz-phone-number">
+                {this.props.business.phone_number}
+              </p>
             </div>
             <Link to="/businesses" className="logo-link">
               <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
