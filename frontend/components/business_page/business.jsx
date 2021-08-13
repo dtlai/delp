@@ -16,6 +16,7 @@ class Business extends React.Component {
       hasFetched: false,
     };
     this.avgStar = 1;
+    this.oneStar = (<div></div>);
   }
 
   componentDidMount() {
@@ -57,13 +58,17 @@ class Business extends React.Component {
       sumRating += this.props.business.reviews[i].rating;
     }
 
+    // if (numReviews === 0) {
+    //   numReviews = 1;
+    // }
+
     avgRating = sumRating / numReviews * 1.00;
 
-    if (avgRating === 0) {
+    if (avgRating < 1) {
       avgRating = 1;
     }
 
-    // this.avgStar = avgRating;
+    this.avgStar = avgRating;
 
     // switch (avgRating) {
     //   case (avgRating >= 1) || (avgRating < 1.5):

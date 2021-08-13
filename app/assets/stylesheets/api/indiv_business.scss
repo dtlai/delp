@@ -56,8 +56,9 @@ $primary-gray: rgb(241, 241, 241);
             position: absolute;
             left: 100px;
             top: 400px;
+            display: flex;
             .biz-category {
-                
+                margin-right: 5px;
             }
         }
 
