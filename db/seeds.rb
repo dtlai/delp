@@ -108,9 +108,19 @@ business4.photos.attach(io: bizfile4_4, filename: 'shinsengumi1.jpeg')
 
 korean_cat = Category.create!(category: "Korean")
 japanese_cat = Category.create!(category: "Japanese")
+lunch_cat = Category.create!(category: "Lunch")
+dinner_cat = Category.create!(category: "Dinner")
+
 
 
 b_c1 = BusinessCategory.create!(business_id: business1.id, category_id: korean_cat.id)
+b_c1 = BusinessCategory.create!(business_id: business1.id, category_id: dinner_cat.id)
+
 b_c2 = BusinessCategory.create!(business_id: business2.id, category_id: korean_cat.id)
+b_c2 = BusinessCategory.create!(business_id: business2.id, category_id: lunch_cat.id)
+
 b_c3 = BusinessCategory.create!(business_id: business3.id, category_id: japanese_cat.id)
+b_c3 = BusinessCategory.create!(business_id: business3.id, category_id: dinner_cat.id)
+
 b_c4 = BusinessCategory.create!(business_id: business4.id, category_id: japanese_cat.id)
+b_c4 = BusinessCategory.create!(business_id: business4.id, category_id: lunch_cat.id)

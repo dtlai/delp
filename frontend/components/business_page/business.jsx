@@ -63,8 +63,7 @@ class Business extends React.Component {
       avgRating = 1;
     }
 
-    this.avgStar = avgRating;
-    // let businessRating = avgRating;
+    // this.avgStar = avgRating;
 
     // switch (avgRating) {
     //   case (avgRating >= 1) || (avgRating < 1.5):
@@ -146,15 +145,24 @@ class Business extends React.Component {
             </div>
             <div className="biz-reviews-container">
               <div className="biz-stars">{this.avgStar}</div>
-              {/* <div className="biz-stars">{avgRating}</div> */}
               <div className="num-reviews">{numReviews}</div>
             </div>
             <div className="biz-categories-container">
-              {this.props.business.categories.map((category, i) => (
-                <div className="biz-category" key={i}>
-                  {category.category}
-                </div>
-              ))}
+              {this.props.business.categories.map((category, i) => {
+                if (i !== this.props.business.categories.length - 1) {
+                  return (
+                    <div className="biz-category" key={i}>
+                      {category.category},{" "}
+                    </div>
+                  ); 
+                } else {
+                  return (
+                    <div className="biz-category" key={i}>
+                      {category.category}{" "}
+                    </div>
+                  );
+                }
+              })}
             </div>
             <div className="biz-hours">
               <h3>Open</h3>
@@ -168,11 +176,6 @@ class Business extends React.Component {
                 <div className="star-pic">
                   <BsStar />
                 </div>
-                {/* <img
-                  className="star-pic"
-                  src="https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2@2x.yji-6fb03840141c3117356e128a78ab81e7.png"
-                  alt="star"
-                /> */}
                 Write a Review
               </button>
             </div>
