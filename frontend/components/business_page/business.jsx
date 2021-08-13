@@ -15,6 +15,7 @@ class Business extends React.Component {
     this.state = {
       hasFetched: false,
     };
+    this.avgStar = 1;
   }
 
   componentDidMount() {
@@ -47,6 +48,55 @@ class Business extends React.Component {
     if (!this.props.business) {
       return <div>Loading...</div>;
     }
+
+    let sumRating = 0;
+    let avgRating = 0;
+    // let numReviews = this.props.business.reviews.length;
+    let numReviews = 1;
+
+    // for (let i = 0; i < numReviews; i++) {
+    //   sumRating += this.props.business.reviews[i].avgRating;
+    // }
+
+    avgRating = sumRating / numReviews;
+    if (avgRating === 0) {
+      avgRating = 1;
+    }
+    // let businessRating = avgRating;
+
+    // switch (avgRating) {
+    //   case (avgRating >= 1) || (avgRating < 1.5):
+    //     this.avgStar = this.oneStar;
+    //     break;
+    //   case (avgRating >= 1.5) || (avgRating < 2):
+    //     this.avgStar = this.oneHalfStar;
+    //     break;
+    //   case (avgRating >= 2) || (avgRating < 2.5):
+    //     this.avgStar = this.twoStar;
+    //     break;
+    //   case (avgRating >= 2.5) || (avgRating < 3):
+    //     this.avgStar = this.twoHalfStar;
+    //     break;
+    //   case (avgRating >= 3) || (avgRating < 3.5):
+    //     this.avgStar = this.threeStar;
+    //     break;
+    //   case (avgRating >= 3.5) || (avgRating < 4):
+    //     this.avgStar = this.threeHalfStar;
+    //     break;
+    //   case (avgRating >= 4) || (avgRating < 4.5):
+    //     this.avgStar = this.fourStar;
+    //     break;
+    //   case (avgRating >= 4.5) || (avgRating < 5):
+    //     this.avgStar = this.fourHalfStar;
+    //     break;
+    //   case (avgRating === 5):
+    //     this.avgStar = this.fiveStar;
+    //     break;
+    
+    //   default:
+    //     this.avgStar;
+    // }
+
     return (
       <>
         <div className="businesses-container">
@@ -91,6 +141,19 @@ class Business extends React.Component {
                   <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
                 </div>
               ))}
+            </div>
+            <div className="biz-reviews-container">
+              <div className="biz-stars">{this.avgStar}</div>
+              <div className="num-reviews">{numReviews}</div>
+            </div>
+            <div className="biz-categories-container">
+              {this.props.business.categories.map((category, i) => (
+                <div className="biz-category" key={i}>{category.category}</div>
+              ))}
+            </div>
+            <div className="biz-hours">
+                <h3>Open</h3>
+                <p>8:00 AM - 9:00 PM</p>
             </div>
             <div className="create-review-button">
               <button

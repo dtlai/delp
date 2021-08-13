@@ -104,7 +104,11 @@ class ReviewForm extends React.Component {
           <div className="form-container">
             <h3>{this.props.business.name}</h3>
             <div className="review-form">
-              <form onSubmit={this.handleSubmit} className="review-form-box">
+              <form
+                id="submit-review"
+                onSubmit={this.handleSubmit}
+                className="review-form-box"
+              >
                 <div className="review-content-container">
                   <label>
                     Not Good
@@ -161,10 +165,12 @@ class ReviewForm extends React.Component {
                     placeholder="Please write a review for this business. Also if you would like, you can also leave a review for this application and let me know what you think of it. I do hope you had a good experience and enjoyed browsing through my Yelp-inspired application. Many thanks."
                   />
                 </div>
-                {/* <div className="review-submit-button"> */}
-                  <button className="submit-button">Post Review</button>
-                {/* </div> */}
               </form>
+            </div>
+            <div className="review-submit-button">
+              <button form="submit-review" type="submit" className="submit-button">
+                Post Review
+              </button>
             </div>
           </div>
 
