@@ -39,16 +39,16 @@ class ReviewsIndex extends React.Component {
     console.log(reviews)
     return (
       <>
-       <div>
-           {reviews.map((review) => (
-               <p>{review.message}</p>
-           ))}
-       </div>
-       <div>
-           {reviews.map((review) => (
-               <p>{review.rating}</p>
-           ))}
-       </div>
+        <div>
+          {reviews.map((review, i) => (
+            <p key={i}>{review.message}</p>
+          ))}
+        </div>
+        <div>
+          {reviews.map((review, i) => (
+            <p key={i}>{review.rating}</p>
+          ))}
+        </div>
       </>
     );
   }

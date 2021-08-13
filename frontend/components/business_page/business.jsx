@@ -51,17 +51,19 @@ class Business extends React.Component {
 
     let sumRating = 0;
     let avgRating = 0;
-    // let numReviews = this.props.business.reviews.length;
-    let numReviews = 1;
+    let numReviews = this.props.business.reviews.length;
 
-    // for (let i = 0; i < numReviews; i++) {
-    //   sumRating += this.props.business.reviews[i].avgRating;
-    // }
+    for (let i = 0; i < numReviews; i++) {
+      sumRating += this.props.business.reviews[i].rating;
+    }
 
-    avgRating = sumRating / numReviews;
+    avgRating = sumRating / numReviews * 1.00;
+
     if (avgRating === 0) {
       avgRating = 1;
     }
+
+    this.avgStar = avgRating;
     // let businessRating = avgRating;
 
     // switch (avgRating) {
@@ -137,23 +139,26 @@ class Business extends React.Component {
           <div className="indiv-business-container">
             <div className="business-pics-container">
               {this.props.business.photoUrls.map((photoUrl, i) => (
-                <div className="biz-pic-container">
-                  <img className={`biz-pic`} key={i} src={photoUrl} alt="" />
+                <div className="biz-pic-container" key={i}>
+                  <img className={`biz-pic`} src={photoUrl} alt="" />
                 </div>
               ))}
             </div>
             <div className="biz-reviews-container">
               <div className="biz-stars">{this.avgStar}</div>
+              {/* <div className="biz-stars">{avgRating}</div> */}
               <div className="num-reviews">{numReviews}</div>
             </div>
             <div className="biz-categories-container">
               {this.props.business.categories.map((category, i) => (
-                <div className="biz-category" key={i}>{category.category}</div>
+                <div className="biz-category" key={i}>
+                  {category.category}
+                </div>
               ))}
             </div>
             <div className="biz-hours">
-                <h3>Open</h3>
-                <p>8:00 AM - 9:00 PM</p>
+              <h3>Open</h3>
+              <p>8:00 AM - 9:00 PM</p>
             </div>
             <div className="create-review-button">
               <button

@@ -7,4 +7,5 @@ json.extract! business,
     :biz_zipcode,
     :phone_number, 
     :price_range,
-    :categories
+    :categories,
+    :reviews
