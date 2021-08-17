@@ -35,7 +35,6 @@ $primary-gray: rgb(241, 241, 241);
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 30.42%, #00000070);
             }
         }
-        
 
         .biz-name-container {
             
@@ -59,6 +58,15 @@ $primary-gray: rgb(241, 241, 241);
             display: flex;
             .biz-category {
                 margin-right: 5px;
+            }
+        }
+
+        .biz-reviews-container {
+            position: absolute;
+            left: 100px;
+            top: 300px;
+            .biz-stars {
+
             }
         }
 

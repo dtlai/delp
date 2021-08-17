@@ -65,7 +65,9 @@ export class BusinessIndexMap extends Component {
     });
   }
 
-  componentDidUpdate(prevProps) {}
+  componentDidUpdate(prevProps) {
+    window.scrollTo(0, 0);
+  }
 
   recenterMap(mapProps, map, event) {
     this.setState({ center: event.latLng });

@@ -15,8 +15,87 @@ class Business extends React.Component {
     this.state = {
       hasFetched: false,
     };
-    this.avgStar = 1;
-    this.oneStar = (<div></div>);
+    this.avgStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/one.png"
+          alt="avgstar"
+        />
+      </div>
+    );
+    this.oneStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/one.png"
+          alt="onestar"
+        />
+      </div>
+    );
+    this.oneHalfStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/onehalf.png"
+          alt="onestar"
+        />
+      </div>
+    );
+    this.twoStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/two.png"
+          alt="twostar"
+        />
+      </div>
+    );
+    this.twoHalfStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/twohalf.png"
+          alt="twostar"
+        />
+      </div>
+    );
+    this.threeStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/three.png"
+          alt="threestar"
+        />
+      </div>
+    );
+    this.threeHalfStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/threehalf.png"
+          alt="threestar"
+        />
+      </div>
+    );
+    this.fourStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/four.png"
+          alt="fourstar"
+        />
+      </div>
+    );
+    this.fourHalfStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/fourhalf.png"
+          alt="fourstar"
+        />
+      </div>
+    );
+    this.fiveStar = (
+      <div className="star-pic">
+        <img
+          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/five.png"
+          alt="fivestar"
+        />
+      </div>
+    );
+    
   }
 
   componentDidMount() {
@@ -54,54 +133,34 @@ class Business extends React.Component {
     let avgRating = 0;
     let numReviews = this.props.business.reviews.length;
 
+
     for (let i = 0; i < numReviews; i++) {
       sumRating += this.props.business.reviews[i].rating;
     }
 
-    // if (numReviews === 0) {
-    //   numReviews = 1;
-    // }
+    avgRating = (sumRating / numReviews).toFixed(2);
 
-    avgRating = sumRating / numReviews * 1.00;
 
-    if (avgRating < 1) {
-      avgRating = 1;
+    if (avgRating >= 1 && avgRating < 1.5) {
+      this.avgStar = this.oneStar;
+    } else if (avgRating >= 1.5 && avgRating < 2) {
+      this.avgStar = this.oneHalfStar;
+    } else if (avgRating >= 2 && avgRating < 2.5) {
+      this.avgStar = this.twoStar;
+    } else if (avgRating >= 2.5 && avgRating < 3) {
+      this.avgStar = this.twoHalfStar;
+    } else if (avgRating >= 3 && avgRating < 3.5) {
+      this.avgStar = this.threeStar;
+    } else if (avgRating >= 3.5 && avgRating < 4) {
+      this.avgStar = this.threeHalfStar;
+    } else if (avgRating >= 4 && avgRating < 4.5) {
+      this.avgStar = this.fourStar;
+    } else if (avgRating >= 4.5 && avgRating < 5) {
+      this.avgStar = this.fourHalfStar;
+    } else if (avgRating === 5 ) {
+      this.avgStar = this.fiveStar;
     }
-
-    this.avgStar = avgRating;
-
-    // switch (avgRating) {
-    //   case (avgRating >= 1) || (avgRating < 1.5):
-    //     this.avgStar = this.oneStar;
-    //     break;
-    //   case (avgRating >= 1.5) || (avgRating < 2):
-    //     this.avgStar = this.oneHalfStar;
-    //     break;
-    //   case (avgRating >= 2) || (avgRating < 2.5):
-    //     this.avgStar = this.twoStar;
-    //     break;
-    //   case (avgRating >= 2.5) || (avgRating < 3):
-    //     this.avgStar = this.twoHalfStar;
-    //     break;
-    //   case (avgRating >= 3) || (avgRating < 3.5):
-    //     this.avgStar = this.threeStar;
-    //     break;
-    //   case (avgRating >= 3.5) || (avgRating < 4):
-    //     this.avgStar = this.threeHalfStar;
-    //     break;
-    //   case (avgRating >= 4) || (avgRating < 4.5):
-    //     this.avgStar = this.fourStar;
-    //     break;
-    //   case (avgRating >= 4.5) || (avgRating < 5):
-    //     this.avgStar = this.fourHalfStar;
-    //     break;
-    //   case (avgRating === 5):
-    //     this.avgStar = this.fiveStar;
-    //     break;
-    
-    //   default:
-    //     this.avgStar;
-    // }
+  
 
     return (
       <>
