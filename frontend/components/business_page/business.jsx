@@ -15,86 +15,6 @@ class Business extends React.Component {
     this.state = {
       hasFetched: false,
     };
-    this.avgStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/one.png"
-          alt="avgstar"
-        />
-      </div>
-    );
-    this.oneStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/one.png"
-          alt="onestar"
-        />
-      </div>
-    );
-    this.oneHalfStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/onehalf.png"
-          alt="onestar"
-        />
-      </div>
-    );
-    this.twoStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/two.png"
-          alt="twostar"
-        />
-      </div>
-    );
-    this.twoHalfStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/twohalf.png"
-          alt="twostar"
-        />
-      </div>
-    );
-    this.threeStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/three.png"
-          alt="threestar"
-        />
-      </div>
-    );
-    this.threeHalfStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/threehalf.png"
-          alt="threestar"
-        />
-      </div>
-    );
-    this.fourStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/four.png"
-          alt="fourstar"
-        />
-      </div>
-    );
-    this.fourHalfStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/fourhalf.png"
-          alt="fourstar"
-        />
-      </div>
-    );
-    this.fiveStar = (
-      <div className="star-pic">
-        <img
-          src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/stars/five.png"
-          alt="fivestar"
-        />
-      </div>
-    );
     
   }
 
@@ -129,6 +49,16 @@ class Business extends React.Component {
       return <div>Loading...</div>;
     }
 
+    let avgStar = {
+      width: "176px",
+      height: "32px",
+      display: "inlineBlock",
+      verticalAlign: "middle",
+      background:
+        'url("https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yji-52d3d7a328db670d4402843cbddeed89.png")',
+      backgroundPosition: "0 0px",
+    };
+
     let sumRating = 0;
     let avgRating = 0;
     let numReviews = this.props.business.reviews.length;
@@ -142,25 +72,26 @@ class Business extends React.Component {
 
 
     if (avgRating >= 1 && avgRating < 1.5) {
-      this.avgStar = this.oneStar;
+      avgStar["backgroundPosition"] = "0 -64px";
     } else if (avgRating >= 1.5 && avgRating < 2) {
-      this.avgStar = this.oneHalfStar;
+      avgStar["backgroundPosition"] = "0 -32px";
     } else if (avgRating >= 2 && avgRating < 2.5) {
-      this.avgStar = this.twoStar;
+      avgStar["backgroundPosition"] = "0 -128px";
     } else if (avgRating >= 2.5 && avgRating < 3) {
-      this.avgStar = this.twoHalfStar;
+      avgStar["backgroundPosition"] = "0 -96px";
     } else if (avgRating >= 3 && avgRating < 3.5) {
-      this.avgStar = this.threeStar;
+      avgStar["backgroundPosition"] = "0 -192px";
     } else if (avgRating >= 3.5 && avgRating < 4) {
-      this.avgStar = this.threeHalfStar;
+      avgStar["backgroundPosition"] = "0 -160px";
     } else if (avgRating >= 4 && avgRating < 4.5) {
-      this.avgStar = this.fourStar;
+      avgStar["backgroundPosition"] = "0 -256px";
     } else if (avgRating >= 4.5 && avgRating < 5) {
-      this.avgStar = this.fourHalfStar;
+      avgStar["backgroundPosition"] = "0 -224px";
     } else if (avgRating === 5 ) {
-      this.avgStar = this.fiveStar;
+      avgStar["backgroundPosition"] = "0 -288px";
     }
   
+    let avgStars = <div style={avgStar}></div>;
 
     return (
       <>
@@ -208,8 +139,9 @@ class Business extends React.Component {
               ))}
             </div>
             <div className="biz-reviews-container">
-              <div className="biz-stars">{this.avgStar}</div>
+              <div className="biz-stars">{avgStars}</div>
               <div className="num-reviews">{numReviews}</div>
+              <p>Reviews</p>
             </div>
             <div className="biz-categories-container">
               {this.props.business.categories.map((category, i) => {

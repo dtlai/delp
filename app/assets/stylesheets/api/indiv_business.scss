@@ -64,9 +64,13 @@ $primary-gray: rgb(241, 241, 241);
         .biz-reviews-container {
             position: absolute;
             left: 100px;
-            top: 300px;
+            top: 360px;
+            background: transparent;
             .biz-stars {
-
+                img {
+                    height: 32px;
+                    border-radius: 4px;
+                }
             }
         }
 
