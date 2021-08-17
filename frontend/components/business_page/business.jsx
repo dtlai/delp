@@ -140,8 +140,10 @@ class Business extends React.Component {
             </div>
             <div className="biz-reviews-container">
               <div className="biz-stars">{avgStars}</div>
-              <div className="num-reviews">{numReviews}</div>
-              <p>Reviews</p>
+              <div className="num-reviews">
+                {numReviews}
+                <p>Reviews</p>
+              </div>
             </div>
             <div className="biz-categories-container">
               {this.props.business.categories.map((category, i) => {
@@ -150,7 +152,7 @@ class Business extends React.Component {
                     <div className="biz-category" key={i}>
                       {category.category},{" "}
                     </div>
-                  ); 
+                  );
                 } else {
                   return (
                     <div className="biz-category" key={i}>

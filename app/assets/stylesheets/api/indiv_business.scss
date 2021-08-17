@@ -66,10 +66,21 @@ $primary-gray: rgb(241, 241, 241);
             left: 100px;
             top: 360px;
             background: transparent;
+            display: flex;
             .biz-stars {
                 img {
                     height: 32px;
                     border-radius: 4px;
+                }
+            }
+            .num-reviews {
+                font-size: 16px;
+                color: white;
+                margin-left: 10px;
+                margin-top: 5px;
+                display: flex;
+                p {
+                    margin-left: 5px;
                 }
             }
         }
