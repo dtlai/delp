@@ -215,6 +215,7 @@ class Business extends React.Component {
                   <p>{business.biz_zipcode}</p>
                 </div>
               </div>
+              <div className="biz-line"></div>
               <div className="business-reviews">
                 <ReviewIndexContainer />
               </div>
