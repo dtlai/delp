@@ -92,6 +92,7 @@ class Business extends React.Component {
     }
   
     let avgStars = <div style={avgStar}></div>;
+    let biz = this.props.business;
 
     return (
       <>
@@ -203,8 +204,10 @@ class Business extends React.Component {
             <div className="biz-page-container">
               <div className="biz-line"></div>
               <div className="business-map">
-                <h3>Location & Directions</h3>
+                <h2>Location & Directions</h2>
                 <BusinessMap business={this.props.business} />
+                <h3>{this.props.business.address}</h3>
+                <p>{this.props.business}</p>
               </div>
               <div className="business-reviews">
                 <ReviewIndexContainer />

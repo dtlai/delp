@@ -136,16 +136,19 @@ $lightdark-gray: rgb(167, 167, 167);
         }
 
         .biz-sidebar {
-            position: sticky;
-            top: 0px;
+            height: 400px;
+            display: flex;
+            align-items: flex-start;
+            position: absolute;
+            right: 100px;
             .business-info {
                 display: flex;
+                position: sticky;
                 flex-direction: column;
                 border: 1px solid $lightdark-gray;
                 width: 300px;
                 border-radius: 4px;
-                position: fixed;
-                top: 600px;
+                top: 100px;
                 right: 100px;
                 h3 {
                     font-size: 20px;
