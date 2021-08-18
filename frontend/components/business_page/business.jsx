@@ -181,24 +181,27 @@ class Business extends React.Component {
             <div className="biz-name-container">
               <p className="biz-name">{this.props.business.name}</p>
             </div>
-            <div className="business-info">
-              <h3>Order Food</h3>
-              <p className="biz-address">{this.props.business.address}</p>
-              <p className="biz-city">{this.props.business.city}</p>
-              <p className="biz-state">{this.props.business.state}</p>
-              <p className="biz-biz-zipcode">
-                {this.props.business.biz_zipcode}
-              </p>
-              <p className="biz-price-range">
-                {this.props.business.price_range}
-              </p>
-              <p className="biz-phone-number">
-                {this.props.business.phone_number}
-              </p>
+
+            <div className="biz-sidebar">
+              <div className="business-info">
+                <h3>Order Food</h3>
+                <p className="biz-address">{this.props.business.address}</p>
+                <p className="biz-city">{this.props.business.city}</p>
+                <p className="biz-state">{this.props.business.state}</p>
+                <p className="biz-biz-zipcode">
+                  {this.props.business.biz_zipcode}
+                </p>
+                <p className="biz-price-range">
+                  {this.props.business.price_range}
+                </p>
+                <p className="biz-phone-number">
+                  {this.props.business.phone_number}
+                </p>
+              </div>
             </div>
+
             <div className="biz-page-container">
               <div className="biz-line"></div>
-
               <div className="business-map">
                 <h3>Location & Directions</h3>
                 <BusinessMap business={this.props.business} />

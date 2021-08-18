@@ -110,22 +110,7 @@ $lightdark-gray: rgb(167, 167, 167);
                 height: 60px;
             }
         }
-        .business-info {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid $lightdark-gray;
-            width: 300px;
-            border-radius: 4px;
-            position: sticky;
-            top: 600px;
-            right: 100px;
-            h3 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 16px;
-            }
-        }
+        
 
         .biz-page-container {
             display: flex;
@@ -145,14 +130,38 @@ $lightdark-gray: rgb(167, 167, 167);
                 img {
                     margin-top: 10px;
                 }
+                
             }
             
+        }
+
+        .biz-sidebar {
+            position: fixed;
+            top: 600px;
+            right: 100px;
+            .business-info {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $lightdark-gray;
+                width: 300px;
+                border-radius: 4px;
+                position: fixed;
+                top: 600px;
+                right: 100px;
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
         }
         
         
         .create-review-button {
             margin-top: 20px;
             margin-left: 80px;
+            
             .review-button {
                 color: white;
                 font-weight: bold;
