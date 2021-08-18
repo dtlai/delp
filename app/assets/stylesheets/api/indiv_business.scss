@@ -136,9 +136,8 @@ $lightdark-gray: rgb(167, 167, 167);
         }
 
         .biz-sidebar {
-            position: fixed;
-            top: 600px;
-            right: 100px;
+            position: sticky;
+            top: 0px;
             .business-info {
                 display: flex;
                 flex-direction: column;
