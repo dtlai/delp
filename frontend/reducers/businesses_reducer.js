@@ -10,7 +10,6 @@ const BusinessesReducer = (state={}, action) => {
         case RECEIVE_BUSINESSES:
             return action.businesses
         case RECEIVE_BUSINESS:
-            console.log(action)
             return Object.assign({}, state, {[action.business.id]: action.business})
     
         default:

@@ -36,14 +36,14 @@ class ReviewsIndex extends React.Component {
   render() {
     if (!this.state.hasFetched) return null;
     let { reviews } = this.props;
+    console.log(reviews)
     return (
       <>
         <div className="review-page-container">
           {reviews.map((review, i) => {
             return (
-            <div className="review-message" key={i}>{review.message}</div>
-            // <div className="review-username" key={i}>{review.author.first_name}</div>
-            // <div className="review-date" key={i}>{date}</div>
+            // <div className="review-message" key={i}>{review.message}</div>
+            <div className="review-username" key={i}>{review.user.first_name}</div>
           )})}
         </div>
       </>
