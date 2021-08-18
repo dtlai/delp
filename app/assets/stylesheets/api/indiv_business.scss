@@ -54,7 +54,7 @@ $lightdark-gray: rgb(167, 167, 167);
             color: white;
             font-size: 16px;
             position: absolute;
-            left: 80px;
+            left: 220px;
             top: 450px;
             display: flex;
             .biz-category {
@@ -84,6 +84,22 @@ $lightdark-gray: rgb(167, 167, 167);
                 p {
                     margin-left: 5px;
                 }
+            }
+        }
+
+        .biz-costs {
+            font-size: 16px;
+            color: white;
+            position: absolute;
+            left: 80px;
+            top: 450px;
+            display: flex;
+            p {
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+            .claimed {
+                color: teal;
             }
         }
 
@@ -124,11 +140,20 @@ $lightdark-gray: rgb(167, 167, 167);
             }
             .business-map {
                 margin-top: 10px;
-                h3 {
+                font-size: 16px;
+                h2 {
                     font-size: 20px;
                 }
+                
                 img {
                     margin-top: 10px;
+                }
+                .location-info {
+                    display: flex;
+                    margin-top: 10px;
+                    h3 {
+                        color: teal;
+                    }
                 }
                 
             }

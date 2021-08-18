@@ -7,7 +7,8 @@ import { BusinessMap } from "../google_maps/business_map";
 import SearchBarContainer from "../search_form/search_form_container";
 import Footer from "../footer/footer";
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
-import { BsStar } from "react-icons/bs"
+import { BsStar } from "react-icons/bs";
+import { AiFillCheckCircle } from 'react-icons/ai';
 
 class Business extends React.Component {
   constructor(props) {
@@ -92,7 +93,7 @@ class Business extends React.Component {
     }
   
     let avgStars = <div style={avgStar}></div>;
-    let biz = this.props.business;
+    let business = this.props.business;
 
     return (
       <>
@@ -133,7 +134,7 @@ class Business extends React.Component {
           </div>
           <div className="indiv-business-container">
             <div className="business-pics-container">
-              {this.props.business.photoUrls.map((photoUrl, i) => (
+              {business.photoUrls.map((photoUrl, i) => (
                 <div className="biz-pic-container" key={i}>
                   <img className={`biz-pic`} src={photoUrl} alt="" />
                 </div>
@@ -147,8 +148,8 @@ class Business extends React.Component {
               </div>
             </div>
             <div className="biz-categories-container">
-              {this.props.business.categories.map((category, i) => {
-                if (i !== this.props.business.categories.length - 1) {
+              {business.categories.map((category, i) => {
+                if (i !== business.categories.length - 1) {
                   return (
                     <div className="biz-category" key={i}>
                       {category.category},{" "}
@@ -162,6 +163,13 @@ class Business extends React.Component {
                   );
                 }
               })}
+            </div>
+            <div className="biz-costs">
+              <AiFillCheckCircle className="claimed" />
+              <h3 className="claimed">Claimed</h3>
+              <p>&#8226;</p>
+              {business.price_range}
+              <p>&#8226;</p>
             </div>
             <div className="biz-hours">
               <h3>Open</h3>
@@ -180,24 +188,18 @@ class Business extends React.Component {
               </button>
             </div>
             <div className="biz-name-container">
-              <p className="biz-name">{this.props.business.name}</p>
+              <p className="biz-name">{business.name}</p>
             </div>
 
             <div className="biz-sidebar">
               <div className="business-info">
                 <h3>Order Food</h3>
-                <p className="biz-address">{this.props.business.address}</p>
-                <p className="biz-city">{this.props.business.city}</p>
-                <p className="biz-state">{this.props.business.state}</p>
-                <p className="biz-biz-zipcode">
-                  {this.props.business.biz_zipcode}
-                </p>
-                <p className="biz-price-range">
-                  {this.props.business.price_range}
-                </p>
-                <p className="biz-phone-number">
-                  {this.props.business.phone_number}
-                </p>
+                <p className="biz-address">{business.address}</p>
+                <p className="biz-city">{business.city}</p>
+                <p className="biz-state">{business.state}</p>
+                <p className="biz-biz-zipcode">{business.biz_zipcode}</p>
+                <p className="biz-price-range">{business.price_range}</p>
+                <p className="biz-phone-number">{business.phone_number}</p>
               </div>
             </div>
 
@@ -205,9 +207,13 @@ class Business extends React.Component {
               <div className="biz-line"></div>
               <div className="business-map">
                 <h2>Location & Directions</h2>
-                <BusinessMap business={this.props.business} />
-                <h3>{this.props.business.address}</h3>
-                <p>{this.props.business}</p>
+                <BusinessMap business={business} />
+                <div className="location-info">
+                  <h3>{business.address}&nbsp;</h3>
+                  <p>{business.city}&nbsp;</p>
+                  <p>{business.state}&nbsp;</p>
+                  <p>{business.biz_zipcode}</p>
+                </div>
               </div>
               <div className="business-reviews">
                 <ReviewIndexContainer />
