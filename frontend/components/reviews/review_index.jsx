@@ -36,15 +36,22 @@ class ReviewsIndex extends React.Component {
   render() {
     if (!this.state.hasFetched) return null;
     let { reviews } = this.props;
-    console.log(reviews)
+
     return (
       <>
         <div className="review-page-container">
-          {reviews.map((review, i) => {
-            return (
-            // <div className="review-message" key={i}>{review.message}</div>
-            <div className="review-username" key={i}>{review.user.first_name}</div>
-          )})}
+          {reviews.map((review, i) => (
+            <div className="reviews-container" key={i}>
+              <div className="review-box">
+                <div className="review-username">
+                  {review.user.first_name}&nbsp;{review.user.last_name}
+                </div>
+                <div className="review-message">{review.message}</div>
+                <div className="review-message">{review.created_at.substring(0,10)}</div>
+                <div className="review-rating">{review.rating}</div>
+              </div>
+            </div>
+          ))}
         </div>
       </>
     );

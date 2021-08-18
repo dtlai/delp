@@ -3,4 +3,5 @@ json.extract! review,
     :message,
     :user_id,
     :business_id,
-    :user
+    :user,
+    :created_at
