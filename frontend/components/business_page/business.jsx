@@ -166,6 +166,7 @@ class Business extends React.Component {
               <h3>Open</h3>
               <p>8:00 AM - 9:00 PM</p>
             </div>
+
             <div className="create-review-button">
               <button
                 className="review-button"
@@ -181,6 +182,7 @@ class Business extends React.Component {
               <p className="biz-name">{this.props.business.name}</p>
             </div>
             <div className="business-info">
+              <h3>Order Food</h3>
               <p className="biz-address">{this.props.business.address}</p>
               <p className="biz-city">{this.props.business.city}</p>
               <p className="biz-state">{this.props.business.state}</p>
@@ -194,15 +196,21 @@ class Business extends React.Component {
                 {this.props.business.phone_number}
               </p>
             </div>
+            <div className="biz-page-container">
+              <div className="biz-line"></div>
+
+              <div className="business-map">
+                <h3>Location & Directions</h3>
+                <BusinessMap business={this.props.business} />
+              </div>
+              <div className="business-reviews">
+                <ReviewIndexContainer />
+              </div>
+            </div>
+
             <Link to="/businesses" className="logo-link">
               <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
             </Link>
-          </div>
-          <div className="business-map">
-            <BusinessMap business={this.props.business} />
-          </div>
-          <div>
-            <ReviewIndexContainer />
           </div>
         </div>
         <Footer />

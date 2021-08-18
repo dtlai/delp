@@ -5,6 +5,7 @@ $open-sans: 'Open Sans Condensed', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
 
 $primary-gray: rgb(241, 241, 241);
+$lightdark-gray: rgb(167, 167, 167);
 
 .businesses-container {
     .indiv-business-container {
@@ -42,9 +43,9 @@ $primary-gray: rgb(241, 241, 241);
                 font-family: $montserrat;
                 position: absolute;
                 font-weight: 900;
-                top: 300px;
+                top: 350px;
                 color: white;
-                left: 100px;
+                left: 80px;
                 font-size: 48px;
             }
         }
@@ -53,8 +54,8 @@ $primary-gray: rgb(241, 241, 241);
             color: white;
             font-size: 16px;
             position: absolute;
-            left: 100px;
-            top: 400px;
+            left: 80px;
+            top: 450px;
             display: flex;
             .biz-category {
                 margin-right: 5px;
@@ -63,8 +64,8 @@ $primary-gray: rgb(241, 241, 241);
 
         .biz-reviews-container {
             position: absolute;
-            left: 100px;
-            top: 360px;
+            left: 80px;
+            top: 410px;
             background: transparent;
             display: flex;
             .biz-stars {
@@ -89,8 +90,8 @@ $primary-gray: rgb(241, 241, 241);
         .biz-hours {
             font-size: 16px;
             position: absolute;
-            left: 100px;
-            top: 430px;
+            left: 80px;
+            top: 480px;
             display: flex;
             h3 {
                 color: green;
@@ -109,10 +110,49 @@ $primary-gray: rgb(241, 241, 241);
                 height: 60px;
             }
         }
+        .business-info {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $lightdark-gray;
+            width: 300px;
+            border-radius: 4px;
+            position: sticky;
+            top: 600px;
+            right: 100px;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .biz-page-container {
+            display: flex;
+            // justify-content: center;
+            margin-left: 80px;
+            flex-direction: column;
+            margin-top: 10px;
+            width: 700px;
+            .biz-line {
+                border-top: 1px solid $lightdark-gray;
+            }
+            .business-map {
+                margin-top: 10px;
+                h3 {
+                    font-size: 20px;
+                }
+                img {
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+        
         
         .create-review-button {
             margin-top: 20px;
-            margin-left: 20px;
+            margin-left: 80px;
             .review-button {
                 color: white;
                 font-weight: bold;
