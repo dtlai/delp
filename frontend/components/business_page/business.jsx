@@ -220,10 +220,6 @@ class Business extends React.Component {
                 <ReviewIndexContainer />
               </div>
             </div>
-
-            <Link to="/businesses" className="logo-link">
-              <img src="https://delp-seeds.s3.us-west-1.amazonaws.com/briefcase.png" />
-            </Link>
           </div>
         </div>
         <Footer />

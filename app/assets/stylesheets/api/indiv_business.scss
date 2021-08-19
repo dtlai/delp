@@ -118,14 +118,14 @@ $lightdark-gray: rgb(167, 167, 167);
             }
         }
 
-        .logo-link {
-            display: flex;    
-            margin-top: 40px;
-            justify-content: center;
-            img {
-                height: 60px;
-            }
-        }
+        // .logo-link {
+        //     display: flex;    
+        //     margin-top: 40px;
+        //     justify-content: center;
+        //     img {
+        //         height: 60px;
+        //     }
+        // }
         
 
         .biz-page-container {
@@ -137,9 +137,10 @@ $lightdark-gray: rgb(167, 167, 167);
             width: 700px;
             .biz-line {
                 border-top: 1px solid $lightdark-gray;
+                margin-top: 30px;
+                margin-bottom: 30px;
             }
             .business-map {
-                margin-top: 10px;
                 font-size: 16px;
                 h2 {
                     font-size: 20px;

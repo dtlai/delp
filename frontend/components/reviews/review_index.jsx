@@ -52,8 +52,8 @@ class ReviewsIndex extends React.Component {
               date.getFullYear();
 
             let starRating = {
-              width: "176px",
-              height: "32px",
+              width: "108px",
+              height: "20px",
               display: "inlineBlock",
               verticalAlign: "middle",
               background:
@@ -62,15 +62,15 @@ class ReviewsIndex extends React.Component {
             };
 
             if (review.rating === 1) {
-              starRating["backgroundPosition"] = "0 -64px";
+              starRating["backgroundPosition"] = "0 -360px";
             } else if (review.rating === 2) {
-              starRating["backgroundPosition"] = "0 -128px";
+              starRating["backgroundPosition"] = "0 -400px";
             } else if (review.rating === 3) {
-              starRating["backgroundPosition"] = "0 -192px";
+              starRating["backgroundPosition"] = "0 -440px";
             } else if (review.rating === 4) {
-              starRating["backgroundPosition"] = "0 -256px";
+              starRating["backgroundPosition"] = "0 -480px";
             } else {
-              starRating["backgroundPosition"] = "0 -288px";
+              starRating["backgroundPosition"] = "0 -500px";
             }
 
             let reviewStars = <div style={starRating}></div>;
@@ -81,23 +81,22 @@ class ReviewsIndex extends React.Component {
                   <div className="review-user-pic">
                     <img src="https://i.imgur.com/eHreOGm.jpg" alt="profpic" />
                     <div className="review-username">
-                      {review.user.first_name}&nbsp;{review.user.last_name.substring(0,1)}.
-                      <div className="review-user-zip">{review.user.zipcode}</div>
+                      {review.user.first_name}&nbsp;
+                      {review.user.last_name.substring(0, 1)}.
+                      <div className="review-user-zip">
+                        {review.user.zipcode}
+                      </div>
                     </div>
                   </div>
 
                   <div className="review-date">
-                    <div className="review-stars">
-                      {reviewStars}
-                    </div>
-                    {reviewDate}
+                    <div className="review-stars">{reviewStars}</div>
+                    <p>{reviewDate}</p>
                   </div>
                   <div className="review-message">{review.message}</div>
-
-                  <div className="review-rating">{review.rating}</div>
                 </div>
               </div>
-            )})}
+            );})}
         </div>
       </>
     );

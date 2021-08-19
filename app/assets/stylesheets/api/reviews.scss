@@ -74,12 +74,13 @@ $montserrat: 'Montserrat', sans-serif;
 .review-page-container {
     font-family: $open-sans;
     font-size: 16px;
-    margin-top: 20px;
+    // margin-top: 20px;
     h3 {
         font-size: 20px;
     }
     .reviews-container {
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         .review-box {
             .review-user-pic {
                 display: flex;
@@ -90,6 +91,7 @@ $montserrat: 'Montserrat', sans-serif;
                 }
                 .review-username {
                     font-size: 18px;
+                    margin-top: 10px;
                     .review-user-zip {
                         margin-top: 5px;
                         font-family: sans-serif;
@@ -98,6 +100,13 @@ $montserrat: 'Montserrat', sans-serif;
             }
             .review-date {
                 color: gray;
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                p {
+                    margin-top: 2px;
+                    margin-left: 10px;
+                }
             }
             
 
