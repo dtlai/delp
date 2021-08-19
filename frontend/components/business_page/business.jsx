@@ -57,7 +57,7 @@ class Business extends React.Component {
       verticalAlign: "middle",
       background:
         'url("https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yji-52d3d7a328db670d4402843cbddeed89.png")',
-      backgroundPosition: "0 0px",
+      backgroundPosition: "0 -64px",
     };
 
     let sumRating = 0;
@@ -97,7 +97,7 @@ class Business extends React.Component {
 
     return (
       <>
-        <div className="businesses-container">
+        <div className="indiv-business-page">
           <div className="nav-header-container">
             <div className="nav-header">
               <Link to="/" className="logo-link">
@@ -193,13 +193,18 @@ class Business extends React.Component {
 
             <div className="biz-sidebar">
               <div className="business-info">
-                <h3>Order Food</h3>
-                <p className="biz-address">{business.address}</p>
-                <p className="biz-city">{business.city}</p>
-                <p className="biz-state">{business.state}</p>
-                <p className="biz-biz-zipcode">{business.biz_zipcode}</p>
-                <p className="biz-price-range">{business.price_range}</p>
-                <p className="biz-phone-number">{business.phone_number}</p>
+                <div className="order-food-box">Order Food</div>
+                <div className="num-directions-box">
+                  <p className="biz-phone-number">{business.phone_number}</p>
+                  <div className="border-line"></div>
+                  <h2>Get Directions</h2>
+                  <p className="biz-address">
+                    {business.address}&nbsp;
+                    {business.city}&nbsp;
+                    {business.state}&nbsp;
+                    {business.biz_zipcode}
+                  </p>
+                </div>
               </div>
             </div>
 

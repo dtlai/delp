@@ -7,7 +7,7 @@ $montserrat: 'Montserrat', sans-serif;
 $primary-gray: rgb(241, 241, 241);
 $lightdark-gray: rgb(167, 167, 167);
 
-.businesses-container {
+.indiv-business-page {
     .indiv-business-container {
         
         .business-pics-container {
@@ -150,7 +150,7 @@ $lightdark-gray: rgb(167, 167, 167);
         }
 
         .biz-sidebar {
-            height: 200%;
+            height: 100%;
             display: flex;
             align-items: flex-start;
             position: absolute;
@@ -160,18 +160,39 @@ $lightdark-gray: rgb(167, 167, 167);
                 display: flex;
                 position: sticky;
                 flex-direction: column;
-                border: 1px solid $lightdark-gray;
                 width: 365px;
                 height: 461;
                 border-radius: 4px;
                 top: 100px;
                 right: 100px;
-                h3 {
+                font-size: 16px;
+                .order-food-box {
                     font-size: 20px;
+                    border: 1px solid $lightdark-gray;
+                    margin-bottom: 10px;
+                    height: 200px;
                 }
-                p {
-                    font-size: 16px;
+                .num-directions-box {
+                    border: 1px solid $lightdark-gray;
+                    height: 100px;
+                    .border-line {
+                        border-top: 1px solid $lightdark-gray;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    h2 {
+                        font-size: 16px;
+                        color: teal;
+                    }
+                    .biz-address {
+                        display: flex;
+                        font-family: sans-serif;
+                    }
+                    .biz-phone-number {
+                        font-family: sans-serif;
+                    }
                 }
+                
             }
         }
         
@@ -208,5 +229,7 @@ $lightdark-gray: rgb(167, 167, 167);
         }
     }
 }
+
+
 
 
