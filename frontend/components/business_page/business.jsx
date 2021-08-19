@@ -194,7 +194,9 @@ class Business extends React.Component {
             <div className="biz-page-container">
               <div className="biz-sidebar">
                 <div className="business-info">
-                  <div className="order-food-box">Order Food</div>
+                  <div className="order-food-box">
+                    <p>Order Food</p>
+                  </div>
                   <div className="num-directions-box">
                     <p className="biz-phone-number">{business.phone_number}</p>
                     <div className="border-line"></div>

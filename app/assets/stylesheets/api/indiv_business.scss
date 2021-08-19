@@ -8,6 +8,8 @@ $primary-gray: rgb(241, 241, 241);
 $lightdark-gray: rgb(167, 167, 167);
 
 .indiv-business-page {
+    font-family: $open-sans;
+    font-weight: 700;
     .indiv-business-container {
         .business-pics-container {
             height: 100%;
@@ -146,53 +148,70 @@ $lightdark-gray: rgb(167, 167, 167);
                 
             }
 
+            .biz-sidebar {
+                height: 200%;
+                display: flex;
+                align-items: flex-start;
+                position: absolute;
+                right: 100px;
+                .business-info {
+                    display: flex;
+                    position: sticky;
+                    flex-direction: column;
+                    width: 365px;
+                    height: 461;
+                    border-radius: 4px;
+                    top: 100px;
+                    right: 100px;
+                    font-size: 16px;
+                    .order-food-box {
+                        font-size: 20px;
+                        border: 1px solid $lightdark-gray;
+                        border-radius: 4px;
+                        margin-bottom: 10px;
+                        height: 220px;
+                        p {
+                            margin-left: 10px;
+                            margin-top: 10px;
+                        }
+                    }
+                    .num-directions-box {
+                        border: 1px solid $lightdark-gray;
+                        border-radius: 4px;
+                        height: 120px;
+                        .border-line {
+                            border-top: 1px solid $lightdark-gray;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                        h2 {
+                            font-size: 16px;
+                            color: teal;
+                            margin-left: 10px;
+                            margin-bottom: 5px;
+                            margin-top: 10px;
+                        }
+                        .biz-address {
+                            display: flex;
+                            font-family: sans-serif;
+                            margin-left: 10px;
+                        }
+                        .biz-phone-number {
+                            font-family: sans-serif;
+                            font-weight: 400;
+                            color: gray;
+                            margin-left: 10px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    
+                }
+            }
+
         }
 
-        .biz-sidebar {
-            height: 200%;
-            display: flex;
-            align-items: flex-start;
-            position: absolute;
-            right: 100px;
-            .business-info {
-                display: flex;
-                position: sticky;
-                flex-direction: column;
-                width: 365px;
-                height: 461;
-                border-radius: 4px;
-                top: 100px;
-                right: 100px;
-                font-size: 16px;
-                .order-food-box {
-                    font-size: 20px;
-                    border: 1px solid $lightdark-gray;
-                    margin-bottom: 10px;
-                    height: 200px;
-                }
-                .num-directions-box {
-                    border: 1px solid $lightdark-gray;
-                    height: 100px;
-                    .border-line {
-                        border-top: 1px solid $lightdark-gray;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                    }
-                    h2 {
-                        font-size: 16px;
-                        color: teal;
-                    }
-                    .biz-address {
-                        display: flex;
-                        font-family: sans-serif;
-                    }
-                    .biz-phone-number {
-                        font-family: sans-serif;
-                    }
-                }
-                
-            }
-        }
+        
         
         
         .create-review-button {
