@@ -118,22 +118,10 @@ $lightdark-gray: rgb(167, 167, 167);
             }
         }
 
-        // .logo-link {
-        //     display: flex;    
-        //     margin-top: 40px;
-        //     justify-content: center;
-        //     img {
-        //         height: 60px;
-        //     }
-        // }
-        
-
         .biz-page-container {
             display: flex;
-            // justify-content: center;
             margin-left: 80px;
             flex-direction: column;
-            margin-top: 10px;
             width: 700px;
             .biz-line {
                 border-top: 1px solid $lightdark-gray;
@@ -158,21 +146,23 @@ $lightdark-gray: rgb(167, 167, 167);
                 }
                 
             }
-            
+
         }
 
         .biz-sidebar {
-            height: 400px;
+            height: 200%;
             display: flex;
             align-items: flex-start;
             position: absolute;
             right: 100px;
+            top: 600px;
             .business-info {
                 display: flex;
                 position: sticky;
                 flex-direction: column;
                 border: 1px solid $lightdark-gray;
-                width: 300px;
+                width: 365px;
+                height: 461;
                 border-radius: 4px;
                 top: 100px;
                 right: 100px;
