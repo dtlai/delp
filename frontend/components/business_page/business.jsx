@@ -191,24 +191,23 @@ class Business extends React.Component {
               <p className="biz-name">{business.name}</p>
             </div>
 
-            <div className="biz-sidebar">
-              <div className="business-info">
-                <div className="order-food-box">Order Food</div>
-                <div className="num-directions-box">
-                  <p className="biz-phone-number">{business.phone_number}</p>
-                  <div className="border-line"></div>
-                  <h2>Get Directions</h2>
-                  <p className="biz-address">
-                    {business.address}&nbsp;
-                    {business.city}&nbsp;
-                    {business.state}&nbsp;
-                    {business.biz_zipcode}
-                  </p>
+            <div className="biz-page-container">
+              <div className="biz-sidebar">
+                <div className="business-info">
+                  <div className="order-food-box">Order Food</div>
+                  <div className="num-directions-box">
+                    <p className="biz-phone-number">{business.phone_number}</p>
+                    <div className="border-line"></div>
+                    <h2>Get Directions</h2>
+                    <p className="biz-address">
+                      {business.address}&nbsp;
+                      {business.city}&nbsp;
+                      {business.state}&nbsp;
+                      {business.biz_zipcode}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="biz-page-container">
               <div className="biz-line"></div>
               <div className="business-map">
                 <h2>Location & Directions</h2>
