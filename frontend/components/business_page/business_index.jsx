@@ -28,59 +28,122 @@ class BusinessIndex extends React.Component {
 
   render() {
     if (!this.state.hasFetched) {
-      return null;
-    }
-    return (
-      <>
-        <div className="businesses-container">
-          <div className="nav-header-container">
-            <div className="nav-header">
-              <Link to="/" className="logo-link">
-                <img src="https://i.imgur.com/JrsNpWu.png" />
-              </Link>
-              <SearchBarContainer formType={this.props.formType} />
-              <div className="navbar-links">
-                <a
-                  href="https://www.linkedin.com/in/davidlai9/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaLinkedin className="about-icon" size={30} color="black" />
-                </a>
-                <a
-                  href="https://github.com/dtlai"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaGithub className="about-icon" size={30} color="black" />
-                </a>
-                <a
-                  href="https://angel.co/u/davidtlai"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaAngellist className="about-icon" size={30} color="black" />
-                </a>
-              </div>
-              <div className="nav-user-header">
-                <NavBarContainer formType={this.props.formType} />
+      return <div>Loading...</div>;
+    } else if ((!this.state.hasFetched) && (Object.keys(this.props.businesses).length === 0) || !Array.isArray(this.props.businesses)) {
+      return (
+        <>
+          <div className="businesses-container">
+            <div className="nav-header-container">
+              <div className="nav-header">
+                <Link to="/" className="logo-link">
+                  <img src="https://i.imgur.com/JrsNpWu.png" />
+                </Link>
+                <SearchBarContainer formType={this.props.formType} />
+                <div className="navbar-links">
+                  <a
+                    href="https://www.linkedin.com/in/davidlai9/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedin
+                      className="about-icon"
+                      size={30}
+                      color="black"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/dtlai"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub className="about-icon" size={30} color="black" />
+                  </a>
+                  <a
+                    href="https://angel.co/u/davidtlai"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaAngellist
+                      className="about-icon"
+                      size={30}
+                      color="black"
+                    />
+                  </a>
+                </div>
+                <div className="nav-user-header">
+                  <NavBarContainer formType={this.props.formType} />
+                </div>
               </div>
             </div>
+            <div className="no-search-container">
+              <p>No results for {this.state.search} in Los Angeles, CA</p>
+            </div>
           </div>
-          <div className="businesses-map">
-            {/* <BusinessIndexMap businesses={this.props.businesses}/> */}
+          <Footer />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <div className="businesses-container">
+            <div className="nav-header-container">
+              <div className="nav-header">
+                <Link to="/" className="logo-link">
+                  <img src="https://i.imgur.com/JrsNpWu.png" />
+                </Link>
+                <SearchBarContainer formType={this.props.formType} />
+                <div className="navbar-links">
+                  <a
+                    href="https://www.linkedin.com/in/davidlai9/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedin
+                      className="about-icon"
+                      size={30}
+                      color="black"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/dtlai"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub className="about-icon" size={30} color="black" />
+                  </a>
+                  <a
+                    href="https://angel.co/u/davidtlai"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaAngellist
+                      className="about-icon"
+                      size={30}
+                      color="black"
+                    />
+                  </a>
+                </div>
+                <div className="nav-user-header">
+                  <NavBarContainer formType={this.props.formType} />
+                </div>
+              </div>
+            </div>
+            <div className="businesses-map">
+              {/* <BusinessIndexMap businesses={this.props.businesses}/> */}
+            </div>
+            <div className="list-of-bizs">
+              {this.props.businesses.map((business, i) => (
+                <Link to={`/businesses/${business.id}`} key={i}>
+                  {business.name}
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="list-of-bizs">
-            {this.props.businesses.map((business, i) => (
-              <Link to={`/businesses/${business.id}`} key={i}>
-                {business.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <Footer />
-      </>
-    );
+          <Footer />
+        </>
+      );
+    }
+    
   }
 }
 
