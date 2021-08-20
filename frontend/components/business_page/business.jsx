@@ -195,7 +195,22 @@ class Business extends React.Component {
               <div className="biz-sidebar">
                 <div className="business-info">
                   <div className="order-food-box">
-                    <p>Order Food</p>
+                    <h1>Order Food</h1>
+                    <div className="delivery-address-container">
+                      <div className="delivery-address">
+                        <h1>Delivery Address</h1>
+                        <p>140 New Montgomery, San Francisco, CA 94105</p>
+                      </div>
+                    </div>
+                    <div className="start-email-button">
+                      <a
+                        href="mailto:davidlai9@gmail.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Start Email
+                      </a>
+                    </div>
                   </div>
                   <div className="num-directions-box">
                     <p className="biz-phone-number">{business.phone_number}</p>

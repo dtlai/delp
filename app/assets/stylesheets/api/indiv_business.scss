@@ -170,9 +170,49 @@ $lightdark-gray: rgb(167, 167, 167);
                         border-radius: 4px;
                         margin-bottom: 10px;
                         height: 220px;
-                        p {
+                        h1 {
                             margin-left: 10px;
                             margin-top: 10px;
+                        }
+                        .delivery-address-container {
+                            border: 1px solid $lightdark-gray;
+                            border-radius: 4px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            margin-top: 10px;
+                            .delivery-address {
+                                font-family: sans-serif;
+                                font-size: 16px;
+                                color: gray;
+                                p {
+                                    margin-left: 10px;
+                                    font-weight: 400;
+                                    margin-bottom: 10px;
+                                    margin-top: 10px;
+                                }
+                            }
+                            
+                        }
+                        .start-email-button {
+                            a {
+                                color: white;
+                                background-color: red;
+                                border: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 5px 20px 5px;
+                                border-radius: 4px;
+                                text-decoration: none;
+                                outline: none;
+                                height: 40px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-top: 20px;
+                            }
+                            
                         }
                     }
                     .num-directions-box {
@@ -195,11 +235,10 @@ $lightdark-gray: rgb(167, 167, 167);
                             display: flex;
                             font-family: sans-serif;
                             margin-left: 10px;
+                            color: gray;
                         }
                         .biz-phone-number {
-                            font-family: sans-serif;
                             font-weight: 400;
-                            color: gray;
                             margin-left: 10px;
                             margin-top: 20px;
                             margin-bottom: 20px;
