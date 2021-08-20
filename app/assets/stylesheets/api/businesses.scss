@@ -58,6 +58,25 @@ $primary-gray: rgb(241, 241, 241);
         }
     }
 
+    .no-search-container {
+        margin-top: 40px;
+        margin-left: 40px;
+        h1 {
+            font-size: 24px;
+        }
+        .suggestions {
+            margin-top: 40px;
+            h2 {
+                margin-bottom: 20px;
+            }
+            li {
+                margin-top: 10px;
+                color: gray;
+            }
+        }
+        
+    }
+
 }
 
 

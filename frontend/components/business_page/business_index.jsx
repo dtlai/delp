@@ -29,7 +29,7 @@ class BusinessIndex extends React.Component {
   render() {
     if (!this.state.hasFetched) {
       return <div>Loading...</div>;
-    } else if ((!this.state.hasFetched) && (Object.keys(this.props.businesses).length === 0) || !Array.isArray(this.props.businesses)) {
+    } else if ((this.state.hasFetched) && (Object.keys(this.props.businesses).length === 0) || !Array.isArray(this.props.businesses)) {
       return (
         <>
           <div className="businesses-container">
@@ -76,7 +76,14 @@ class BusinessIndex extends React.Component {
               </div>
             </div>
             <div className="no-search-container">
-              <p>No results for {this.state.search} in Los Angeles, CA</p>
+              <h1>No results for {this.state.search} in Los Angeles, CA</h1>
+              <div className="suggestions">
+                <h2>Suggestions for improving your results:</h2>
+                <li>Try a search for some listed categories</li>
+                <li>Try businesses in Los Angeles area</li>
+                <li>Check the spelling or try alternate spellings</li>
+                <li>Try a more general search, e.g. "pizza" instead of "pepperoni"</li>
+              </div>
             </div>
           </div>
           <Footer />
