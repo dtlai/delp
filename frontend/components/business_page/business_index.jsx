@@ -22,8 +22,15 @@ class BusinessIndex extends React.Component {
     } else {
       this.props
         .searchBusinesses(this.state.search)
-        .then(() => this.setState({ hasFetched: true }));
+        .then(() => this.setState({ hasFetched: true, oldSearch: this.state.search, }));
     }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.location.search.split("=")[1] !== this.props.location.search.split("=")[1]) {
+      this.setState({search: this.props.location.search.split("=")[1]})
+    }
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -137,6 +144,9 @@ class BusinessIndex extends React.Component {
             </div>
             <div className="businesses-map">
               {/* <BusinessIndexMap businesses={this.props.businesses}/> */}
+            </div>
+            <div className="search-results">
+              <h1>Search results for {this.state.search} in Los Angeles, CA</h1>
             </div>
             <div className="list-of-bizs">
               {this.props.businesses.map((business, i) => (
