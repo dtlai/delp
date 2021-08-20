@@ -184,6 +184,9 @@ $lightdark-gray: rgb(167, 167, 167);
                                 font-family: sans-serif;
                                 font-size: 16px;
                                 color: gray;
+                                h1 {
+                                    text-decoration: underline;
+                                }
                                 p {
                                     margin-left: 10px;
                                     font-weight: 400;
