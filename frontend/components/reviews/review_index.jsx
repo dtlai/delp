@@ -35,7 +35,6 @@ class ReviewsIndex extends React.Component {
   render() {
     if (!this.state.hasFetched) return null;
     let { reviews } = this.props;
-    let idx = this.props.idx;
     
     return (
         <>
