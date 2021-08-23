@@ -51,16 +51,24 @@ $primary-gray: rgb(241, 241, 241);
     .list-of-bizs {
         display: grid;
         margin-top: 20px;
-        margin-left: 20px;
-        a {
-            color: gray;
-            margin-top: 5px;
+        margin-left: 40px;
+
+        .biz-card-link {
+            height: 230px;
+            width: 650px;
+            border: 1px solid $primary-gray;
+            border-radius: 4px;
+            h1 {
+                font-size: 16px;
+                text-decoration: none;
+            }
         }
     }
 
     .no-search-container {
         margin-top: 40px;
         margin-left: 40px;
+        font-size: 16px;
         h1 {
             font-size: 24px;
         }
@@ -78,10 +86,15 @@ $primary-gray: rgb(241, 241, 241);
     }
     
     .search-results {
+        font-size: 16px;
         h1 {
             font-size: 24px;
             margin-left: 40px;
             margin-top: 40px;
+        }
+        h2 {
+            margin-top: 40px;
+            margin-left: 40px;
         }
     }
 

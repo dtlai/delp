@@ -5,6 +5,7 @@ import BusinessIndexMap from "../google_maps/business_index_map";
 import SearchBarContainer from "../search_form/search_form_container";
 import Footer from "../footer/footer";
 import { FaLinkedin, FaGithub, FaAngellist } from "react-icons/fa";
+import BusinessCard from './business_card'
 class BusinessIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -97,6 +98,8 @@ class BusinessIndex extends React.Component {
         </>
       );
     } else {
+
+      
       return (
         <>
           <div className="businesses-container">
@@ -146,13 +149,12 @@ class BusinessIndex extends React.Component {
               {/* <BusinessIndexMap businesses={this.props.businesses}/> */}
             </div>
             <div className="search-results">
-              <h1>Search results for {this.state.search} in Los Angeles, CA</h1>
+              <h1>Best {this.state.search} in Los Angeles, CA</h1>
+              <h2>All Results</h2>
             </div>
             <div className="list-of-bizs">
               {this.props.businesses.map((business, i) => (
-                <Link to={`/businesses/${business.id}`} key={i}>
-                  {business.name}
-                </Link>
+                <BusinessCard key={i} business={business} i={i}/>
               ))}
             </div>
           </div>
