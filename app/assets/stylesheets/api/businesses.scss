@@ -4,6 +4,7 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 $primary-gray: rgb(241, 241, 241);
+$open-sans: 'Open Sans', sans-serif;
 
 .nav-header-container {
     display: flex;
@@ -47,23 +48,6 @@ $primary-gray: rgb(241, 241, 241);
 
 .businesses-container {
     font-family: 'Open Sans', sans-serif;
-    
-    .list-of-bizs {
-        display: grid;
-        margin-top: 20px;
-        margin-left: 40px;
-
-        .biz-card-link {
-            height: 230px;
-            width: 650px;
-            border: 1px solid $primary-gray;
-            border-radius: 4px;
-            text-decoration: none;
-            h1 {
-                font-size: 16px;
-            }
-        }
-    }
 
     .no-search-container {
         margin-top: 40px;
@@ -98,6 +82,71 @@ $primary-gray: rgb(241, 241, 241);
         }
     }
 
+}
+
+.list-of-bizs {
+    display: grid;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: $open-sans;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .biz-card-link {
+        height: 260px;
+        width: 650px;
+        border: 1px solid $primary-gray;
+        border-radius: 4px;
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 20px;
+        .biz-card-container {
+            display: flex;
+            margin-top: 20px;
+            .card-pic-container {
+                
+                img {
+                    height: 220px;
+                    margin-left: 20px;
+                    border-radius: 4px;
+                }
+            }
+            
+            .card-info-container {
+                margin-left: 20px;
+                h1 {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                h2 {
+                    margin-bottom: 10px;
+                }
+                .biz-card-info {
+                    display: flex;
+                    margin-bottom: 10px;
+                    color: gray;
+                    .card-categories-container {
+                        display: flex;
+                        background-color: $primary-gray;
+                        font-size: 14px;
+                        // color: gray;
+                        margin-right: 5px;
+                        .card-category {
+                            margin-right: 5px;
+                        }
+                    }
+                    
+                }
+                .biz-card-review {
+                    font-family: sans-serif;
+                }
+            }
+        }
+        
+        
+    }
 }
 
 

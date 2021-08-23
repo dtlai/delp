@@ -61,11 +61,43 @@ class BusinessCard extends React.Component {
           className="biz-card-link"
         >
           <div className="biz-card-container">
-            <h1>
-              {idx}.&nbsp;{business.name}
-            </h1>
-            {avgStars}
-            <ReviewShow idx={i} business={business} />
+            <div className="card-pic-container">
+              <img src={business.photoUrls[0]} alt="cardpic" />
+            </div>
+            <div className="card-info-container">
+              <h1>
+                {idx}.&nbsp;{business.name}
+              </h1>
+              <h2>{avgStars}</h2>
+              <div className="biz-card-info">
+                <div className="card-categories-container">
+                  {business.categories.map((category, i) => {
+                    // if (i !== business.categories.length - 1) {
+                    //   return (
+                    //     <div className="card-category" key={i}>
+                    //       {category.category},&nbsp;
+                    //     </div>
+                    //   );
+                    // } else {
+                    //   return (
+                    //     <div className="card-category" key={i}>
+                    //       {category.category}&nbsp;
+                    //     </div>
+                    //   );
+                    // }
+                    return (
+                      <div className="card-catgory" key={i}>
+                        {category.category}
+                      </div>
+                    )
+                  })}
+                </div>
+                <div>{business.price_range}</div>
+              </div>
+              <div className="biz-card-review">
+                <ReviewShow idx={i} business={business} />
+              </div>
+            </div>
           </div>
         </Link>
       );

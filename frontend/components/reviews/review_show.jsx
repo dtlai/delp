@@ -1,11 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
-import { withRouter } from "react-router";
-import {
-  fetchReviews,
-} from "../../actions/review_actions";
-
-
 class ReviewShow extends React.Component {
   constructor(props) {
     super(props);
