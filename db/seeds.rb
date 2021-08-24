@@ -21,6 +21,51 @@ demo_user = User.create!(
     birthday: '01/01/1990',
 ) 
 
+user1 = User.create!(
+    first_name: 'Guest',
+    last_name: 'User',
+    email: 'guest_user@email.com',
+    password: 'guestuser',
+    zipcode: '90045',
+    birthday: '01/01/1990',
+) 
+
+user2 = User.create!(
+    first_name: 'Guest',
+    last_name: 'User',
+    email: 'guest_user@email.com',
+    password: 'guestuser',
+    zipcode: '90045',
+    birthday: '01/01/1990',
+) 
+
+user3 = User.create!(
+    first_name: 'Guest',
+    last_name: 'User',
+    email: 'guest_user@email.com',
+    password: 'guestuser',
+    zipcode: '90045',
+    birthday: '01/01/1990',
+) 
+
+user4 = User.create!(
+    first_name: 'Guest',
+    last_name: 'User',
+    email: 'guest_user@email.com',
+    password: 'guestuser',
+    zipcode: '90045',
+    birthday: '01/01/1990',
+) 
+
+user5 = User.create!(
+    first_name: 'Guest',
+    last_name: 'User',
+    email: 'guest_user@email.com',
+    password: 'guestuser',
+    zipcode: '90045',
+    birthday: '01/01/1990',
+) 
+
 business1 = Business.create!(
     name: 'Hae Jang Chon',
     address: '3821 W 6th St Koreatown',
@@ -659,5 +704,14 @@ b_c24 = BusinessCategory.create!(business_id: business24.id, category_id: dinner
 
 b_c25 = BusinessCategory.create!(business_id: business25.id, category_id: mexican_cat.id)
 b_c25 = BusinessCategory.create!(business_id: business25.id, category_id: dinner_cat.id)
+
+#### _______________categ-end
+
+r1a = Review.create! (business_id: business1.id,rating: 5, author_id: user1.id,message: "First time coming to this place and I have to say, it was one of the best food I've ever tried. Everything on the menu was amazing and I thoroughly enjoyed the food. The service was also excellent as they really took care of me. Would definitely recommend checking out this business.")
+r1b = Review.create! (business_id: business1.id,rating: 4, author_id: user2.id,message: "I would definitely rate the food as some of the best I have had. Wished it came out a bit faster, but still definitely enjoyed my experience as this business.")
+r1c = Review.create! (business_id: business1.id,rating: 5, author_id: user3.id,message: "Wow I gotta say, I did not expect this place to be so good. The food was excellent and the service was just as great. Would recommend anyone who wants excellent food and service to come check this business out.")
+r1d = Review.create! (business_id: business1.id,rating: 5, author_id: user4.id,message: "If you ask me, this place is definitely underrated as I really enjoyed my experience at this business. The service was top notch and the food was delicious. Highly recommend for anyone who enjoys good food and good service to check this establishment out")
+r1e = Review.create! (business_id: business1.id,rating: 4, author_id: user5.id,message: "I think the food was good, but service could have been better. Waited too long for our food to come so I gotta lower the rating a bit. Overall, a good experience and would still recommend giving this business a try.")
+
 
 
