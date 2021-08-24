@@ -68,7 +68,10 @@ class BusinessCard extends React.Component {
               <h1>
                 {idx}.&nbsp;{business.name}
               </h1>
-              <h2>{avgStars}</h2>
+              <h2>
+                {avgStars}
+                <p>{business.reviews.length}</p>
+              </h2>
               <div className="biz-card-info">
                 <div className="card-categories-container">
                   {business.categories.map((category, i) => {

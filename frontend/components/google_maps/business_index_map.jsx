@@ -75,7 +75,6 @@ export class BusinessIndexMap extends Component {
   }
 
   onMarkerClick = (props, marker, e) => {
-    console.log(props);
     return this.setState({
       selectedPlace: props,
       activeMarker: marker,

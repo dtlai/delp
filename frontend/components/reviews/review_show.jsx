@@ -6,9 +6,17 @@ class ReviewShow extends React.Component {
 
   render() {
     let reviews = this.props.business.reviews;
+    let max = reviews.length - 1;
+    let random = Math.floor(Math.random() * max);
+    let idx = this.props.idx;
+
+    if (idx > max) {
+      idx = random;
+    }
+
     return (
       <div className="indiv-review-container">
-        <div>"{reviews[this.props.idx].message}"</div>
+        <div>"{reviews[idx].message}"</div>
       </div>
     );
   }

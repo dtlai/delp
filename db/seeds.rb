@@ -61,6 +61,16 @@ business4 = Business.create!(
     price_range: '$$',
 )
 
+business5 = Business.create!(
+    name: 'Marugame Monzo',
+    address: '329 E 1st St',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90012',
+    phone_number: '(213) 687-7108',
+    price_range: '$$',
+)
+
 bizfile1_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/haejang/haejang11.jpeg')
 bizfile1_2 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang2.jpeg')
 bizfile1_3 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang3.jpeg')

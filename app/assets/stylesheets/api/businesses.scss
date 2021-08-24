@@ -127,6 +127,13 @@ $open-sans: 'Open Sans', sans-serif;
                 }
                 h2 {
                     margin-bottom: 10px;
+                    display: flex;
+                    p {
+                        margin-left: 7px;
+                        font-family: sans-serif;
+                        color: gray;
+                        margin-top: 3px;
+                    }
                 }
                 .biz-card-info {
                     display: flex;
