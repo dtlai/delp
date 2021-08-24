@@ -22,48 +22,48 @@ demo_user = User.create!(
 ) 
 
 user1 = User.create!(
-    first_name: 'Guest',
-    last_name: 'User',
-    email: 'guest_user@email.com',
+    first_name: 'Michael',
+    last_name: 'Lau',
+    email: 'michael_lau@email.com',
     password: 'guestuser',
-    zipcode: '90045',
-    birthday: '01/01/1990',
+    zipcode: '90046',
+    birthday: '01/02/1990',
 ) 
 
 user2 = User.create!(
-    first_name: 'Guest',
-    last_name: 'User',
-    email: 'guest_user@email.com',
+    first_name: 'Nathan',
+    last_name: 'Luu',
+    email: 'nathan_luu@email.com',
     password: 'guestuser',
-    zipcode: '90045',
-    birthday: '01/01/1990',
+    zipcode: '90047',
+    birthday: '01/03/1990',
 ) 
 
 user3 = User.create!(
-    first_name: 'Guest',
-    last_name: 'User',
-    email: 'guest_user@email.com',
+    first_name: 'Linda',
+    last_name: 'Xiao',
+    email: 'linda_xiao@email.com',
     password: 'guestuser',
-    zipcode: '90045',
-    birthday: '01/01/1990',
+    zipcode: '90048',
+    birthday: '01/04/1990',
 ) 
 
 user4 = User.create!(
-    first_name: 'Guest',
-    last_name: 'User',
-    email: 'guest_user@email.com',
+    first_name: 'Anthony',
+    last_name: 'Chen',
+    email: 'anthony_chen@email.com',
     password: 'guestuser',
-    zipcode: '90045',
-    birthday: '01/01/1990',
+    zipcode: '90049',
+    birthday: '01/05/1990',
 ) 
 
 user5 = User.create!(
-    first_name: 'Guest',
-    last_name: 'User',
-    email: 'guest_user@email.com',
+    first_name: 'David',
+    last_name: 'Lai',
+    email: 'david_lai@email.com',
     password: 'guestuser',
-    zipcode: '90045',
-    birthday: '01/01/1990',
+    zipcode: '90050',
+    birthday: '01/09/1990',
 ) 
 
 business1 = Business.create!(
@@ -707,11 +707,11 @@ b_c25 = BusinessCategory.create!(business_id: business25.id, category_id: dinner
 
 #### _______________categ-end
 
-r1a = Review.create! (business_id: business1.id,rating: 5, author_id: user1.id,message: "First time coming to this place and I have to say, it was one of the best food I've ever tried. Everything on the menu was amazing and I thoroughly enjoyed the food. The service was also excellent as they really took care of me. Would definitely recommend checking out this business.")
-r1b = Review.create! (business_id: business1.id,rating: 4, author_id: user2.id,message: "I would definitely rate the food as some of the best I have had. Wished it came out a bit faster, but still definitely enjoyed my experience as this business.")
-r1c = Review.create! (business_id: business1.id,rating: 5, author_id: user3.id,message: "Wow I gotta say, I did not expect this place to be so good. The food was excellent and the service was just as great. Would recommend anyone who wants excellent food and service to come check this business out.")
-r1d = Review.create! (business_id: business1.id,rating: 5, author_id: user4.id,message: "If you ask me, this place is definitely underrated as I really enjoyed my experience at this business. The service was top notch and the food was delicious. Highly recommend for anyone who enjoys good food and good service to check this establishment out")
-r1e = Review.create! (business_id: business1.id,rating: 4, author_id: user5.id,message: "I think the food was good, but service could have been better. Waited too long for our food to come so I gotta lower the rating a bit. Overall, a good experience and would still recommend giving this business a try.")
+r1a = Review.create!(business_id: business1.id, rating: 5, user_id: user1.id, message: "First time coming to this place and I have to say, it was one of the best food I've ever tried. Everything on the menu was amazing and I thoroughly enjoyed the food. The service was also excellent as they really took care of me. Would definitely recommend checking out this business.")
+r1b = Review.create!(business_id: business1.id, rating: 4, user_id: user2.id, message: "I would definitely rate the food as some of the best I have had. Wished it came out a bit faster, but still definitely enjoyed my experience as this business.")
+r1c = Review.create!(business_id: business1.id, rating: 5, user_id: user3.id, message: "Wow I gotta say, I did not expect this place to be so good. The food was excellent and the service was just as great. Would recommend anyone who wants excellent food and service to come check this business out.")
+r1d = Review.create!(business_id: business1.id, rating: 5, user_id: user4.id, message: "If you ask me, this place is definitely underrated as I really enjoyed my experience at this business. The service was top notch and the food was delicious. Highly recommend for anyone who enjoys good food and good service to check this establishment out")
+r1e = Review.create!(business_id: business1.id, rating: 4, user_id: user5.id, message: "I think the food was good, but service could have been better. Waited too long for our food to come so I gotta lower the rating a bit. Overall, a good experience and would still recommend giving this business a try.")
 
 
 
