@@ -7,10 +7,10 @@ const mapStyles = {
   height: "100%",
 };
 const containerStyle = {
-  position: "relative",
-  width: "70rem",
-  height: "30rem",
-  marginLeft: "20rem",
+  position: "fixed",
+  width: "30%",
+  height: "100%",
+  right: "0px",
   background: "gray",
 };
 

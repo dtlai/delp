@@ -74,7 +74,7 @@ $open-sans: 'Open Sans', sans-serif;
         h1 {
             font-size: 24px;
             margin-left: 40px;
-            margin-top: 40px;
+            padding-top: 40px;
         }
         h2 {
             margin-top: 40px;
@@ -157,13 +157,15 @@ $open-sans: 'Open Sans', sans-serif;
     .biz-card-link:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         cursor: pointer;
-        // border: 1px solid rgb(69, 144, 243);
     }
 }
 
 .businesses-map {
-    height: 600px;
-    width: 300px;
+    // position: absolute;
+    right: 0px;
+    height: 100%;
 }
 
-
+.businesses-page-container {
+    width: 70%;
+}

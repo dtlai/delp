@@ -99,7 +99,6 @@ class BusinessIndex extends React.Component {
       );
     } else {
 
-      
       return (
         <>
           <div className="businesses-container">
@@ -145,20 +144,27 @@ class BusinessIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="businesses-map">
-              <BusinessIndexMap businesses={this.props.businesses}/>
-            </div>
-            <div className="search-results">
-              <h1>Best {this.state.search} in Los Angeles, CA</h1>
-              <h2>All Results</h2>
-            </div>
-            <div className="list-of-bizs">
-              {this.props.businesses.map((business, i) => (
-                <BusinessCard key={i} business={business} i={i}/>
-              ))}
+
+            <div className="biz-and-map-container">
+              <div className="businesses-map">
+                <BusinessIndexMap businesses={this.props.businesses} />
+              </div>
+              <div className="businesses-page-container">
+                <div className="search-results">
+                  <h1>Best {this.state.search} in Los Angeles, CA</h1>
+                  <h2>All Results</h2>
+                </div>
+                <div className="list-of-bizs">
+                  {this.props.businesses.map((business, i) => (
+                    <BusinessCard key={i} business={business} i={i} />
+                  ))}
+                </div>
+                <div className="business-footer-container">
+                  <Footer />
+                </div>
+              </div>
             </div>
           </div>
-          <Footer />
         </>
       );
     }
