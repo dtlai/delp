@@ -161,11 +161,14 @@ $open-sans: 'Open Sans', sans-serif;
 }
 
 .businesses-map {
-    position: absolute;
+    // position: absolute;
     right: 0px;
     height: 100%;
+    width: 30%;
 }
 
 .businesses-page-container {
     width: 70%;
+    overflow-y: auto;
+    height: 100vh;
 }
