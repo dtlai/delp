@@ -466,15 +466,15 @@ business16.photos.attach(io: bizfile16_4, filename: 'pho874.jpeg')
 
 ## ________________________________________
 
-bizfile17_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/aulac1.jpeg')
-bizfile17_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/aulac2.jpeg')
-bizfile17_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/aulac3.jpeg')
-bizfile17_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/aulac4.jpeg')
+bizfile17_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/auluc1.jpeg')
+bizfile17_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/auluc2.jpeg')
+bizfile17_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/auluc3.jpeg')
+bizfile17_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/auluc4.jpeg')
 
-business17.photos.attach(io: bizfile17_1, filename: 'aulac1.jpeg')
-business17.photos.attach(io: bizfile17_2, filename: 'aulac2.jpeg')
-business17.photos.attach(io: bizfile17_3, filename: 'aulac3.jpeg')
-business17.photos.attach(io: bizfile17_4, filename: 'aulac4.jpeg')
+business17.photos.attach(io: bizfile17_1, filename: 'auluc1.jpeg')
+business17.photos.attach(io: bizfile17_2, filename: 'auluc2.jpeg')
+business17.photos.attach(io: bizfile17_3, filename: 'auluc3.jpeg')
+business17.photos.attach(io: bizfile17_4, filename: 'auluc4.jpeg')
 
 ## ________________________________________
 
