@@ -24,14 +24,14 @@ class Categories extends React.Component {
                 <div className="categories-card-container">
                   <div
                     className="categories-card"
-                    onClick={() => this.handleClick("American")}
+                    onClick={() => this.handleClick("Chinese")}
                   >
                     <div className="card-content">
                       <img
                         src="https://i.imgur.com/HSZMEvy.png"
-                        alt="americanfood"
+                        alt="chinesefood"
                       />
-                      <p>American</p>
+                      <p>Chinese</p>
                     </div>
                   </div>
                 </div>

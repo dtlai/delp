@@ -101,8 +101,78 @@ business8 = Business.create!(
     price_range: '$$',
 )
 
+business9 = Business.create!(
+    name: 'Sun Nong Dan',
+    address: '3470 W 6th St Ste 7',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90020',
+    phone_number: '(213) 365-0303',
+    price_range: '$$$',
+)
 
-#### ________________________________________
+business10 = Business.create!(
+    name: 'Han Bat Sul Lung Tang',
+    address: '4163 W 5th St',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90020',
+    phone_number: '(213) 383-9499',
+    price_range: '$$',
+)
+
+business11 = Business.create!(
+    name: 'Yang Chow',
+    address: '819 N Broadway',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90012',
+    phone_number: '(213) 625-0811',
+    price_range: '$$',
+)
+
+business12 = Business.create!(
+    name: 'Won Kok',
+    address: '210 Alpine St',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90012',
+    phone_number: '(213) 613-0700',
+    price_range: '$',
+)
+
+business13 = Business.create!(
+    name: 'Golden Dragon',
+    address: '960 N Broadway',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90012',
+    phone_number: '(213) 613-0700',
+    price_range: '$$',
+)
+
+business14 = Business.create!(
+    name: 'Full House Seafood',
+    address: '963 N Hill St',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90012',
+    phone_number: '(213) 617-8382',
+    price_range: '$$',
+)
+
+business15 = Business.create!(
+    name: 'Lao Tao',
+    address: '727 N Broadway Unit 207',
+    city: 'Los Angeles',
+    state: 'CA',
+    biz_zipcode: '90012',
+    phone_number: '(213) 372-5318',
+    price_range: '$$',
+)
+
+
+#### ________________________________________a-end
 
 bizfile1_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/haejang/haejang11.jpeg')
 bizfile1_2 = URI.open('https://delp-seeds.s3-us-west-1.amazonaws.com/business_pics/haejang/haejang2.jpeg')
@@ -198,15 +268,100 @@ business8.photos.attach(io: bizfile8_2, filename: 'hangari2.jpeg')
 business8.photos.attach(io: bizfile8_3, filename: 'hangari3.jpeg')
 business8.photos.attach(io: bizfile8_4, filename: 'hangari4.jpeg')
 
+## ________________________________________
 
-#### _______________________________________
+bizfile9_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/sunnong1.jpeg')
+bizfile9_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/sunnong2.jpeg')
+bizfile9_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/sunnong3.jpeg')
+bizfile9_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/sunnong4.jpeg')
+
+business9.photos.attach(io: bizfile9_1, filename: 'sunnong1.jpeg')
+business9.photos.attach(io: bizfile9_2, filename: 'sunnong2.jpeg')
+business9.photos.attach(io: bizfile9_3, filename: 'sunnong3.jpeg')
+business9.photos.attach(io: bizfile9_4, filename: 'sunnong4.jpeg')
+
+## ________________________________________
+
+bizfile10_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/hanbat1.jpeg')
+bizfile10_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/hanbat2.jpeg')
+bizfile10_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/hanbat3.jpeg')
+bizfile10_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/hanbat4.jpeg')
+
+business10.photos.attach(io: bizfile10_1, filename: 'hanbat1.jpeg')
+business10.photos.attach(io: bizfile10_2, filename: 'hanbat2.jpeg')
+business10.photos.attach(io: bizfile10_3, filename: 'hanbat3.jpeg')
+business10.photos.attach(io: bizfile10_4, filename: 'hanbat4.jpeg')
+
+## ________________________________________
+
+bizfile11_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/yangchow1.jpeg')
+bizfile11_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/yangchow2.jpeg')
+bizfile11_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/yangchow3.jpeg')
+bizfile11_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/yangchow4.jpeg')
+
+business11.photos.attach(io: bizfile11_1, filename: 'yangchow1.jpeg')
+business11.photos.attach(io: bizfile11_2, filename: 'yangchow2.jpeg')
+business11.photos.attach(io: bizfile11_3, filename: 'yangchow3.jpeg')
+business11.photos.attach(io: bizfile11_4, filename: 'yangchow4.jpeg')
+
+## ________________________________________
+
+bizfile12_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/wonkok1.jpeg')
+bizfile12_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/wonkok2.jpeg')
+bizfile12_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/wonkok3.jpeg')
+bizfile12_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/wonkok4.jpeg')
+
+business12.photos.attach(io: bizfile12_1, filename: 'wonkok1.jpeg')
+business12.photos.attach(io: bizfile12_2, filename: 'wonkok2.jpeg')
+business12.photos.attach(io: bizfile12_3, filename: 'wonkok3.jpeg')
+business12.photos.attach(io: bizfile12_4, filename: 'wonkok4.jpeg')
+
+## ________________________________________
+
+bizfile13_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/fullhouse1.jpeg')
+bizfile13_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag2.jpeg')
+bizfile13_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag3.jpeg')
+bizfile13_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag4.jpeg')
+
+business13.photos.attach(io: bizfile13_1, filename: 'goldendrag1.jpeg')
+business13.photos.attach(io: bizfile13_2, filename: 'goldendrag2.jpeg')
+business13.photos.attach(io: bizfile13_3, filename: 'goldendrag3.jpeg')
+business13.photos.attach(io: bizfile13_4, filename: 'goldendrag4.jpeg')
+
+## ________________________________________
+
+bizfile14_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/fullhouse1.jpeg')
+bizfile14_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/fullhouse2.jpeg')
+bizfile14_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/fullhouse3.jpeg')
+bizfile14_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/fullhouse4.jpeg')
+
+business14.photos.attach(io: bizfile14_1, filename: 'fullhouse1.jpeg')
+business14.photos.attach(io: bizfile14_2, filename: 'fullhouse2.jpeg')
+business14.photos.attach(io: bizfile14_3, filename: 'fullhouse3.jpeg')
+business14.photos.attach(io: bizfile14_4, filename: 'fullhouse4.jpeg')
+
+## ________________________________________
+
+bizfile15_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/laotao1.jpeg')
+bizfile15_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/laotao2.jpeg')
+bizfile15_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/laotao3.jpeg')
+bizfile15_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/laotao4.jpeg')
+
+business15.photos.attach(io: bizfile15_1, filename: 'laotao1.jpeg')
+business15.photos.attach(io: bizfile15_2, filename: 'laotao2.jpeg')
+business15.photos.attach(io: bizfile15_3, filename: 'laotao3.jpeg')
+business15.photos.attach(io: bizfile15_4, filename: 'laotao4.jpeg')
+
+
+#### _______________________________________uh-photo-end
 
 korean_cat = Category.create!(category: "Korean")
 japanese_cat = Category.create!(category: "Japanese")
+chinese_cat = Category.create!(category: "Chinese")
 lunch_cat = Category.create!(category: "Lunch")
 dinner_cat = Category.create!(category: "Dinner")
 
-#### ________________________________________
+#### ________________________________________cat-end
 
 b_c1 = BusinessCategory.create!(business_id: business1.id, category_id: korean_cat.id)
 b_c1 = BusinessCategory.create!(business_id: business1.id, category_id: dinner_cat.id)
@@ -231,5 +386,26 @@ b_c7 = BusinessCategory.create!(business_id: business7.id, category_id: dinner_c
 
 b_c8 = BusinessCategory.create!(business_id: business8.id, category_id: korean_cat.id)
 b_c8 = BusinessCategory.create!(business_id: business8.id, category_id: lunch_cat.id)
+
+b_c9 = BusinessCategory.create!(business_id: business9.id, category_id: korean_cat.id)
+b_c9 = BusinessCategory.create!(business_id: business9.id, category_id: dinner_cat.id)
+
+b_c10 = BusinessCategory.create!(business_id: business10.id, category_id: korean_cat.id)
+b_c10 = BusinessCategory.create!(business_id: business10.id, category_id: lunch_cat.id)
+
+b_c11 = BusinessCategory.create!(business_id: business11.id, category_id: chinese_cat.id)
+b_c11 = BusinessCategory.create!(business_id: business11.id, category_id: dinner_cat.id)
+
+b_c12 = BusinessCategory.create!(business_id: business12.id, category_id: chinese_cat.id)
+b_c12 = BusinessCategory.create!(business_id: business12.id, category_id: lunch_cat.id)
+
+b_c13 = BusinessCategory.create!(business_id: business13.id, category_id: chinese_cat.id)
+b_c13 = BusinessCategory.create!(business_id: business13.id, category_id: lunch_cat.id)
+
+b_c14 = BusinessCategory.create!(business_id: business14.id, category_id: chinese_cat.id)
+b_c14 = BusinessCategory.create!(business_id: business14.id, category_id: dinner_cat.id)
+
+b_c15 = BusinessCategory.create!(business_id: business15.id, category_id: chinese_cat.id)
+b_c15 = BusinessCategory.create!(business_id: business15.id, category_id: lunch_cat.id)
 
 
