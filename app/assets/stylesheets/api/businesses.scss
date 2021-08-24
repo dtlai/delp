@@ -139,8 +139,14 @@ $open-sans: 'Open Sans', sans-serif;
                     }
                     
                 }
-                .biz-card-review {
+                .biz-card-review-container {
                     font-family: sans-serif;
+                    .biz-card-review {
+                        display: flex;
+                        .biz-review-icon {
+                            margin-right: 5px;
+                        }
+                    }
                 }
             }
         }
@@ -149,5 +155,9 @@ $open-sans: 'Open Sans', sans-serif;
     }
 }
 
+.businesses-map {
+    height: 600px;
+    width: 300px;
+}
 
 

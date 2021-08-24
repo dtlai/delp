@@ -8,7 +8,7 @@ class ReviewShow extends React.Component {
     let reviews = this.props.business.reviews;
     return (
       <div className="indiv-review-container">
-        <div>{reviews[this.props.idx].message}</div>
+        <div>"{reviews[this.props.idx].message}"</div>
       </div>
     );
   }

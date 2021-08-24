@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ReviewShow from '../reviews/review_show';
-// import { FiMessageSquare } from 'react-icons/fi';
+import { FiMessageSquare } from 'react-icons/fi';
 class BusinessCard extends React.Component {
   constructor(props) {
     super(props);
@@ -81,9 +81,11 @@ class BusinessCard extends React.Component {
                 </div>
                 <div>{business.price_range}</div>
               </div>
-              <div className="biz-card-review">
-                {/* <FiMessageSquare className="biz-review-icon" size={10}/> */}
-                <ReviewShow idx={i} business={business} />
+              <div className="biz-card-review-container">
+                <div className="biz-card-review">
+                  <FiMessageSquare className="biz-review-icon" size={15} />
+                  <ReviewShow idx={i} business={business} />
+                </div>
               </div>
             </div>
           </div>
