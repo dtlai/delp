@@ -4,13 +4,7 @@
 
 [Live Site](https://ridealong-app.herokuapp.com/#/)
 
-RideAlong is a ride-sharing app that allows drivers to connect with passengers looking for rides to the same destinations. RideAlong is primarily built with the MERN stack, a combination of the four following technologies: MongoDB, Express, React, and Node.
-
-# Group Members
-* Nathan Luu 
-* Linda Xiao
-* Michael Lau
-* David Lai
+A Yelp-inspired web application where users can search for businesses and leave reviews and ratings. Delp is primarily built with React/Redux for the frontend, Ruby on Rails for the backendm, and PostgreSQL
 
 # Features
 * Create an account to make posts about their trips
@@ -47,8 +41,8 @@ RideAlong is a ride-sharing app that allows drivers to connect with passengers l
 # Technologies
 * React
 * Redux
-* MongoDB
-* Express
+* Ruby on Rails
+* PostgreSQL
 * Google Maps API
 * GeoCoding API
 
