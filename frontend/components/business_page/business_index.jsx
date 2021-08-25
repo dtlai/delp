@@ -93,8 +93,8 @@ class BusinessIndex extends React.Component {
                 <li>Try a more general search, e.g. "pizza" instead of "pepperoni"</li>
               </div>
             </div>
+            <Footer />
           </div>
-          <Footer />
         </>
       );
     } else {
