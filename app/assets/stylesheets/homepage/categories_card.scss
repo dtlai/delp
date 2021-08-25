@@ -33,21 +33,16 @@ $primary-gray: rgb(241, 241, 241);
                 width: 200px;
                 height: 250px;
                 .card-content {
-                    // object-fit: cover;
-                    // height: 160px;
                     overflow: hidden;
                     border-radius: 4px;
                     img {
                         height: 200px;
-                        // object-fit: cover;
-                        // overflow: hidden;
-                        // height: 180px;
-                        // width: 200px;
                     }
                     p {
                         justify-content: center;
                         display: flex;
                         margin-top: 10px;
+                        padding-bottom: 3px;
                     }
                 }
             }
