@@ -28,7 +28,7 @@ class Categories extends React.Component {
                   >
                     <div className="card-content">
                       <img
-                        src="https://i.imgur.com/HSZMEvy.png"
+                        src="https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/yangchow2.jpeg"
                         alt="chinesefood"
                       />
                       <p>Chinese</p>
