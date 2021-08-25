@@ -16,7 +16,7 @@ class ReviewShow extends React.Component {
 
     return (
       <div className="indiv-review-container">
-        <div>"{reviews[idx].message}"</div>
+        <div className="card-review">"{reviews[idx].message}"</div>
       </div>
     );
   }

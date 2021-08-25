@@ -86,7 +86,7 @@ class BusinessCard extends React.Component {
               </div>
               <div className="biz-card-review-container">
                 <div className="biz-card-review">
-                  <FiMessageSquare className="biz-review-icon" size={15} />
+                  <FiMessageSquare className="biz-review-icon" />
                   <ReviewShow idx={i} business={business} />
                 </div>
               </div>
