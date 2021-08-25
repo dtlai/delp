@@ -58,12 +58,12 @@ user4 = User.create!(
 ) 
 
 user5 = User.create!(
-    first_name: 'David',
-    last_name: 'Lai',
-    email: 'david_lai@email.com',
+    first_name: 'Tamara',
+    last_name: 'Lin',
+    email: 'tamara_lin@email.com',
     password: 'guestuser',
     zipcode: '90050',
-    birthday: '01/09/1990',
+    birthday: '01/01/1990',
 ) 
 
 business1 = Business.create!(
@@ -463,7 +463,7 @@ business12.photos.attach(io: bizfile12_4, filename: 'wonkok4.jpeg')
 
 ## ________________________________________
 
-bizfile13_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/fullhouse1.jpeg')
+bizfile13_1 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag1.jpeg')
 bizfile13_2 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag2.jpeg')
 bizfile13_3 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag3.jpeg')
 bizfile13_4 = URI.open('https://delp-seeds.s3.us-west-1.amazonaws.com/business_pics/goldendrag4.jpeg')

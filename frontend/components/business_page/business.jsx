@@ -198,7 +198,7 @@ class Business extends React.Component {
                     <h1>Order Food</h1>
                     <div className="delivery-address-container">
                       <div className="delivery-address">
-                        <h1>Delivery Address</h1>
+                        <h1>Delivery Address:</h1>
                         <p>140 New Montgomery, San Francisco, CA 94105</p>
                       </div>
                     </div>

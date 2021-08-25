@@ -99,7 +99,7 @@ export class BusinessIndexMap extends Component {
         mapTypeControl={false}
         ref="map"
         google={this.props.google}
-        zoom={12}
+        zoom={13}
         style={mapStyles}
         containerStyle={containerStyle}
         center={this.state.center}
