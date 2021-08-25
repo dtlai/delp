@@ -57,6 +57,7 @@ class SearchBar extends React.Component {
                     className={`search-content2`}
                     type="text"
                     placeholder="Los Angeles, CA 90012"
+                    disabled="disabled"
                   />
                 </label>
                 <button className={`search-button`}>
