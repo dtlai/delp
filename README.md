@@ -4,7 +4,7 @@
 
 [Live Site](https://ridealong-app.herokuapp.com/#/)
 
-A Yelp-inspired web application where users can search for businesses and leave reviews and ratings. Delp is primarily built with React/Redux for the frontend, Ruby on Rails for the backendm, and PostgreSQL
+A Yelp-inspired web application where users can search for businesses and leave reviews and ratings. Delp is primarily built with React/Redux for the frontend, Ruby on Rails for the backend, and PostgreSQL for the database.
 
 # Features
 * Create an account to make posts about their trips
