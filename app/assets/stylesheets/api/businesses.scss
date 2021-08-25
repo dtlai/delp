@@ -181,11 +181,11 @@ $open-sans: 'Open Sans', sans-serif;
     // position: absolute;
     right: 0px;
     height: 100%;
-    width: 30%;
+    width: 35%;
 }
 
 .businesses-page-container {
-    width: 70%;
+    width: 65%;
     overflow-y: auto;
     height: 80vh;
 }
@@ -194,5 +194,6 @@ $open-sans: 'Open Sans', sans-serif;
     .card-review {
         width: 360px;
         margin-top: 2px;
+        color: gray;
     }
 }
