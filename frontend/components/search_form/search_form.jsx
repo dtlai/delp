@@ -28,7 +28,6 @@ class SearchBar extends React.Component {
         this.props
           .searchBusinesses(this.state.query)
           .then(() => this.props.history.push(`/businesses?query=${this.state.query}`));
-        
     }
 
     render () {
@@ -54,7 +53,7 @@ class SearchBar extends React.Component {
                   <input
                     className={`search-content2`}
                     type="text"
-                    placeholder="Los Angeles, CA 90012"
+                    placeholder="Los Angeles, CA"
                     disabled="disabled"
                   />
                 </div>

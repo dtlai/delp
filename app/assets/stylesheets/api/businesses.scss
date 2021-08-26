@@ -12,9 +12,11 @@ $open-sans: 'Open Sans', sans-serif;
     background-color: $primary-gray;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
 
     .nav-header {
         display: flex;
+        max-width: 100%;
         .logo-link {
             display: flex;
             margin-right: 30px;
