@@ -21,7 +21,11 @@ $open-sans: 'Open Sans', sans-serif;
             background-color: white;
             margin-left: 10px;
             height: 30px;
-            
+            display: flex;
+            align-items: center;
+            p {
+                margin-bottom: 4px;
+            }
         }
         .search-container2 {
             font-size: 18px;
@@ -29,7 +33,11 @@ $open-sans: 'Open Sans', sans-serif;
             background-color: white;
             margin-left: 10px;
             height: 30px;
-
+            display: flex;
+            align-items: center;
+            p {
+                margin-bottom: 4px;
+            }
         }
         .search-content1 {
             height: 30px;
@@ -55,17 +63,18 @@ $open-sans: 'Open Sans', sans-serif;
             align-items: center;
             font-size: 18px;
             margin-left: 5px;
+            margin-right: 10px;
         }
         .search-button {
             background-color: red;
             cursor: pointer;
-            transform: scaleX(-1);
             height: inherit;
             width: 73px;
             border: none;
-            border-radius: 4px 0 0 4px;
+            border-radius: 0 4px 4px 0;
             .search-icon {
-                height: 50px;
+                height: 40px;
+                margin-top: 5px;
             }
         }
     
@@ -74,11 +83,9 @@ $open-sans: 'Open Sans', sans-serif;
     .search-form-other {
         background-color: white;
         height: 50px;
-        width: 600px;
+        width: 650px;
         border-radius: 4px 4px 4px 4px;
-
         display: flex;
-        justify-content: center;
         align-items: center;
         margin-top: 40px;
         margin-left: 20px;
@@ -88,7 +95,6 @@ $open-sans: 'Open Sans', sans-serif;
             color: gray;
             background-color: white;
             margin-left: 10px;
-            // margin-right: 10px;
             
         }
         .search-container2 {
@@ -122,17 +128,18 @@ $open-sans: 'Open Sans', sans-serif;
             margin-left: 5px;
             font-size: 18px;
             margin-top: 1px;
+            margin-right: 40px;
         }
         .search-button {
             background-color: red;
             cursor: pointer;
-            transform: scaleX(-1);
             height: inherit;
             width: 73px;
             border: none;
-            border-radius: 4px 0 0 4px;
+            border-radius: 0px 4px 4px 0;
             .search-icon {
-                height: 50px;
+                height: 40px;
+                margin-top: 5px;
             }
         }
 

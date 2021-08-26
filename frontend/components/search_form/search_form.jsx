@@ -1,7 +1,5 @@
 import React from 'react'
-// import {withRouter} from 'react-router-dom';
-import { GiMagnifyingGlass } from "react-icons/gi";
-
+import { BiSearch } from "react-icons/bi";
 
 class SearchBar extends React.Component {
 
@@ -42,7 +40,7 @@ class SearchBar extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 <div className={`search-container1`}>
-                  {this.find}
+                  <p>{this.find}</p>
                   <input
                     className={`search-content1`}
                     type="text"
@@ -52,7 +50,7 @@ class SearchBar extends React.Component {
                   />
                 </div>
                 <div className={`search-container2`}>
-                  {this.near}
+                  <p>{this.near}</p>
                   <input
                     className={`search-content2`}
                     type="text"
@@ -61,11 +59,7 @@ class SearchBar extends React.Component {
                   />
                 </div>
                 <button className={`search-button`}>
-                  <GiMagnifyingGlass
-                    className="search-icon"
-                    size={30}
-                    color="white"
-                  />
+                  <BiSearch className="search-icon" size={30} color="white" />
                 </button>
               </form>
             </div>
