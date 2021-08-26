@@ -2,30 +2,12 @@
 
 ![delp_logo](https://i.imgur.com/JrsNpWu.png)
 
-[Live Site](https://ridealong-app.herokuapp.com/#/)
+[Live Site](https://delp-app.herokuapp.com/#/)
 
 A Yelp-inspired web application where users can search for businesses and leave reviews and ratings. Delp is primarily built with React/Redux for the frontend, Ruby on Rails for the backend, and PostgreSQL for the database.
 
 # Features
 * Create an account to make posts about their trips
-
-* Post a trip to allow for carpoolers
-
-* View catalog of all the trips posted
-
-* Select start destinations based on map location
-
-![map_location](https://media.giphy.com/media/QaZXYVPwOaI8S4UVcE/giphy.gif)
-
-* Search for trips based on start destination
-
-![search_trip](https://media.giphy.com/media/bYH0KFq11f9ZaWHzO8/giphy.gif)
-
-* Trip page showing details about the trip
-
-![join_a_ride](https://media3.giphy.com/media/CIc6NECkQ0GsVg5YCt/giphy.gif)
-
-* Display all trips requested and posted on user profile
 
 ![user_prof](https://media.giphy.com/media/IAi8uuDVMFoqGUxmyd/giphy.gif)
 
