@@ -57,7 +57,6 @@ export class BusinessIndexMap extends Component {
         this.setState({
           markers: oldMarkers,
           center: markerInfo.coords,
-        //   name: markerInfo.name,
         });
       }),
         (error) => {
