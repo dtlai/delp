@@ -29,13 +29,12 @@ A Yelp-inspired web application where users can search for businesses and leave 
 
 # Backend Technical Challenges
 * Allowing users who are logged in to create reviews
+
 * Creating a search that filters businesses successfully based on category tags
+<img src="https://i.imgur.com/m6xvyDd.png" width="600">
+
 * Integrating Google Maps API and Geocoding API into the application
-
-
-<img src="https://i.imgur.com/HubBLX9.png" width="600">
-
-<img src="https://i.imgur.com/rdn6BJQ.png" width="600">
+<img src="https://i.imgur.com/Qs0RMHw.png" width="600">
 
 # Frontend Technical Challenges
 * Creating user authentication forms
