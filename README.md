@@ -15,9 +15,8 @@ A Yelp-inspired web application where users can search for businesses and leave 
 # Functionality and MVP
 * Live on Heroku
 * User authorization
-* Trips (create, join, delete)
-* Search/Filter Trips
-* User Profile
+* Create reviews
+* Search/Filter businesses
 * Google Maps API, GeoCoding API 
 
 # Technologies
@@ -29,19 +28,18 @@ A Yelp-inspired web application where users can search for businesses and leave 
 * GeoCoding API
 
 # Backend Technical Challenges
-* Integrating Google Maps API and GeoCoding API into our features
+* Allowing users who are logged in to create reviews
+* Creating a search that filters businesses successfully based on category tags
+* Integrating Google Maps API and Geocoding API into the application
+
 
 <img src="https://i.imgur.com/HubBLX9.png" width="600">
-
-* Setting up user authentication
-* Allow for trip creation, joining a trip, and deleting a trip
-* Creating a search that filters trips based on input successfully
 
 <img src="https://i.imgur.com/rdn6BJQ.png" width="600">
 
 # Frontend Technical Challenges
 * Creating user authentication forms
-* Creating trip creation forms
-* Creating a user profile 
+* Creating review creation forms
+* Creating business pages to display all information and reviews
 
 
