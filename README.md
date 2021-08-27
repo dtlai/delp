@@ -1,6 +1,6 @@
 # Delp
 
-![delp_logo](https://i.imgur.com/JrsNpWu.png)
+[delp_logo](https://i.imgur.com/JrsNpWu.png)
 
 [Live Site](https://delp-app.herokuapp.com/#/)
 
